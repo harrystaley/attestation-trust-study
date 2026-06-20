@@ -20,12 +20,8 @@ A 3 × 2 × 2 within-subjects factorial:
 **Stakes, defined.** Stakes is operationalized as the overall consequentiality of
 being wrong about the item:
 
-- **Low stakes** — questions of factual curiosity, where acting on a wrong answer
-  has little or no practical consequence (e.g., the length of a day on Mars, the
-  year a painting was made).
-- **High stakes** — questions where being wrong carries a real practical
-  consequence, for example a financial, legal, health, safety, or security
-  consequence (e.g., a deposit-insurance limit, a recommended ladder setup ratio).
+- **high stakes:** An item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence must be financial, legal, or benefit-related, not physical injury. The fact must apply uniformly to all US adults at the federal level (not state-specific).
+- **Low stakes:** An item of factual interest where acting on the wrong answer  produces no meaningful consequence: at most a trivial inconvenience or a  corrected misconception.
 
 Stakes is treated holistically (bundling magnitude, domain, and relevance) rather
 than isolating a single dimension; the per-trial Perceived Consequence measure is
@@ -33,7 +29,8 @@ used to validate the manipulation. See the project report for the full rationale
 
 Each participant sees 12 trials (one per cell). Counterbalancing uses a
 six-version Latin square; trial order is randomized. Recruitment is planned via
-Prolific; target N is determined by the power-analysis notebook.
+Prolific (US residents only); target N is determined by the power-analysis
+notebook.
 
 (See the project report for hypotheses, measures, and full rationale.)
 
