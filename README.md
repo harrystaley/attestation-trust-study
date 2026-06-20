@@ -1,3 +1,107 @@
-# template
-* This is a template repo that I use to create all of my new GitHUb repos.
-* The .gitattributes allows git to track and display SQL and other code types that traditionally are not calculated in statistics by git.
+# Attestation Trust Study
+
+Materials and analysis code for a cognitive-science experiment on source
+attestation and trust calibration in AI-generated answers, conducted for
+Georgia Tech CS 6795 (Introduction to Cognitive Science), Summer 2026.
+
+This README covers the code and how to run it. **For the full experimental
+design, hypotheses, theoretical framing, and analysis, see the project report.**
+
+---
+
+## Design at a glance
+
+A 3 × 2 × 2 within-subjects factorial:
+
+- **Attestation** (none / weak / strong) — the provenance display attached to an answer
+- **Correctness** (correct / incorrect) — whether the answer is factually accurate
+- **Stakes** (low / high) — the consequence of acting on a wrong answer
+
+Each participant sees 12 trials (one per cell). Counterbalancing uses a
+six-version Latin square; trial order is randomized. Recruitment is planned via
+Prolific; target N is determined by the power-analysis notebook.
+
+(See the project report for hypotheses, measures, and full rationale.)
+
+---
+
+## Repository contents
+
+| File | Purpose |
+|------|---------|
+| `survey_generator.ipynb` | Generates and validates candidate survey stimuli via an LLM, then expands them into a Qualtrics loop table. |
+| `power_analysis_simulation.ipynb` | Monte-Carlo power analysis for the 3×2×2 mixed-effects design; determines target sample size. |
+| `analysis.ipynb` | Analysis of collected data (mixed-effects models). *Pending data collection.* |
+| `setup_env.py` | One-time bootstrap that creates a git-ignored `.env` for the OpenAI API key. |
+| `environment.yaml` | Conda environment definition (delegates Python deps to `requirements.txt`). |
+| `requirements.txt` | Python package dependencies. |
+| `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
+
+<!-- TODO: list generated output files (generated_stems.json/csv,
+qualtrics_loop_table.csv, generation_metadata.json) once a final run exists. -->
+
+---
+
+## Setup
+
+Requires Python 3.13+ and either conda or pip.
+
+**Conda (recommended):**
+
+```bash
+conda env create -f environment.yaml
+conda activate attestation-trust
+```
+
+**Pip:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**API key (for stimulus generation only):**
+
+```bash
+python setup_env.py            # creates a .env template
+# then edit .env and paste your OpenAI API key
+```
+
+The `.env` file is git-ignored and never committed. The stimulus generator
+loads it automatically via `python-dotenv`.
+
+---
+
+## Usage
+
+**Power analysis.** Open `power_analysis_simulation.ipynb`, set the assumed
+effect sizes in the parameters block (ideally from pilot data), and run. Output
+is a power curve indicating the sample size needed for the target power.
+
+**Stimulus generation.** Open `survey_generator.ipynb` and run the cells in
+order. It calls the OpenAI API to generate candidate stimuli, validates them
+against the design constraints, flags items needing manual curation, and writes
+a Qualtrics-ready loop table. Generated stimuli are curated by the author before
+use.
+
+**Analysis.** `analysis.ipynb` fits the mixed-effects models to collected data.
+*Pending data collection.*
+
+---
+
+## License and copyright
+
+This repository is part of an ongoing research project intended for future
+publication. **No open-source license is granted at this time** — all rights are
+reserved by default, and licensing will be determined at publication. See
+[`NOTICE.md`](NOTICE.md) for the full copyright, license-status, and
+AI-assistance disclosure.
+
+Human-subjects data, if collected, is governed separately by the study's IRB
+protocol and participant consent.
+
+---
+
+## Author
+
+Harry Staley — Georgia Institute of Technology, OMSCS
+CS 6795 (Introduction to Cognitive Science), Summer 2026
