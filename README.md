@@ -36,9 +36,15 @@ Prolific; target N is determined by the power-analysis notebook.
 | `environment.yaml` | Conda environment definition (delegates Python deps to `requirements.txt`). |
 | `requirements.txt` | Python package dependencies. |
 | `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
+| `generation_prompt.md` | The LLM prompt used to generate candidate stimuli (the study's authored instrument). |
+| `output/` | Generated and curated stimuli, and the Qualtrics loop table. |
 
-<!-- TODO: list generated output files (generated_stems.json/csv,
-qualtrics_loop_table.csv, generation_metadata.json) once a final run exists. -->
+## Generated outputs
+
+Running `survey_generator.ipynb` writes to `output/`:
+- `generated_stems.json` / `.csv` — the 12 question stems with answers and sources
+- `qualtrics_loop_table.csv` — the 72-row table for Qualtrics loop & merge import
+- `generation_metadata.json` — model, run date, and curation flags (for reproducibility)
 
 ---
 
