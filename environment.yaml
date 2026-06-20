@@ -1,0 +1,13 @@
+name: attestation-trust
+
+channels:
+  - conda-forge
+
+dependencies:
+  # --- Python version (conda's job; requirements.txt can't pin this) ---
+  - python=3.13
+  - pip
+
+  # --- pure-Python deps: delegated to requirements.txt (single source) ---
+  - pip:
+      - -r requirements.txt

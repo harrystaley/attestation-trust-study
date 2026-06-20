@@ -1,0 +1,18 @@
+# --- data handling ---
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+
+# --- mixed-effects modeling + power simulation ---
+statsmodels>=0.14        # MixedLM for the LMM and power_simulation.py
+
+# --- figures ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- notebook kernel (so DataSpell can run notebooks against this env) ---
+ipykernel>=6.25
+
+# --- reading the Qualtrics export ---
+openpyxl>=3.1            # xlsx export
+pyreadstat>=1.2          # SPSS .sav export (optional; remove if unused)
