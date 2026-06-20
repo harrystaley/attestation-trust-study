@@ -6,8 +6,12 @@ Generate 12 question stems as a JSON array. Each object must have exactly:
   {schema_fields}
 
 Definitions:
-- low stakes  = minor or no consequence if acted on wrongly.
-- high stakes = health, safety, financial, legal, or cybersecurity consequence.
+- low stakes = Questions of factual curiosity, where acting on a wrong answer
+  has little or no practical consequence (e.g., the length of a day on Mars, the
+  year a painting was made).
+- high stakes = questions where being wrong carries a real practical
+  consequence, for example a financial, legal, health, safety, or security
+  consequence (e.g., a deposit-insurance limit, a recommended ladder setup ratio).
 
 Constraints:
 - Exactly 12 objects: 6 low stakes, 6 high stakes.

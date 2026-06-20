@@ -15,7 +15,21 @@ A 3 × 2 × 2 within-subjects factorial:
 
 - **Attestation** (none / weak / strong) — the provenance display attached to an answer
 - **Correctness** (correct / incorrect) — whether the answer is factually accurate
-- **Stakes** (low / high) — the consequence of acting on a wrong answer
+- **Stakes** (low / high) — how consequential it would be to act on a wrong answer
+
+**Stakes, defined.** Stakes is operationalized as the overall consequentiality of
+being wrong about the item:
+
+- **Low stakes** — questions of factual curiosity, where acting on a wrong answer
+  has little or no practical consequence (e.g., the length of a day on Mars, the
+  year a painting was made).
+- **High stakes** — questions where being wrong carries a real practical
+  consequence, for example a financial, legal, health, safety, or security
+  consequence (e.g., a deposit-insurance limit, a recommended ladder setup ratio).
+
+Stakes is treated holistically (bundling magnitude, domain, and relevance) rather
+than isolating a single dimension; the per-trial Perceived Consequence measure is
+used to validate the manipulation. See the project report for the full rationale.
 
 Each participant sees 12 trials (one per cell). Counterbalancing uses a
 six-version Latin square; trial order is randomized. Recruitment is planned via
