@@ -262,3 +262,8 @@ xcuserdata/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode,jetbrains,linux,xcode
+
+# secrets (added by setup_env.py)
+.env
+.env.local
+*.key
