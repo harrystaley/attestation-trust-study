@@ -10,6 +10,9 @@ statsmodels>=0.14        # MixedLM for the LMM and power_simulation.py
 matplotlib>=3.8
 seaborn>=0.13
 
+# env file integraiont
+python-dotenv>=1.0
+
 #  notebook kernel (so DataSpell can run notebooks against this env) 
 ipykernel>=6.25
 ipython>=8.0             # IPython.display.display() in the generator
