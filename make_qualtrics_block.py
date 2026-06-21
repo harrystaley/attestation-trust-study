@@ -3,7 +3,7 @@
 AI assistance disclosure: this formatting/plumbing utility was written with the
 assistance of an AI assistant (Claude) and reviewed by the author. It maps the
 version-CSV columns to Qualtrics Loop & Merge piped fields and emits paste-ready
-block text; the MEASURE WORDING (trust, reliance, consequence, knowledge items)
+block text; the MEASURE WORDING (trust, reliance, perceived-consequence items)
 is the author's instrument and is marked for the author to fill/confirm. This is
 tooling, not graded analytical content. Use of generative AI follows the CS 6795
 course policy.
