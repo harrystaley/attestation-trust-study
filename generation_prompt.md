@@ -28,9 +28,10 @@ Definitions:
 Constraints:
 - Exactly 12 objects: 6 low stakes, 6 high stakes.
 - Question prompts MUST be phrased as a plain user question and must NOT name or cite the source within the stem (e.g., not 'According to NASA...'). The source belongs only in the source fields. However, the stem must retain enough information that the correct answer is unambiguous, preserve scoping qualifiers (e.g., 'in general,' 'at the federal level') even while removing source attribution.
-- require diversity along two independent axes at once:
-  - Axis A - consequence-type: financial / benefit-loss / legal-right forfeiture / rights-or-status / legal-obligation. Require spread across these.
-  - Axis B — fact-structure: not all "you have N days to X." Require a mix of deadlines, thresholds/amounts, eligibility rules, rights/entitlements, obligations. This breaks the "everything is a deadline" sameness.
+- require diversity along three independent axes at once:
+  - Axis A - category.
+  - Axis B - consequence-type.
+  - Axis C — fact-structure: not all "you have N days to X." Require a mix of deadlines, thresholds/amounts, eligibility rules, rights/entitlements, obligations. This breaks the "everything is a deadline" sameness.
 - Verifiable ground truth from a real, authoritative source.
 - No lengthy calculations, no trick questions, no insider/private knowledge.
 - correct_answer and incorrect_answer should be MATCHED in length, tone,
