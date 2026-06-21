@@ -300,3 +300,7 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       separately.
 - [ ] Power analysis / target N (pilot-driven).
 - [ ] Debrief screen (must correct the false answers shown).
+- [ ] Abstract: required for the final report and counts toward the word-count
+      limit (per Ed #323, citing TA guidance in thread 8109047). Write last,
+      ~150-250 words, no citations; budget within the ~4000-word total, not on
+      top of it.
