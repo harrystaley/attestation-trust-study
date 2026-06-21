@@ -1,0 +1,145 @@
+stem_id,stakes,question_text,answer_text,att_level,correctness,attestation_text
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 10% additional tax.,none,correct,
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 15% additional tax.,none,incorrect,
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 10% additional tax.,weak,correct,"Source: Internal Revenue Service — IRS, Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions."
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 15% additional tax.,weak,incorrect,"Source: Internal Revenue Service — IRS, Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions."
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 10% additional tax.,strong,correct,"Source: Internal Revenue Service — IRS, Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions.
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+1,high,"If a person takes an early distribution from a traditional IRA before age 59½ and no statutory exception applies, what federal additional tax generally applies?",The distribution is generally subject to a 15% additional tax.,strong,incorrect,"Source: Internal Revenue Service — IRS, Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions.
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,none,correct,
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,none,incorrect,
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,weak,correct,"Source: Medicare.gov — Medicare.gov, Basics: When can I sign up for Medicare?"
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,weak,incorrect,"Source: Medicare.gov — Medicare.gov, Basics: When can I sign up for Medicare?"
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,strong,correct,"Source: Medicare.gov — Medicare.gov, Basics: When can I sign up for Medicare?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+2,high,"For Medicare Part B, when is the Initial Enrollment Period for someone who is first eligible at age 65?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,strong,incorrect,"Source: Medicare.gov — Medicare.gov, Basics: When can I sign up for Medicare?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 90 days after the notice is mailed.,none,correct,
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 60 days after the notice is mailed.,none,incorrect,
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 90 days after the notice is mailed.,weak,correct,"Source: United States Tax Court — U.S. Tax Court, Taxpayer Information: Starting a Case."
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 60 days after the notice is mailed.,weak,incorrect,"Source: United States Tax Court — U.S. Tax Court, Taxpayer Information: Starting a Case."
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 90 days after the notice is mailed.,strong,correct,"Source: United States Tax Court — U.S. Tax Court, Taxpayer Information: Starting a Case.
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+3,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, what is the usual deadline to file a petition with the U.S. Tax Court?",A petition generally must be filed within 60 days after the notice is mailed.,strong,incorrect,"Source: United States Tax Court — U.S. Tax Court, Taxpayer Information: Starting a Case.
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?","A student generally is not eligible after earning a bachelor's, graduate, or professional degree.",none,correct,
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?",A student generally is not eligible only after earning a graduate or professional degree.,none,incorrect,
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?","A student generally is not eligible after earning a bachelor's, graduate, or professional degree.",weak,correct,"Source: Federal Student Aid — U.S. Department of Education, Federal Student Aid, Federal Pell Grants."
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?",A student generally is not eligible only after earning a graduate or professional degree.,weak,incorrect,"Source: Federal Student Aid — U.S. Department of Education, Federal Student Aid, Federal Pell Grants."
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?","A student generally is not eligible after earning a bachelor's, graduate, or professional degree.",strong,correct,"Source: Federal Student Aid — U.S. Department of Education, Federal Student Aid, Federal Pell Grants.
+Publisher verified (Federal Student Aid)
+Document unaltered since publication
+Independently checked for relevance"
+4,high,"For federal Pell Grants, how does already having a degree generally affect a student's eligibility?",A student generally is not eligible only after earning a graduate or professional degree.,strong,incorrect,"Source: Federal Student Aid — U.S. Department of Education, Federal Student Aid, Federal Pell Grants.
+Publisher verified (Federal Student Aid)
+Document unaltered since publication
+Independently checked for relevance"
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 60 days after the statement with the error was sent.,none,correct,
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 90 days after the statement with the error was sent.,none,incorrect,
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 60 days after the statement with the error was sent.,weak,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: How do I dispute a charge on my credit card bill?"
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 90 days after the statement with the error was sent.,weak,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: How do I dispute a charge on my credit card bill?"
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 60 days after the statement with the error was sent.,strong,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: How do I dispute a charge on my credit card bill?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+5,high,"Under federal fair credit billing rules, how soon must a consumer send a written notice to preserve billing-error rights after a credit card statement with the error is sent?",The written notice must reach the creditor within 90 days after the statement with the error was sent.,strong,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: How do I dispute a charge on my credit card bill?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $10,000.",none,correct,
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $20,000.",none,incorrect,
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $10,000.",weak,correct,"Source: U.S. Customs and Border Protection — CBP, Know Before You Go: Money and Other Monetary Instruments."
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $20,000.",weak,incorrect,"Source: U.S. Customs and Border Protection — CBP, Know Before You Go: Money and Other Monetary Instruments."
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $10,000.",strong,correct,"Source: U.S. Customs and Border Protection — CBP, Know Before You Go: Money and Other Monetary Instruments.
+Publisher verified (U.S. Customs and Border Protection)
+Document unaltered since publication
+Independently checked for relevance"
+6,high,"When transporting currency or monetary instruments into or out of the United States, what amount generally triggers the federal reporting requirement?","A person generally must report amounts of more than $20,000.",strong,incorrect,"Source: U.S. Customs and Border Protection — CBP, Know Before You Go: Money and Other Monetary Instruments.
+Publisher verified (U.S. Customs and Border Protection)
+Document unaltered since publication
+Independently checked for relevance"
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Jupiter has the shortest day among the planets, at about 10 hours.",none,correct,
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Saturn has the shortest day among the planets, at about 10 hours.",none,incorrect,
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Jupiter has the shortest day among the planets, at about 10 hours.",weak,correct,"Source: NASA Science — NASA Science, Jupiter Facts."
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Saturn has the shortest day among the planets, at about 10 hours.",weak,incorrect,"Source: NASA Science — NASA Science, Jupiter Facts."
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Jupiter has the shortest day among the planets, at about 10 hours.",strong,correct,"Source: NASA Science — NASA Science, Jupiter Facts.
+Publisher verified (NASA Science)
+Document unaltered since publication
+Independently checked for relevance"
+7,low,"According to NASA, which planet has the shortest day in the solar system?","Saturn has the shortest day among the planets, at about 10 hours.",strong,incorrect,"Source: NASA Science — NASA Science, Jupiter Facts.
+Publisher verified (NASA Science)
+Document unaltered since publication
+Independently checked for relevance"
+8,low,Which Great Lake has the greatest average depth?,Lake Superior has the greatest average depth of the Great Lakes.,none,correct,
+8,low,Which Great Lake has the greatest average depth?,Lake Michigan has the greatest average depth of the Great Lakes.,none,incorrect,
+8,low,Which Great Lake has the greatest average depth?,Lake Superior has the greatest average depth of the Great Lakes.,weak,correct,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures."
+8,low,Which Great Lake has the greatest average depth?,Lake Michigan has the greatest average depth of the Great Lakes.,weak,incorrect,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures."
+8,low,Which Great Lake has the greatest average depth?,Lake Superior has the greatest average depth of the Great Lakes.,strong,correct,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures.
+Publisher verified (U.S. Environmental Protection Agency)
+Document unaltered since publication
+Independently checked for relevance"
+8,low,Which Great Lake has the greatest average depth?,Lake Michigan has the greatest average depth of the Great Lakes.,strong,incorrect,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures.
+Publisher verified (U.S. Environmental Protection Agency)
+Document unaltered since publication
+Independently checked for relevance"
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The stapes in the middle ear is commonly identified as the smallest bone.,none,correct,
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The incus in the middle ear is commonly identified as the smallest bone.,none,incorrect,
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The stapes in the middle ear is commonly identified as the smallest bone.,weak,correct,"Source: Encyclopaedia Britannica — Encyclopaedia Britannica, Stapes."
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The incus in the middle ear is commonly identified as the smallest bone.,weak,incorrect,"Source: Encyclopaedia Britannica — Encyclopaedia Britannica, Stapes."
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The stapes in the middle ear is commonly identified as the smallest bone.,strong,correct,"Source: Encyclopaedia Britannica — Encyclopaedia Britannica, Stapes.
+Publisher verified (Encyclopaedia Britannica)
+Document unaltered since publication
+Independently checked for relevance"
+9,low,"In human anatomy, which bone is commonly identified as the smallest bone in the body?",The incus in the middle ear is commonly identified as the smallest bone.,strong,incorrect,"Source: Encyclopaedia Britannica — Encyclopaedia Britannica, Stapes.
+Publisher verified (Encyclopaedia Britannica)
+Document unaltered since publication
+Independently checked for relevance"
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Art Institute of Chicago.,none,correct,
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Museum of Modern Art.,none,incorrect,
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Art Institute of Chicago.,weak,correct,"Source: Art Institute of Chicago — Art Institute of Chicago, Georges Seurat, A Sunday on La Grande Jatte—1884."
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Museum of Modern Art.,weak,incorrect,"Source: Art Institute of Chicago — Art Institute of Chicago, Georges Seurat, A Sunday on La Grande Jatte—1884."
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Art Institute of Chicago.,strong,correct,"Source: Art Institute of Chicago — Art Institute of Chicago, Georges Seurat, A Sunday on La Grande Jatte—1884.
+Publisher verified (Art Institute of Chicago)
+Document unaltered since publication
+Independently checked for relevance"
+10,low,Which museum holds Georges Seurat's painting A Sunday on La Grande Jatte—1884?,The painting is held by the Museum of Modern Art.,strong,incorrect,"Source: Art Institute of Chicago — Art Institute of Chicago, Georges Seurat, A Sunday on La Grande Jatte—1884.
+Publisher verified (Art Institute of Chicago)
+Document unaltered since publication
+Independently checked for relevance"
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?","The novel was first published anonymously, without Mary Shelley's name on the title page.",none,correct,
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?",The novel was first published under Mary Shelley's name on the title page.,none,incorrect,
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?","The novel was first published anonymously, without Mary Shelley's name on the title page.",weak,correct,"Source: British Library — British Library, Discovering Literature: Frankenstein."
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?",The novel was first published under Mary Shelley's name on the title page.,weak,incorrect,"Source: British Library — British Library, Discovering Literature: Frankenstein."
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?","The novel was first published anonymously, without Mary Shelley's name on the title page.",strong,correct,"Source: British Library — British Library, Discovering Literature: Frankenstein.
+Publisher verified (British Library)
+Document unaltered since publication
+Independently checked for relevance"
+11,low,"When Mary Shelley's Frankenstein was first published in 1818, how was the author credited?",The novel was first published under Mary Shelley's name on the title page.,strong,incorrect,"Source: British Library — British Library, Discovering Literature: Frankenstein.
+Publisher verified (British Library)
+Document unaltered since publication
+Independently checked for relevance"
+12,low,Which film won the first Academy Award for Best Animated Feature?,Shrek won the first Academy Award for Best Animated Feature.,none,correct,
+12,low,Which film won the first Academy Award for Best Animated Feature?,"Monsters, Inc. won the first Academy Award for Best Animated Feature.",none,incorrect,
+12,low,Which film won the first Academy Award for Best Animated Feature?,Shrek won the first Academy Award for Best Animated Feature.,weak,correct,"Source: Academy of Motion Picture Arts and Sciences — Oscars.org, 74th Academy Awards, 2002."
+12,low,Which film won the first Academy Award for Best Animated Feature?,"Monsters, Inc. won the first Academy Award for Best Animated Feature.",weak,incorrect,"Source: Academy of Motion Picture Arts and Sciences — Oscars.org, 74th Academy Awards, 2002."
+12,low,Which film won the first Academy Award for Best Animated Feature?,Shrek won the first Academy Award for Best Animated Feature.,strong,correct,"Source: Academy of Motion Picture Arts and Sciences — Oscars.org, 74th Academy Awards, 2002.
+Publisher verified (Academy of Motion Picture Arts and Sciences)
+Document unaltered since publication
+Independently checked for relevance"
+12,low,Which film won the first Academy Award for Best Animated Feature?,"Monsters, Inc. won the first Academy Award for Best Animated Feature.",strong,incorrect,"Source: Academy of Motion Picture Arts and Sciences — Oscars.org, 74th Academy Awards, 2002.
+Publisher verified (Academy of Motion Picture Arts and Sciences)
+Document unaltered since publication
+Independently checked for relevance"
