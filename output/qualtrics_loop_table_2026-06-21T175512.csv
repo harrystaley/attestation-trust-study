@@ -1,0 +1,145 @@
+stem_id,stakes,question_text,answer_text,att_level,correctness,attestation_text
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 1 ounce.,none,correct,
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 2 ounces.,none,incorrect,
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 1 ounce.,weak,correct,"Source: United States Postal Service — USPS, First-Class Mail"
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 2 ounces.,weak,incorrect,"Source: United States Postal Service — USPS, First-Class Mail"
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 1 ounce.,strong,correct,"Source: United States Postal Service — USPS, First-Class Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+1,low,"For a standard domestic First-Class Mail letter, what maximum weight does one First-Class Mail Forever stamp cover before extra-ounce postage is needed?",One Forever stamp covers a letter weighing up to 2 ounces.,strong,incorrect,"Source: United States Postal Service — USPS, First-Class Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 30 consecutive days.,none,correct,
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 45 consecutive days.,none,incorrect,
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 30 consecutive days.,weak,correct,"Source: United States Postal Service — USPS, Hold Mail Service"
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 45 consecutive days.,weak,incorrect,"Source: United States Postal Service — USPS, Hold Mail Service"
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 30 consecutive days.,strong,correct,"Source: United States Postal Service — USPS, Hold Mail Service
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"When requesting mail to be held for a temporary absence, what is the maximum number of consecutive days USPS will generally hold the mail?",USPS Hold Mail can generally be scheduled for up to 45 consecutive days.,strong,incorrect,"Source: United States Postal Service — USPS, Hold Mail Service
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $100 of insurance.,none,correct,
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $50 of insurance.,none,incorrect,
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $100 of insurance.,weak,correct,"Source: United States Postal Service — USPS, Priority Mail"
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $50 of insurance.,weak,incorrect,"Source: United States Postal Service — USPS, Priority Mail"
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $100 of insurance.,strong,correct,"Source: United States Postal Service — USPS, Priority Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For domestic USPS Priority Mail service, how much insurance is generally included at no additional charge?",Domestic Priority Mail generally includes up to $50 of insurance.,strong,incorrect,"Source: United States Postal Service — USPS, Priority Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 14 calendar days after receipt.,none,correct,
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 30 calendar days after receipt.,none,incorrect,
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 14 calendar days after receipt.,weak,correct,"Source: Apple — Apple, Returns & Refunds"
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 30 calendar days after receipt.,weak,incorrect,"Source: Apple — Apple, Returns & Refunds"
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 14 calendar days after receipt.,strong,correct,"Source: Apple — Apple, Returns & Refunds
+Publisher verified (Apple)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For most products bought directly from Apple in the United States, what is the standard return period after receiving the item?",Most eligible products can be returned within 30 calendar days after receipt.,strong,incorrect,"Source: Apple — Apple, Returns & Refunds
+Publisher verified (Apple)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 3.4 ounces or 100 milliliters or smaller.,none,correct,
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 4.0 ounces or 120 milliliters or smaller.,none,incorrect,
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 3.4 ounces or 100 milliliters or smaller.,weak,correct,"Source: Transportation Security Administration — TSA, Liquids Rule"
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 4.0 ounces or 120 milliliters or smaller.,weak,incorrect,"Source: Transportation Security Administration — TSA, Liquids Rule"
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 3.4 ounces or 100 milliliters or smaller.,strong,correct,"Source: Transportation Security Administration — TSA, Liquids Rule
+Publisher verified (Transportation Security Administration)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"Under the general carry-on liquids rule for U.S. airport screening, what is the maximum size allowed for each liquid, aerosol, gel, cream, or paste container?",Each container may be 4.0 ounces or 120 milliliters or smaller.,strong,incorrect,"Source: Transportation Security Administration — TSA, Liquids Rule
+Publisher verified (Transportation Security Administration)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-third as much dried herb as fresh herb.,none,correct,
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-half as much dried herb as fresh herb.,none,incorrect,
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-third as much dried herb as fresh herb.,weak,correct,"Source: University of Nebraska-Lincoln Extension — UNL Extension, Food preparation guidance on herb substitutions"
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-half as much dried herb as fresh herb.,weak,incorrect,"Source: University of Nebraska-Lincoln Extension — UNL Extension, Food preparation guidance on herb substitutions"
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-third as much dried herb as fresh herb.,strong,correct,"Source: University of Nebraska-Lincoln Extension — UNL Extension, Food preparation guidance on herb substitutions
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,"When substituting dried herbs for fresh herbs in a recipe, what general amount of dried herbs should be used?",Use about one-half as much dried herb as fresh herb.,strong,incorrect,"Source: University of Nebraska-Lincoln Extension — UNL Extension, Food preparation guidance on herb substitutions
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 10% tax.,none,correct,
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 15% tax.,none,incorrect,
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 10% tax.,weak,correct,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements"
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 15% tax.,weak,incorrect,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements"
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 10% tax.,strong,correct,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,"In general at the federal level, what additional tax applies to an IRA distribution taken before age 59½ when no exception applies?",The distribution is generally subject to an additional 15% tax.,strong,incorrect,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 60 days to elect COBRA coverage.,none,correct,
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 45 days to elect COBRA coverage.,none,incorrect,
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 60 days to elect COBRA coverage.,weak,correct,"Source: U.S. Department of Labor — DOL, COBRA Continuation Coverage"
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 45 days to elect COBRA coverage.,weak,incorrect,"Source: U.S. Department of Labor — DOL, COBRA Continuation Coverage"
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 60 days to elect COBRA coverage.,strong,correct,"Source: U.S. Department of Labor — DOL, COBRA Continuation Coverage
+Publisher verified (U.S. Department of Labor)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"At the federal level, after receiving a COBRA election notice, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",A qualified beneficiary generally has 45 days to elect COBRA coverage.,strong,incorrect,"Source: U.S. Department of Labor — DOL, COBRA Continuation Coverage
+Publisher verified (U.S. Department of Labor)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 90 days from the notice date to file.,none,correct,
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 120 days from the notice date to file.,none,incorrect,
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 90 days from the notice date to file.,weak,correct,"Source: United States Tax Court — U.S. Tax Court, Starting a Case"
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 120 days from the notice date to file.,weak,incorrect,"Source: United States Tax Court — U.S. Tax Court, Starting a Case"
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 90 days from the notice date to file.,strong,correct,"Source: United States Tax Court — U.S. Tax Court, Starting a Case
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"For a federal IRS notice of deficiency addressed to a person within the United States, how long does the person generally have to file a petition with the U.S. Tax Court?",The person generally has 120 days from the notice date to file.,strong,incorrect,"Source: United States Tax Court — U.S. Tax Court, Starting a Case
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 60 days.,none,correct,
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 90 days.,none,incorrect,
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 60 days.,weak,correct,"Source: Federal Trade Commission — FTC, Disputing Credit Card Charges"
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 90 days.,weak,incorrect,"Source: Federal Trade Commission — FTC, Disputing Credit Card Charges"
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 60 days.,strong,correct,"Source: Federal Trade Commission — FTC, Disputing Credit Card Charges
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"Under the federal credit-card billing-error dispute process, by when must a consumer generally send a written dispute after the bill containing the error was sent?",The consumer generally must send the written dispute within 90 days.,strong,incorrect,"Source: Federal Trade Commission — FTC, Disputing Credit Card Charges
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 25.,none,correct,
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 30.,none,incorrect,
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 25.,weak,correct,"Source: Selective Service System — Selective Service System, Who Needs to Register"
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 30.,weak,incorrect,"Source: Selective Service System — Selective Service System, Who Needs to Register"
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 25.,strong,correct,"Source: Selective Service System — Selective Service System, Who Needs to Register
+Publisher verified (Selective Service System)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"At the federal level, who generally must register with the Selective Service System based on age and sex?",Male U.S. citizens and male immigrants generally must register from ages 18 through 30.,strong,incorrect,"Source: Selective Service System — Selective Service System, Who Needs to Register
+Publisher verified (Selective Service System)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",none,correct,
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from the month the person turns 65 through six months after that month.",none,incorrect,
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",weak,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from the month the person turns 65 through six months after that month.",weak,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",strong,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"For someone first eligible for Medicare at age 65 and not automatically enrolled, when does the Initial Enrollment Period generally run for Medicare Part B?","It runs for seven months, from the month the person turns 65 through six months after that month.",strong,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
