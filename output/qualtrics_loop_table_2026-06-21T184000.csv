@@ -1,0 +1,145 @@
+stem_id,stakes,question_text,answer_text,att_level,correctness,attestation_text
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 30 days of delivery.,none,correct,
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 45 days of delivery.,none,incorrect,
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 30 days of delivery.,weak,correct,"Source: Amazon Customer Service — Amazon Customer Service, Returns and Refunds policy"
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 45 days of delivery.,weak,incorrect,"Source: Amazon Customer Service — Amazon Customer Service, Returns and Refunds policy"
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 30 days of delivery.,strong,correct,"Source: Amazon Customer Service — Amazon Customer Service, Returns and Refunds policy
+Publisher verified (Amazon Customer Service)
+Document unaltered since publication
+Independently checked for relevance"
+1,low,"For most items shipped from Amazon.com, what is the standard return window after delivery?",Most items shipped from Amazon.com can generally be returned within 45 days of delivery.,strong,incorrect,"Source: Amazon Customer Service — Amazon Customer Service, Returns and Refunds policy
+Publisher verified (Amazon Customer Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $225 of the check deposit must generally be available by the next business day.,none,correct,
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $100 of the check deposit must generally be available by the next business day.,none,incorrect,
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $225 of the check deposit must generally be available by the next business day.,weak,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?"
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $100 of the check deposit must generally be available by the next business day.,weak,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?"
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $225 of the check deposit must generally be available by the next business day.,strong,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"When a consumer deposits a check at a U.S. bank, how much of the deposit must generally be available by the next business day?",At least the first $100 of the check deposit must generally be available by the next business day.,strong,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 1 to 5 business days.,none,correct,
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 2 to 7 business days.,none,incorrect,
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 1 to 5 business days.,weak,correct,"Source: United States Postal Service — USPS, First-Class Mail"
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 2 to 7 business days.,weak,incorrect,"Source: United States Postal Service — USPS, First-Class Mail"
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 1 to 5 business days.,strong,correct,"Source: United States Postal Service — USPS, First-Class Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For standard domestic First-Class Mail in the United States, what delivery timeframe is generally advertised?",First-Class Mail is generally advertised with delivery in 2 to 7 business days.,strong,incorrect,"Source: United States Postal Service — USPS, First-Class Mail
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 3.4 ounces or 100 milliliters or less.,none,correct,
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 4 ounces or 125 milliliters or less.,none,incorrect,
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 3.4 ounces or 100 milliliters or less.,weak,correct,"Source: Transportation Security Administration — TSA, Liquids Rule"
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 4 ounces or 125 milliliters or less.,weak,incorrect,"Source: Transportation Security Administration — TSA, Liquids Rule"
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 3.4 ounces or 100 milliliters or less.,strong,correct,"Source: Transportation Security Administration — TSA, Liquids Rule
+Publisher verified (Transportation Security Administration)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For U.S. airport security screening, what liquid container size is generally allowed in a carry-on bag under the standard liquids rule?",Liquids are generally allowed in containers of 4 ounces or 125 milliliters or less.,strong,incorrect,"Source: Transportation Security Administration — TSA, Liquids Rule
+Publisher verified (Transportation Security Administration)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,none,correct,
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,none,incorrect,
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,weak,correct,"Source: University of Nebraska-Lincoln Extension — University of Nebraska-Lincoln Extension, Fresh vs. Dried Herbs"
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,weak,incorrect,"Source: University of Nebraska-Lincoln Extension — University of Nebraska-Lincoln Extension, Fresh vs. Dried Herbs"
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,strong,correct,"Source: University of Nebraska-Lincoln Extension — University of Nebraska-Lincoln Extension, Fresh vs. Dried Herbs
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"In general cooking use, what ratio is commonly recommended when substituting dried herbs for fresh herbs?",Use 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,strong,incorrect,"Source: University of Nebraska-Lincoln Extension — University of Nebraska-Lincoln Extension, Fresh vs. Dried Herbs
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,852 meters.",none,correct,
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,609 meters.",none,incorrect,
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,852 meters.",weak,correct,"Source: National Oceanic and Atmospheric Administration — NOAA Ocean Service, What is a nautical mile?"
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,609 meters.",weak,incorrect,"Source: National Oceanic and Atmospheric Administration — NOAA Ocean Service, What is a nautical mile?"
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,852 meters.",strong,correct,"Source: National Oceanic and Atmospheric Administration — NOAA Ocean Service, What is a nautical mile?
+Publisher verified (National Oceanic and Atmospheric Administration)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,What is the internationally accepted length of one nautical mile?,"One nautical mile is exactly 1,609 meters.",strong,incorrect,"Source: National Oceanic and Atmospheric Administration — NOAA Ocean Service, What is a nautical mile?
+Publisher verified (National Oceanic and Atmospheric Administration)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?","The penalty generally does not apply if the tax due is less than $1,000.",none,correct,
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?",The penalty generally does not apply if the tax due is less than $500.,none,incorrect,
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?","The penalty generally does not apply if the tax due is less than $1,000.",weak,correct,"Source: Internal Revenue Service — IRS Publication 505, Tax Withholding and Estimated Tax"
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?",The penalty generally does not apply if the tax due is less than $500.,weak,incorrect,"Source: Internal Revenue Service — IRS Publication 505, Tax Withholding and Estimated Tax"
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?","The penalty generally does not apply if the tax due is less than $1,000.",strong,correct,"Source: Internal Revenue Service — IRS Publication 505, Tax Withholding and Estimated Tax
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,"For a U.S. individual taxpayer, when does the federal estimated tax penalty generally not apply based on the amount due after withholding and refundable credits?",The penalty generally does not apply if the tax due is less than $500.,strong,incorrect,"Source: Internal Revenue Service — IRS Publication 505, Tax Withholding and Estimated Tax
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,none,correct,
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,none,incorrect,
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,weak,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,weak,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 7-month period that starts 3 months before the month they turn 65 and ends 3 months after that month.,strong,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"For someone first eligible for Medicare at age 65, what is the standard initial enrollment period for Medicare Part B?",It is a 6-month period that starts 2 months before the month they turn 65 and ends 3 months after that month.,strong,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 2 business days after learning of the loss or theft generally limits liability to $50.,none,correct,
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 5 business days after learning of the loss or theft generally limits liability to $50.,none,incorrect,
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 2 business days after learning of the loss or theft generally limits liability to $50.,weak,correct,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards"
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 5 business days after learning of the loss or theft generally limits liability to $50.,weak,incorrect,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards"
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 2 business days after learning of the loss or theft generally limits liability to $50.,strong,correct,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"Under federal rules, what reporting window generally limits liability for unauthorized debit-card charges after learning a card was lost or stolen?",Reporting within 5 business days after learning of the loss or theft generally limits liability to $50.,strong,incorrect,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$250,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",none,correct,
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$100,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",none,incorrect,
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$250,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",weak,correct,"Source: Federal Deposit Insurance Corporation — FDIC, Deposit Insurance FAQs"
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$100,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",weak,incorrect,"Source: Federal Deposit Insurance Corporation — FDIC, Deposit Insurance FAQs"
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$250,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",strong,correct,"Source: Federal Deposit Insurance Corporation — FDIC, Deposit Insurance FAQs
+Publisher verified (Federal Deposit Insurance Corporation)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"At an FDIC-insured bank, what is the standard deposit insurance limit for one depositor in one ownership category?","$100,000 per depositor, per insured bank, for each account ownership category is the standard coverage limit.",strong,incorrect,"Source: Federal Deposit Insurance Corporation — FDIC, Deposit Insurance FAQs
+Publisher verified (Federal Deposit Insurance Corporation)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 3 to 4 days.,none,correct,
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 5 to 6 days.,none,incorrect,
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 3 to 4 days.,weak,correct,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety"
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 5 to 6 days.,weak,incorrect,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety"
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 3 to 4 days.,strong,correct,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety
+Publisher verified (U.S. Department of Agriculture Food Safety and Inspection Service)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"For food safety, how long should cooked leftovers generally be kept in a refrigerator at 40°F or below before being discarded?",Cooked leftovers should generally be used or discarded within 5 to 6 days.,strong,incorrect,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety
+Publisher verified (U.S. Department of Agriculture Food Safety and Inspection Service)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 180 calendar days, with extension to 300 days if a state or local agency enforces a similar law.",none,correct,
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 90 calendar days, with extension to 180 days if a state or local agency enforces a similar law.",none,incorrect,
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 180 calendar days, with extension to 300 days if a state or local agency enforces a similar law.",weak,correct,"Source: U.S. Equal Employment Opportunity Commission — EEOC, Time Limits for Filing a Charge"
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 90 calendar days, with extension to 180 days if a state or local agency enforces a similar law.",weak,incorrect,"Source: U.S. Equal Employment Opportunity Commission — EEOC, Time Limits for Filing a Charge"
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 180 calendar days, with extension to 300 days if a state or local agency enforces a similar law.",strong,correct,"Source: U.S. Equal Employment Opportunity Commission — EEOC, Time Limits for Filing a Charge
+Publisher verified (U.S. Equal Employment Opportunity Commission)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"For most private-sector federal employment-discrimination claims, what is the basic deadline to file a charge with the EEOC?","A charge generally must be filed within 90 calendar days, with extension to 180 days if a state or local agency enforces a similar law.",strong,incorrect,"Source: U.S. Equal Employment Opportunity Commission — EEOC, Time Limits for Filing a Charge
+Publisher verified (U.S. Equal Employment Opportunity Commission)
+Document unaltered since publication
+Independently checked for relevance"

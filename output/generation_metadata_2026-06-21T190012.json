@@ -1,0 +1,7 @@
+{
+  "model": "gpt-5.5",
+  "timestamp": "2026-06-21T19:00:12",
+  "max_retries": 5,
+  "curation_warnings": [],
+  "note": "Soft warnings indicate items flagged for human curation (matched length/sentence count), per the documented method."
+}
