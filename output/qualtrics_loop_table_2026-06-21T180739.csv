@@ -1,0 +1,145 @@
+stem_id,stakes,question_text,answer_text,att_level,correctness,attestation_text
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 3.5 ounces for a First-Class Mail letter.,none,correct,
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 4.5 ounces for a First-Class Mail letter.,none,incorrect,
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 3.5 ounces for a First-Class Mail letter.,weak,correct,"Source: U.S. Postal Service — USPS, Letters: Size and Weight Standards"
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 4.5 ounces for a First-Class Mail letter.,weak,incorrect,"Source: U.S. Postal Service — USPS, Letters: Size and Weight Standards"
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 3.5 ounces for a First-Class Mail letter.,strong,correct,"Source: U.S. Postal Service — USPS, Letters: Size and Weight Standards
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+1,low,"For a standard domestic First-Class Mail letter, what is the maximum weight allowed for the letter category?",The maximum weight is 4.5 ounces for a First-Class Mail letter.,strong,incorrect,"Source: U.S. Postal Service — USPS, Letters: Size and Weight Standards
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 2 to 8 business days.,none,correct,
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 3 to 10 business days.,none,incorrect,
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 2 to 8 business days.,weak,correct,"Source: U.S. Postal Service — USPS, Mail & Shipping Services"
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 3 to 10 business days.,weak,incorrect,"Source: U.S. Postal Service — USPS, Mail & Shipping Services"
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 2 to 8 business days.,strong,correct,"Source: U.S. Postal Service — USPS, Mail & Shipping Services
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,low,"For domestic Media Mail, what is the usual delivery timeframe listed for the service?",The usual delivery timeframe is 3 to 10 business days.,strong,incorrect,"Source: U.S. Postal Service — USPS, Mail & Shipping Services
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $100 of insurance is generally included at no extra charge.,none,correct,
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $50 of insurance is generally included at no extra charge.,none,incorrect,
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $100 of insurance is generally included at no extra charge.,weak,correct,"Source: U.S. Postal Service — USPS, Ground Advantage"
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $50 of insurance is generally included at no extra charge.,weak,incorrect,"Source: U.S. Postal Service — USPS, Ground Advantage"
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $100 of insurance is generally included at no extra charge.,strong,correct,"Source: U.S. Postal Service — USPS, Ground Advantage
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,low,"For domestic Ground Advantage retail shipments, how much insurance is generally included at no extra charge?",Up to $50 of insurance is generally included at no extra charge.,strong,incorrect,"Source: U.S. Postal Service — USPS, Ground Advantage
+Publisher verified (U.S. Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 21 days before the due date.,none,correct,
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 14 days before the due date.,none,incorrect,
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 21 days before the due date.,weak,correct,"Source: Consumer Financial Protection Bureau — CFPB, Regulation Z, 12 CFR § 1026.5(b)(2)(ii)"
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 14 days before the due date.,weak,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Regulation Z, 12 CFR § 1026.5(b)(2)(ii)"
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 21 days before the due date.,strong,correct,"Source: Consumer Financial Protection Bureau — CFPB, Regulation Z, 12 CFR § 1026.5(b)(2)(ii)
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+4,low,"For an open-end credit card account, how far before the due date must the issuer generally send or deliver a periodic statement for grace-period protections to apply?",The issuer generally must send or deliver the statement at least 14 days before the due date.,strong,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Regulation Z, 12 CFR § 1026.5(b)(2)(ii)
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $225 available by the next business day.,none,correct,
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $200 available by the next business day.,none,incorrect,
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $225 available by the next business day.,weak,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?"
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $200 available by the next business day.,weak,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?"
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $225 available by the next business day.,strong,correct,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+5,low,"Under federal funds-availability rules, how much of a check deposit must a bank generally make available by the next business day?",The bank generally must make the first $200 available by the next business day.,strong,incorrect,"Source: Consumer Financial Protection Bureau — CFPB, Ask CFPB: I deposited a check. When will my funds be available?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 4 to 6 weeks, not counting mailing time.",none,correct,
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 6 to 8 weeks, not counting mailing time.",none,incorrect,
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 4 to 6 weeks, not counting mailing time.",weak,correct,"Source: U.S. Department of State — Travel.State.Gov, Passport Processing Times"
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 6 to 8 weeks, not counting mailing time.",weak,incorrect,"Source: U.S. Department of State — Travel.State.Gov, Passport Processing Times"
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 4 to 6 weeks, not counting mailing time.",strong,correct,"Source: U.S. Department of State — Travel.State.Gov, Passport Processing Times
+Publisher verified (U.S. Department of State)
+Document unaltered since publication
+Independently checked for relevance"
+6,low,"For a routine U.S. passport application, what processing timeframe is generally listed, not counting mailing time?","Routine processing is generally listed as 6 to 8 weeks, not counting mailing time.",strong,incorrect,"Source: U.S. Department of State — Travel.State.Gov, Passport Processing Times
+Publisher verified (U.S. Department of State)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 10% additional tax generally applies to the early distribution.,none,correct,
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 15% additional tax generally applies to the early distribution.,none,incorrect,
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 10% additional tax generally applies to the early distribution.,weak,correct,"Source: Internal Revenue Service — IRS Topic No. 557, Additional Tax on Early Distributions from Traditional and Roth IRAs"
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 15% additional tax generally applies to the early distribution.,weak,incorrect,"Source: Internal Revenue Service — IRS Topic No. 557, Additional Tax on Early Distributions from Traditional and Roth IRAs"
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 10% additional tax generally applies to the early distribution.,strong,correct,"Source: Internal Revenue Service — IRS Topic No. 557, Additional Tax on Early Distributions from Traditional and Roth IRAs
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+7,high,What federal additional tax generally applies to an IRA distribution taken before age 59½ when no exception applies?,A 15% additional tax generally applies to the early distribution.,strong,incorrect,"Source: Internal Revenue Service — IRS Topic No. 557, Additional Tax on Early Distributions from Traditional and Roth IRAs
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 60 days to elect COBRA continuation coverage.,none,correct,
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 30 days to elect COBRA continuation coverage.,none,incorrect,
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 60 days to elect COBRA continuation coverage.,weak,correct,"Source: U.S. Department of Labor — DOL, Continuation of Health Coverage: COBRA"
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 30 days to elect COBRA continuation coverage.,weak,incorrect,"Source: U.S. Department of Labor — DOL, Continuation of Health Coverage: COBRA"
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 60 days to elect COBRA continuation coverage.,strong,correct,"Source: U.S. Department of Labor — DOL, Continuation of Health Coverage: COBRA
+Publisher verified (U.S. Department of Labor)
+Document unaltered since publication
+Independently checked for relevance"
+8,high,"After receiving a COBRA election notice for job-based health coverage, how long does a qualified beneficiary generally have to elect COBRA continuation coverage?",The beneficiary generally has 30 days to elect COBRA continuation coverage.,strong,incorrect,"Source: U.S. Department of Labor — DOL, Continuation of Health Coverage: COBRA
+Publisher verified (U.S. Department of Labor)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 90 days to file a petition with the U.S. Tax Court.,none,correct,
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 60 days to file a petition with the U.S. Tax Court.,none,incorrect,
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 90 days to file a petition with the U.S. Tax Court.,weak,correct,"Source: U.S. Tax Court — U.S. Tax Court, Starting a Case"
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 60 days to file a petition with the U.S. Tax Court.,weak,incorrect,"Source: U.S. Tax Court — U.S. Tax Court, Starting a Case"
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 90 days to file a petition with the U.S. Tax Court.,strong,correct,"Source: U.S. Tax Court — U.S. Tax Court, Starting a Case
+Publisher verified (U.S. Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+9,high,"After the IRS mails a notice of deficiency to a taxpayer in the United States, how long does the taxpayer generally have to file a petition with the U.S. Tax Court?",The taxpayer generally has 60 days to file a petition with the U.S. Tax Court.,strong,incorrect,"Source: U.S. Tax Court — U.S. Tax Court, Starting a Case
+Publisher verified (U.S. Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",none,correct,
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for five months, from two months before through two months after the month the person turns 65.",none,incorrect,
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",weak,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for five months, from two months before through two months after the month the person turns 65.",weak,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?"
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for seven months, from three months before through three months after the month the person turns 65.",strong,correct,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+10,high,"For someone first eligible for Medicare at age 65, what is the usual Initial Enrollment Period for Part B?","It runs for five months, from two months before through two months after the month the person turns 65.",strong,incorrect,"Source: Medicare.gov — Medicare.gov, When does Medicare coverage start?
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year.",none,correct,
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $50,000 at the end of the calendar year.",none,incorrect,
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year.",weak,correct,"Source: Internal Revenue Service — IRS, Report of Foreign Bank and Financial Accounts"
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $50,000 at the end of the calendar year.",weak,incorrect,"Source: Internal Revenue Service — IRS, Report of Foreign Bank and Financial Accounts"
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year.",strong,correct,"Source: Internal Revenue Service — IRS, Report of Foreign Bank and Financial Accounts
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+11,high,"At the federal level, when does a U.S. person generally have to file an FBAR for foreign financial accounts?","When the aggregate value of foreign financial accounts exceeded $50,000 at the end of the calendar year.",strong,incorrect,"Source: Internal Revenue Service — IRS, Report of Foreign Bank and Financial Accounts
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $50.,none,correct,
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $500.,none,incorrect,
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $50.,weak,correct,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards"
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $500.,weak,incorrect,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards"
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $50.,strong,correct,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+12,high,"Under federal rules, if a consumer reports a lost debit card within two business days after learning of the loss, what is the maximum loss for unauthorized transfers?",The consumer’s maximum loss is generally $500.,strong,incorrect,"Source: Federal Trade Commission — FTC Consumer Advice, Lost or Stolen Credit, ATM, and Debit Cards
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
