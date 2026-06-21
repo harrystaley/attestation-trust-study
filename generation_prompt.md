@@ -32,7 +32,8 @@ Definitions:
 
 Constraints:
 - Exactly 12 objects: 6 low stakes, 6 high stakes.
-- Diverse, non-duplicate topics; understandable by educated non-experts.
+- Rephrase stems to remove source attribution (keep scope; preserve ground truth) before locking; add no source-naming in stems
+- Stems must be phrased as a plain user question and must NOT name or cite the source within the stem (e.g., not 'According to NASA...'). The source belongs only in the source fields. However, the stem must retain enough information that the correct answer is unambiguous, preserve scoping qualifiers (e.g., 'in general,' 'at the federal level') even while removing source attribution.
 - require diversity along two independent axes at once:
   - Axis A - consequence-type: financial / benefit-loss / legal-right forfeiture / rights-or-status / legal-obligation. Require spread across these.
   - Axis B — fact-structure: not all "you have N days to X." Require a mix of deadlines, thresholds/amounts, eligibility rules, rights/entitlements, obligations. This breaks the "everything is a deadline" sameness.
