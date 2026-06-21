@@ -16,6 +16,52 @@ follows the CS 6795 course policy.
 
 ---
 
+## Per-trial measure set reduced to three (dropped topic knowledge)
+
+**Decision.** The per-trial measure set is trust (1-7), behavioral reliance
+(reject / verify / act), and perceived consequence ("how serious if wrong"). The
+topic-knowledge item was removed, reducing per-trial responses from 4x12=48 to
+3x12=36.
+
+**Why.** 48 per-trial responses risked fatigue and dropout. Topic knowledge was
+the only exploratory item (not testing a core hypothesis), so it was the
+lowest-cost cut: trust and reliance are the primary outcomes and perceived
+consequence is the H4 mediator, so all three were kept.
+
+**Tradeoff.** Per-trial prior knowledge is no longer measured as a control; to be
+noted in Limitations. Confirm the reduced burden is acceptable in the pilot.
+
+**Status.** Applied. Report edits open: remove the Topic Knowledge subsection and
+its scale table.
+
+**Paper location.** Procedure (measures), Limitations.
+
+---
+
+## Behavioral reliance: finalized wording (three ordered options)
+
+**Decision.** Reliance uses three ordered options, coded 1->3 as increasing
+reliance:
+1. Reject/don't use the information or take the recommended action.
+2. Verify before taking action or using the information.
+3. Use the information or take the recommended action (do not double-check).
+
+**Why.** Reliance is kept distinct from the state-trust scale by the verify-cost
+middle option: trust is an attitude (1-7), whereas reject/verify/act captures
+whether the participant will pay a verification cost -- a behavioral choice
+(Vasconcelos). The "use/act" pole is phrased to read coherently for both a
+real-world decision (high-stakes) and using a fact (low-stakes).
+
+**Note.** Measured on all 12 trials; interpretation spotlights the high-stakes
+cells. Residual check: option 1's "do not" should clearly govern both "use" and
+"take the action."
+
+**Status.** Wording finalized by author.
+
+**Paper location.** Procedure (behavioral reliance measure), Analysis.
+
+---
+
 ## Stakes: kept binary (low/high), gradation captured by measure
 
 **Decision.** Stakes remains a 2-level manipulated factor (low / high). It is NOT
