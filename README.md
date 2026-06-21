@@ -20,7 +20,7 @@ A 3 × 2 × 2 within-subjects factorial:
 **Stakes, defined.** Stakes is operationalized as the overall consequentiality of
 being wrong about the item:
 
-- **high stakes:** An item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence must be financial, legal, or benefit-related, not physical injury. The fact must apply uniformly to all US adults at the federal level (not state-specific).
+- **high stakes:** An item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence may be financial, legal, or benefit-related. The fact must apply uniformly to all US adults at the federal level (not state-specific). This may also include significant health, safety, financial, or security consequence.
 - **Low stakes:** An item of factual interest where acting on the wrong answer  produces no meaningful consequence: at most a trivial inconvenience or a  corrected misconception.
 
 Stakes is treated holistically (bundling magnitude, domain, and relevance) rather
@@ -48,6 +48,8 @@ notebook.
 | `requirements.txt` | Python package dependencies. |
 | `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
 | `generation_prompt.md` | The LLM prompt used to generate candidate stimuli (the study's authored instrument). |
+| `make_qualtrics_block.py` | Emits paste-ready Qualtrics advanced-format text for the trial block (stimulus display + per-trial measures), with Loop & Merge piped fields pre-wired. |
+| `DESIGN_LOG.md` | Running record of design decisions and rationale (working document; not a deliverable). |
 | `output/` | Generated and curated stimuli, and the Qualtrics loop table. |
 
 ## Generated outputs
