@@ -16,6 +16,34 @@ follows the CS 6795 course policy.
 
 ---
 
+## High-stakes diversity: two-axis spread to break clustering
+
+**Decision.** High-stakes items are required to spread across two independent
+axes, not just distinct topic domains: (A) consequence-type (financial /
+benefit-loss / legal-right forfeiture / rights-or-status / legal-obligation) and
+(B) fact-structure (deadline / threshold-amount / eligibility rule /
+right-entitlement / obligation). The intent is no more than ~two items sharing a
+consequence-type and no more than ~two sharing a fact-structure.
+
+**Why.** Across runs the high-stakes items clustered into "a federal
+financial/benefits deadline" even when agencies differed — the sameness was on
+consequence-type (financial/benefits) and fact-structure (deadlines), not agency.
+Constraining only topic/agency did not break it. Requiring spread on the two
+underlying axes forces variety the topic-level rule could not (e.g., a
+rights-entitlement or an obligation rather than another N-day filing window).
+
+**Tradeoff.** Tighter constraints reduce run-to-run variety somewhat; mitigated by
+the candidate-pool curation workflow (generate several runs, select best-in-breed).
+Rights/civic items must still pass the federal-uniform and uncontested-ground-truth
+filters (avoid state-specific or interpretive facts).
+
+**Status.** Two-axis constraint added to the generation prompt; effect on output
+still being evaluated across runs.
+
+**Paper location.** Experiment Design (stimulus construction / materials).
+
+---
+
 ## Per-trial measure set reduced to three (dropped topic knowledge)
 
 **Decision.** The per-trial measure set is trust (1-7), behavioral reliance
@@ -263,6 +291,12 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
 - [ ] Add a run timestamp to generation_metadata.json at final locked generation.
 - [ ] Reconcile Python version (environment.yaml 3.13 vs. runtime 3.14).
 - [ ] Confirm stale survey_genrator_example.py removed from repo.
-- [ ] PI designation (course vs. advisor) - gates IRB submission.
+- [x] PI designation resolved: Dr. Keith McGreggor (course professor) is PI for
+      the course exempt-consent submission. Source: TA Robert J. Forwerck, Ed
+      Discussion #310 ("IRB Waiver for Surveys"), CS 6795 Summer 2026, answering
+      that the course professor (Dr. Keith McGreggor) should be listed as PI on
+      the GT Exempt Consent Template. Note: a separate PI arrangement (Madisetti)
+      may apply if this is later pursued as a CS 8903 publication — track
+      separately.
 - [ ] Power analysis / target N (pilot-driven).
 - [ ] Debrief screen (must correct the false answers shown).
