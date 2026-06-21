@@ -16,6 +16,40 @@ follows the CS 6795 course policy.
 
 ---
 
+## Source attribution removed from question stems
+
+**Decision.** Question stems are phrased as plain user questions and must not name
+the authoritative source inside the stem (e.g., not "According to NASA, how fast
+is the Moon receding?" but "How fast is the Moon moving away from Earth?"). Source
+information appears only in the attestation display, where it is manipulated across
+the none/weak/strong levels.
+
+**Why.** Naming the source in the stem leaks provenance into every condition,
+including the no-attestation condition, partially collapsing the manipulation. If
+"According to NASA..." is in the question itself, a participant in the none
+condition still receives source information even though the provenance region is
+empty, weakening the contrast between attestation levels. Source must be carried
+by the attestation layer (which the study controls), not pre-loaded into the stem
+(where it is constant across conditions). Removing it also improves ecological
+validity: real users typically ask a bare question rather than prefacing it with
+the source.
+
+**Wrinkle / constraint on the fix.** Some stems use source framing to *scope* the
+question so ground truth is well-defined (e.g., "Under the general IRS limitations
+rule..." fixes which rule applies). The rephrasing must remove source *attribution*
+while preserving enough *scope* that the answer retains a definite, verifiable
+ground truth -- e.g., "In general, how long do you have to claim a federal tax
+refund?" keeps the federal/general scope but drops the "IRS says" attribution.
+
+**Status.** Decision made; stem rephrasing OPEN (must rewrite existing stems before
+locking). Generation prompt to be updated with a constraint forbidding
+source-naming in stems so future generation does not reintroduce it.
+
+**Paper location.** Experiment Design (stimulus construction), Limitations (if any
+residual scoping compromises remain).
+
+---
+
 ## High-stakes diversity: two-axis spread to break clustering
 
 **Decision.** High-stakes items are required to spread across two independent
@@ -288,6 +322,9 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       with stronger non-physical federal items.
 - [ ] Replace Texas voter-registration item with a federal equivalent.
 - [ ] Ground-truth verification pass on high-consequence date-sensitive items.
+- [ ] Rephrase stems to remove source attribution (keep scope; preserve
+      ground truth) before locking; add "no source-naming in stems"
+      constraint to the generation prompt.
 - [ ] Add a run timestamp to generation_metadata.json at final locked generation.
 - [ ] Reconcile Python version (environment.yaml 3.13 vs. runtime 3.14).
 - [ ] Confirm stale survey_genrator_example.py removed from repo.
