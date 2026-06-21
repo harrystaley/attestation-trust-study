@@ -6,7 +6,7 @@ Generate 12 question stems as a JSON array. Each object must have exactly:
   {schema_fields}
 
 Definitions:
-- high stakes = an item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence must be financial, legal, or benefit-related, not physical injury. The fact must apply uniformly to all US adults at the federal level (not state-specific).
+- high stakes = an item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence may be financial, legal, or benefit-related. The fact must apply uniformly to all US adults at the federal level (not state-specific). This may also include significant health, safety, financial, or security consequence.
 - Low stakes = an item of factual interest where acting on the wrong answer produces no meaningful consequence — at most a trivial inconvenience or a corrected misconception.
 
 Constraints:
