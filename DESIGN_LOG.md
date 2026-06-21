@@ -16,6 +16,40 @@ follows the CS 6795 course policy.
 
 ---
 
+## Low stakes redefined: minor-real consequence, not zero (Option B)
+
+**Decision.** Low-stakes items carry a *minor, real, recoverable, non-physical*
+consequence (lose a small refund, a few dollars, some time/convenience) rather than
+*zero* consequence. Low-stakes categories were shifted from zero-consequence
+encyclopedia trivia (astronomy, art, literature) to everyday-decision domains
+(consumer/retail, financial-convenience, shipping, travel-logistics, everyday-tech,
+household-quality).
+
+**Why.** The cost-benefit account underlying H4 concerns *weighing* a real
+consequence against verification cost; a literally-zero low pole gives nothing to
+weigh (verification is never justified, trivially), so the theory fits better with a
+small-but-real low consequence. Zero-consequence trivia also risked disengagement
+(participants skim/rate without reading), adding noise to the baseline condition.
+
+**Tradeoff.** Raising the low pole above zero *narrows* the low/high gap, slightly
+reducing power for the H4 stakes-moderation test. Mitigated by keeping the high pole
+severe (preserve maximum gap) and by the Perceived Consequence measure, which
+quantifies the realized separation. Note: "stakes" now contrasts *minor* vs. *severe*
+consequence rather than *no* vs. *severe* -- H4 tests whether severity (not mere
+presence of stakes) moderates reliance.
+
+**Boundary.** Low-consequence items must be minor *financial/time/convenience*
+consequences, never *physical* (no "minor health/food-safety" items); body stays out
+at both poles.
+
+**Status.** Definition + categories updated in the generation prompt; output register
+still being verified across runs.
+
+**Paper location.** Experiment Design (operationalization of the stakes IV), Power,
+Limitations.
+
+---
+
 ## Source attribution removed from question stems
 
 **Decision.** Question stems are phrased as plain user questions and must not name
@@ -322,10 +356,14 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       with stronger non-physical federal items.
 - [ ] Replace Texas voter-registration item with a federal equivalent.
 - [ ] Ground-truth verification pass on high-consequence date-sensitive items.
-- [ ] Rephrase stems to remove source attribution (keep scope; preserve
-      ground truth) before locking; add "no source-naming in stems"
-      constraint to the generation prompt.
-- [ ] Add a run timestamp to generation_metadata.json at final locked generation.
+- [x] Source attribution removed from stems: "no source-naming in stems"
+      constraint added to the generation prompt; confirmed working (run
+      2026-06-21T172759: 1/12 stems named a source, down from 12/12 in an
+      unconstrained run -- the one remaining names the law being asked about,
+      not a source authority).
+- [x] Run timestamp added to generation outputs: generator now writes
+      timestamped filenames and a timestamp field in generation_metadata.json
+      (e.g., 2026-06-21T172759).
 - [ ] Reconcile Python version (environment.yaml 3.13 vs. runtime 3.14).
 - [ ] Confirm stale survey_genrator_example.py removed from repo.
 - [x] PI designation resolved: Dr. Keith McGreggor (course professor) is PI for
