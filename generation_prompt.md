@@ -6,8 +6,8 @@ Generate 12 question stems as a JSON array. Each object must have exactly:
   {schema_fields}
 
 Definitions:
-- high stakes = an item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The consequence may be financial, legal, or benefit-related. The fact must apply uniformly to all US adults at the federal level (not state-specific). This may also include significant health, safety, financial, or security consequence.
-- Low stakes = an item of factual interest where acting on the wrong answer produces minor, real, recoverable, non-physical consequence.
+- high stakes = an item where acting on the wrong answer causes a substantial, concrete negative consequence — a significant financial loss, legal penalty, or forfeited benefit or right — ideally one that is hard to reverse. The fact must apply uniformly to all US adults at the federal level (not state-specific). This may also include significant health, safety, financial, or security consequence.
+- Low stakes = an item of factual interest where acting on the wrong answer produces minor, real, or recoverable consequence.
 
 Categories:
 - high stakes:
@@ -33,10 +33,10 @@ Categories:
 Constraints:
 - Exactly 12 objects: 6 low stakes, 6 high stakes.
 - Question prompts MUST be phrased as a plain user question and must NOT name or cite the source within the stem (e.g., not 'According to NASA...'). The source belongs only in the source fields. However, the stem must retain enough information that the correct answer is unambiguous, preserve scoping qualifiers (e.g., 'in general,' 'at the federal level') even while removing source attribution.
-- REQUIRED question diversity along three independent axes at once:
-  - Axis A - category.
-  - Axis B - consequence-type.
-  - Axis C — fact-structure: not all "you have N days to X." Require a mix of deadlines, thresholds/amounts, eligibility rules, rights/entitlements, obligations. This breaks the "everything is a deadline" sameness.
+- No two questions may come from the same category.
+- REQUIRED question diversity along two independent axes at once:
+  - Axis A - consequence-type.
+  - Axis B — fact-structure: not all "you have N days to X." Require a mix of deadlines, thresholds/amounts, eligibility rules, rights/entitlements, obligations. This breaks the "everything is a deadline" sameness.
 - Verifiable ground truth from a real, authoritative source.
 - No lengthy calculations, no trick questions, no insider/private knowledge.
 - correct_answer and incorrect_answer should be MATCHED in length, tone,
