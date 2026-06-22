@@ -207,4 +207,4 @@ if __name__ == "__main__":
     else:
         print("Usage: python latin_square_versions.py <stems.csv> <out_dir>")
         print("Running self-test on synthetic data instead...\n")
-        _self_test()∂
+        _self_test()
