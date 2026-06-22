@@ -16,6 +16,40 @@ follows the CS 6795 course policy.
 
 ---
 
+## Dispositional trust switched to a single author-written item (reverses Merritt 6-item)
+
+**Decision.** Dispositional (baseline) trust is now measured with a *single*
+author-written item -- general trust in AI on the 5-point scale (Strongly Distrust
+-> Strongly Trust) -- replacing the previously adopted six-item Merritt et al.
+(2013) Propensity to Trust scale. This *reverses* the earlier "RESOLVED: use Merritt
+6-item" decision recorded below.
+
+**Why.** Lower participant burden and a simpler Qualtrics build; avoids reproducing
+a published scale's copyrighted item text in the instrument. Dispositional trust is
+only a *covariate* in this design (not a primary outcome), so a single-item measure
+is a defensible trade -- the measurement-quality cost falls on a non-critical
+variable rather than the dependent variable.
+
+**Tradeoff.** A single item is noisier and less reliable than a validated
+multi-item scale; the trait estimate has more measurement error. Accepted because
+the construct is a covariate, not a DV. To record as a limitation.
+
+**Downstream edits required (report must match the instrument).**
+- Dispositional AI variables subsection: replace "six-item Propensity to Trust
+  scale, a validated trait-level measure" with an accurate single-item description.
+- tab:trust-levels "Instrument" row: update the dispositional cell (currently cites
+  Merritt) to the single-item measure.
+- tab:disposition-scale caption: remove the Merritt citation.
+- References: dropping Merritt removes one citation (it had been helping move from
+  7 toward the >=10 requirement); make it up elsewhere.
+- Limitations: note single-item dispositional measure (reduced reliability),
+  acceptable for a covariate.
+
+**Paper location.** Procedure (measures), Demographic/Individual-Difference
+Variables, Limitations, References.
+
+---
+
 ## Low stakes redefined: minor-real consequence, not zero (Option B)
 
 **Decision.** Low-stakes items carry a *minor, real, recoverable, non-physical*
@@ -350,11 +384,11 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
 
 ## Open items
 
-- [ ] Finalize tightened high-stakes prompt wording (substantial / hard-to-reverse
+- [x] Finalize tightened high-stakes prompt wording (substantial / hard-to-reverse
       / non-physical / federal); keep stakes binary.
-- [ ] Replace passport (moderate) and OSHA ladder (physical-adjacent) high items
+- [x] Replace passport (moderate) and OSHA ladder (physical-adjacent) high items
       with stronger non-physical federal items.
-- [ ] Replace Texas voter-registration item with a federal equivalent.
+- [x] Replace Texas voter-registration item with a federal equivalent.
 - [ ] Ground-truth verification pass on high-consequence date-sensitive items.
 - [x] Source attribution removed from stems: "no source-naming in stems"
       constraint added to the generation prompt; confirmed working (run
@@ -365,7 +399,6 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       timestamped filenames and a timestamp field in generation_metadata.json
       (e.g., 2026-06-21T172759).
 - [ ] Reconcile Python version (environment.yaml 3.13 vs. runtime 3.14).
-- [ ] Confirm stale survey_genrator_example.py removed from repo.
 - [x] PI designation resolved: Dr. Keith McGreggor (course professor) is PI for
       the course exempt-consent submission. Source: TA Robert J. Forwerck, Ed
       Discussion #310 ("IRB Waiver for Surveys"), CS 6795 Summer 2026, answering
