@@ -58,6 +58,18 @@ N = 6  # stems per pool, conditions, and versions
 
 
 def _load_rows(in_csv: Path) -> list[dict]:
+    """Read a CSV into a list of row dicts (header keys -> cell values).
+
+    Uses ``newline=""`` and UTF-8 so that quoted multi-line cells (e.g. an
+    attestation_text containing embedded newlines) are parsed as single fields
+    rather than split across rows.
+
+    Args:
+        in_csv: Path to the stem CSV to read.
+
+    Returns:
+        A list of dicts, one per data row, keyed by the CSV header names.
+    """
     with in_csv.open(newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
@@ -68,6 +80,18 @@ def _index_rows(rows: list[dict]) -> dict:
     Validates that each stakes pool has exactly 6 stems, each with all 6
     condition rows. Raises on any structural problem so a malformed stem set
     fails loudly rather than producing a silently-wrong counterbalance.
+
+    Args:
+        rows: The full list of stem rows as loaded from the master CSV.
+
+    Returns:
+        A nested mapping ``{(stakes, stem_id): {(att_level, correctness): row}}``
+        giving direct access to the row for any (pool, stem, condition).
+
+    Raises:
+        ValueError: if a row carries an unrecognized (att_level, correctness)
+            pair; if a stakes pool does not contain exactly ``N`` (6) stems; or
+            if any stem is missing one or more of its 6 condition rows.
     """
     table: dict = defaultdict(dict)
     stems_by_pool: dict = defaultdict(set)
@@ -113,7 +137,25 @@ def _pool_stem_order(rows: list[dict], pool: str) -> list[str]:
 
 
 def build_versions(in_csv: str | Path, out_dir: str | Path) -> list[Path]:
-    """Emit version_1.csv ... version_6.csv into out_dir. Returns the paths."""
+    """Emit version_1.csv ... version_6.csv into out_dir. Returns the paths.
+
+    For each version ``v`` (0..5, written as files 1..6) and each stem ``i`` in
+    pool order, selects the row whose condition index is ``(i + v) mod 6`` and
+    writes it out with a ``version`` column added. The low and high pools are
+    handled independently, so each version file has 12 rows (6 + 6).
+
+    Args:
+        in_csv: Path to the 72-row master stem CSV (6 stems x 6 conditions x 2
+            pools).
+        out_dir: Directory to write the version files into; created if absent.
+
+    Returns:
+        The list of 6 written ``Path`` objects, in version order.
+
+    Raises:
+        ValueError: propagated from :func:`_index_rows` if the input stem set is
+            structurally incomplete (wrong stem count or missing condition rows).
+    """
     in_path, out_path = Path(in_csv), Path(out_dir)
     out_path.mkdir(parents=True, exist_ok=True)
     rows = _load_rows(in_path)
@@ -195,16 +237,50 @@ def _self_test() -> None:
     print("SELF-TEST PASSED: 6 versions, 12 rows each, fully balanced counterbalance.")
 
 
+# ============================================================================
+# RUN-FROM-EDITOR CONFIG
+# Set these two paths to your files, then just press Run in your editor.
+# (Leave INPUT_CSV = None to fall back to CLI args, or to the self-test if
+#  no args are given.)
+# ----------------------------------------------------------------------------
+INPUT_CSV: str | None = "output/qualtrics_loop_table_2026-06-21T222501.csv" # The loop table.
+OUTPUT_DIR: str = "versions_output"        # <-- folder for version_1..6.csv
+# ============================================================================
+
+
+def run(in_csv: str | Path, out_dir: str | Path) -> None:
+    """Generate the version files and print a short report."""
+    out = build_versions(in_csv, out_dir)
+    print(f"Wrote {len(out)} version files:")
+    for p in out:
+        print(f"  {p}")
+    print("\nEach version_N.csv has 12 rows (6 low + 6 high), one per design cell.")
+    print("Assign participants evenly across the 6 versions via a Survey Flow Randomizer.")
+
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
-        out = build_versions(sys.argv[1], sys.argv[2])
-        print(f"Wrote {len(out)} version files:")
-        for p in out:
-            print(f"  {p}")
-        print("\nEach version_N.csv has 12 rows (6 low + 6 high), one per design cell.")
-        print("Assign participants evenly across the 6 versions via a Survey Flow Randomizer.")
+        # Command-line use: python latin_square_versions.py <stems.csv> <out_dir>
+        run(sys.argv[1], sys.argv[2])
+    elif INPUT_CSV:
+        # Editor use: just press Run. Uses the INPUT_CSV / OUTPUT_DIR above.
+        # Paths are resolved relative to this script's folder, so it does not
+        # matter what the editor's working directory is set to.
+        here = Path(__file__).parent
+        in_path = (here / INPUT_CSV) if not Path(INPUT_CSV).is_absolute() else Path(INPUT_CSV)
+        out_path = (here / OUTPUT_DIR) if not Path(OUTPUT_DIR).is_absolute() else Path(OUTPUT_DIR)
+        if not in_path.exists():
+            print(f"INPUT_CSV not found: {in_path}")
+            print("Edit INPUT_CSV at the bottom of this file to point at your stem CSV,")
+            print("or place your CSV next to this script. Running self-test instead...\n")
+            _self_test()
+        else:
+            print(f"Reading stems from: {in_path}")
+            print(f"Writing versions to: {out_path}\n")
+            run(in_path, out_path)
     else:
         print("Usage: python latin_square_versions.py <stems.csv> <out_dir>")
+        print("Or set INPUT_CSV at the bottom of this file and press Run.")
         print("Running self-test on synthetic data instead...\n")
         _self_test()
