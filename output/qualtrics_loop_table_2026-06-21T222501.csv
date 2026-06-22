@@ -1,0 +1,145 @@
+stem_id,stakes,question_text,answer_text,att_level,correctness,attestation_text
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 10% of the taxable part of the early distribution.,none,correct,
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 15% of the taxable part of the early distribution.,none,incorrect,
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 10% of the taxable part of the early distribution.,weak,correct,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions"
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 15% of the taxable part of the early distribution.,weak,incorrect,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions"
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 10% of the taxable part of the early distribution.,strong,correct,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+1,high,"If I take money out of a traditional IRA before age 59½ and no exception applies, what extra federal tax usually applies?",The extra federal tax is generally 15% of the taxable part of the early distribution.,strong,incorrect,"Source: Internal Revenue Service — IRS Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs), section on additional tax on early distributions
+Publisher verified (Internal Revenue Service)
+Document unaltered since publication
+Independently checked for relevance"
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 4,000 mg in 24 hours from all acetaminophen-containing medicines.",none,correct,
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 5,000 mg in 24 hours from all acetaminophen-containing medicines.",none,incorrect,
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 4,000 mg in 24 hours from all acetaminophen-containing medicines.",weak,correct,"Source: U.S. Food and Drug Administration — FDA, Acetaminophen Information, consumer safety information on maximum daily dose"
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 5,000 mg in 24 hours from all acetaminophen-containing medicines.",weak,incorrect,"Source: U.S. Food and Drug Administration — FDA, Acetaminophen Information, consumer safety information on maximum daily dose"
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 4,000 mg in 24 hours from all acetaminophen-containing medicines.",strong,correct,"Source: U.S. Food and Drug Administration — FDA, Acetaminophen Information, consumer safety information on maximum daily dose
+Publisher verified (U.S. Food and Drug Administration)
+Document unaltered since publication
+Independently checked for relevance"
+2,high,What is the maximum total acetaminophen an adult should take in one day from all medicines combined?,"The adult maximum is 5,000 mg in 24 hours from all acetaminophen-containing medicines.",strong,incorrect,"Source: U.S. Food and Drug Administration — FDA, Acetaminophen Information, consumer safety information on maximum daily dose
+Publisher verified (U.S. Food and Drug Administration)
+Document unaltered since publication
+Independently checked for relevance"
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 3 to 4 days.,none,correct,
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 5 to 6 days.,none,incorrect,
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 3 to 4 days.,weak,correct,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety, guidance on refrigerated leftovers"
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 5 to 6 days.,weak,incorrect,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety, guidance on refrigerated leftovers"
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 3 to 4 days.,strong,correct,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety, guidance on refrigerated leftovers
+Publisher verified (U.S. Department of Agriculture Food Safety and Inspection Service)
+Document unaltered since publication
+Independently checked for relevance"
+3,high,How long can cooked leftovers stay safely in the refrigerator before I should throw them out?,Cooked leftovers are generally safe in the refrigerator for 5 to 6 days.,strong,incorrect,"Source: U.S. Department of Agriculture Food Safety and Inspection Service — USDA FSIS, Leftovers and Food Safety, guidance on refrigerated leftovers
+Publisher verified (U.S. Department of Agriculture Food Safety and Inspection Service)
+Document unaltered since publication
+Independently checked for relevance"
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A FIDO security key is generally stronger against phishing than a text-message code.,none,correct,
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A text-message code is generally stronger against phishing than a FIDO security key.,none,incorrect,
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A FIDO security key is generally stronger against phishing than a text-message code.,weak,correct,"Source: Cybersecurity and Infrastructure Security Agency — CISA, Implementing Phishing-Resistant MFA, discussion of FIDO/WebAuthn authentication"
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A text-message code is generally stronger against phishing than a FIDO security key.,weak,incorrect,"Source: Cybersecurity and Infrastructure Security Agency — CISA, Implementing Phishing-Resistant MFA, discussion of FIDO/WebAuthn authentication"
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A FIDO security key is generally stronger against phishing than a text-message code.,strong,correct,"Source: Cybersecurity and Infrastructure Security Agency — CISA, Implementing Phishing-Resistant MFA, discussion of FIDO/WebAuthn authentication
+Publisher verified (Cybersecurity and Infrastructure Security Agency)
+Document unaltered since publication
+Independently checked for relevance"
+4,high,"For important online accounts, which is generally stronger against phishing: a FIDO security key or a text-message code?",A text-message code is generally stronger against phishing than a FIDO security key.,strong,incorrect,"Source: Cybersecurity and Infrastructure Security Agency — CISA, Implementing Phishing-Resistant MFA, discussion of FIDO/WebAuthn authentication
+Publisher verified (Cybersecurity and Infrastructure Security Agency)
+Document unaltered since publication
+Independently checked for relevance"
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 10% for each full 12-month period you could have had Part B but did not, and it usually lasts as long as you have Part B.",none,correct,
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 5% for each full 12-month period you could have had Part B but did not, and it usually lasts for the first three years of Part B.",none,incorrect,
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 10% for each full 12-month period you could have had Part B but did not, and it usually lasts as long as you have Part B.",weak,correct,"Source: Medicare.gov — Medicare.gov, Avoid late enrollment penalties, Part B late enrollment penalty"
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 5% for each full 12-month period you could have had Part B but did not, and it usually lasts for the first three years of Part B.",weak,incorrect,"Source: Medicare.gov — Medicare.gov, Avoid late enrollment penalties, Part B late enrollment penalty"
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 10% for each full 12-month period you could have had Part B but did not, and it usually lasts as long as you have Part B.",strong,correct,"Source: Medicare.gov — Medicare.gov, Avoid late enrollment penalties, Part B late enrollment penalty
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+5,high,"If I enroll late in Medicare Part B and don’t qualify for a Special Enrollment Period, how is the late enrollment penalty usually figured?","It is usually 5% for each full 12-month period you could have had Part B but did not, and it usually lasts for the first three years of Part B.",strong,incorrect,"Source: Medicare.gov — Medicare.gov, Avoid late enrollment penalties, Part B late enrollment penalty
+Publisher verified (Medicare.gov)
+Document unaltered since publication
+Independently checked for relevance"
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 90 days from the notice date to file a Tax Court petition, or 150 days if the notice is addressed outside the United States.",none,correct,
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 120 days from the notice date to file a Tax Court petition, or 180 days if the notice is addressed outside the United States.",none,incorrect,
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 90 days from the notice date to file a Tax Court petition, or 150 days if the notice is addressed outside the United States.",weak,correct,"Source: United States Tax Court — U.S. Tax Court, Starting a Case, deadline for filing a petition after a notice of deficiency"
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 120 days from the notice date to file a Tax Court petition, or 180 days if the notice is addressed outside the United States.",weak,incorrect,"Source: United States Tax Court — U.S. Tax Court, Starting a Case, deadline for filing a petition after a notice of deficiency"
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 90 days from the notice date to file a Tax Court petition, or 150 days if the notice is addressed outside the United States.",strong,correct,"Source: United States Tax Court — U.S. Tax Court, Starting a Case, deadline for filing a petition after a notice of deficiency
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+6,high,"If the IRS mails me a notice of deficiency, how long do I generally have to file a petition with the U.S. Tax Court?","You generally have 120 days from the notice date to file a Tax Court petition, or 180 days if the notice is addressed outside the United States.",strong,incorrect,"Source: United States Tax Court — U.S. Tax Court, Starting a Case, deadline for filing a petition after a notice of deficiency
+Publisher verified (United States Tax Court)
+Document unaltered since publication
+Independently checked for relevance"
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","No. If it cannot ship on time, it generally must get your consent to the delay or promptly refund your money.",none,correct,
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","Yes. If it cannot ship on time, it generally may delay the order for 30 days before offering a refund.",none,incorrect,
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","No. If it cannot ship on time, it generally must get your consent to the delay or promptly refund your money.",weak,correct,"Source: Federal Trade Commission — FTC, Business Guide to the Mail, Internet, or Telephone Order Merchandise Rule, delayed shipment requirements"
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","Yes. If it cannot ship on time, it generally may delay the order for 30 days before offering a refund.",weak,incorrect,"Source: Federal Trade Commission — FTC, Business Guide to the Mail, Internet, or Telephone Order Merchandise Rule, delayed shipment requirements"
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","No. If it cannot ship on time, it generally must get your consent to the delay or promptly refund your money.",strong,correct,"Source: Federal Trade Commission — FTC, Business Guide to the Mail, Internet, or Telephone Order Merchandise Rule, delayed shipment requirements
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+7,low,"If an online store can’t ship my order by the promised date, can it just delay the order without asking me?","Yes. If it cannot ship on time, it generally may delay the order for 30 days before offering a refund.",strong,incorrect,"Source: Federal Trade Commission — FTC, Business Guide to the Mail, Internet, or Telephone Order Merchandise Rule, delayed shipment requirements
+Publisher verified (Federal Trade Commission)
+Document unaltered since publication
+Independently checked for relevance"
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 21 days before the payment due date.,none,correct,
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 14 days before the payment due date.,none,incorrect,
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 21 days before the payment due date.,weak,correct,"Source: Consumer Financial Protection Bureau — CFPB Ask CFPB, How long before my credit card payment due date does the card issuer have to mail or deliver my bill?"
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 14 days before the payment due date.,weak,incorrect,"Source: Consumer Financial Protection Bureau — CFPB Ask CFPB, How long before my credit card payment due date does the card issuer have to mail or deliver my bill?"
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 21 days before the payment due date.,strong,correct,"Source: Consumer Financial Protection Bureau — CFPB Ask CFPB, How long before my credit card payment due date does the card issuer have to mail or deliver my bill?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+8,low,"For a credit card, how long before the due date must the bill generally be sent or delivered?",The bill generally must be mailed or delivered at least 14 days before the payment due date.,strong,incorrect,"Source: Consumer Financial Protection Bureau — CFPB Ask CFPB, How long before my credit card payment due date does the card issuer have to mail or deliver my bill?
+Publisher verified (Consumer Financial Protection Bureau)
+Document unaltered since publication
+Independently checked for relevance"
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 1 to 5 business days.,none,correct,
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 2 to 7 business days.,none,incorrect,
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 1 to 5 business days.,weak,correct,"Source: United States Postal Service — USPS, First-Class Mail, delivery standard for letters and postcards"
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 2 to 7 business days.,weak,incorrect,"Source: United States Postal Service — USPS, First-Class Mail, delivery standard for letters and postcards"
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 1 to 5 business days.,strong,correct,"Source: United States Postal Service — USPS, First-Class Mail, delivery standard for letters and postcards
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+9,low,How long does First-Class Mail usually take for letters and postcards in the U.S.?,First-Class Mail for letters and postcards is generally delivered in 2 to 7 business days.,strong,incorrect,"Source: United States Postal Service — USPS, First-Class Mail, delivery standard for letters and postcards
+Publisher verified (United States Postal Service)
+Document unaltered since publication
+Independently checked for relevance"
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","Yes. If you bought it at least seven days before departure, the airline generally must let you cancel within 24 hours for a full refund.",none,correct,
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","No. For a full refund, you generally must have bought it at least fourteen days before departure and cancel within 12 hours.",none,incorrect,
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","Yes. If you bought it at least seven days before departure, the airline generally must let you cancel within 24 hours for a full refund.",weak,correct,"Source: U.S. Department of Transportation — DOT Aviation Consumer Protection, Refunds and 24-hour reservation requirement"
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","No. For a full refund, you generally must have bought it at least fourteen days before departure and cancel within 12 hours.",weak,incorrect,"Source: U.S. Department of Transportation — DOT Aviation Consumer Protection, Refunds and 24-hour reservation requirement"
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","Yes. If you bought it at least seven days before departure, the airline generally must let you cancel within 24 hours for a full refund.",strong,correct,"Source: U.S. Department of Transportation — DOT Aviation Consumer Protection, Refunds and 24-hour reservation requirement
+Publisher verified (U.S. Department of Transportation)
+Document unaltered since publication
+Independently checked for relevance"
+10,low,"If I book a U.S. flight directly with an airline at least a week before departure, can I cancel within 24 hours for a full refund?","No. For a full refund, you generally must have bought it at least fourteen days before departure and cancel within 12 hours.",strong,incorrect,"Source: U.S. Department of Transportation — DOT Aviation Consumer Protection, Refunds and 24-hour reservation requirement
+Publisher verified (U.S. Department of Transportation)
+Document unaltered since publication
+Independently checked for relevance"
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,none,correct,
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,none,incorrect,
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,weak,correct,"Source: University of Nebraska-Lincoln Extension — Nebraska Extension, using herbs and spices in cooking, fresh-to-dried herb substitution guidance"
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,weak,incorrect,"Source: University of Nebraska-Lincoln Extension — Nebraska Extension, using herbs and spices in cooking, fresh-to-dried herb substitution guidance"
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 1 teaspoon of dried herbs for each 1 tablespoon of fresh herbs.,strong,correct,"Source: University of Nebraska-Lincoln Extension — Nebraska Extension, using herbs and spices in cooking, fresh-to-dried herb substitution guidance
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+11,low,"When substituting dried herbs for fresh herbs in a recipe, what ratio should I use?",Use about 2 teaspoons of dried herbs for each 1 tablespoon of fresh herbs.,strong,incorrect,"Source: University of Nebraska-Lincoln Extension — Nebraska Extension, using herbs and spices in cooking, fresh-to-dried herb substitution guidance
+Publisher verified (University of Nebraska-Lincoln Extension)
+Document unaltered since publication
+Independently checked for relevance"
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Superior has the greatest maximum depth, at about 1,332 feet.",none,correct,
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Michigan has the greatest maximum depth, at about 1,332 feet.",none,incorrect,
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Superior has the greatest maximum depth, at about 1,332 feet.",weak,correct,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures, maximum depth table"
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Michigan has the greatest maximum depth, at about 1,332 feet.",weak,incorrect,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures, maximum depth table"
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Superior has the greatest maximum depth, at about 1,332 feet.",strong,correct,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures, maximum depth table
+Publisher verified (U.S. Environmental Protection Agency)
+Document unaltered since publication
+Independently checked for relevance"
+12,low,Which Great Lake has the greatest maximum depth?,"Lake Michigan has the greatest maximum depth, at about 1,332 feet.",strong,incorrect,"Source: U.S. Environmental Protection Agency — EPA, Great Lakes Facts and Figures, maximum depth table
+Publisher verified (U.S. Environmental Protection Agency)
+Document unaltered since publication
+Independently checked for relevance"
