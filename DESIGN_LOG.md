@@ -16,6 +16,77 @@ follows the CS 6795 course policy.
 
 ---
 
+## Counterbalancing implemented as six Qualtrics blocks + even Randomizer (not embedded-data)
+
+**Decision.** The six-version Latin square is implemented in Qualtrics as **six
+separate Trial blocks**, one per version (each loaded with that version's 12-row
+file from `latin_square_versions.py`), wrapped in a Survey Flow **Randomizer set
+to "Evenly Present Elements," presenting 1 of 6**. The alternative — a single
+Trial block with version assigned via embedded data — was not used.
+
+**Why.** [[YOUR RATIONALE — e.g., verifiability: each version's stem→condition
+assignment can be inspected directly in its own block; the Randomizer logic is
+simple and auditable; embedded-data version-switching is harder to verify and
+more error-prone. State your actual reasoning.]]
+
+**Tradeoff.** [[YOUR RATIONALE — e.g., six near-duplicate blocks instead of one;
+more blocks to maintain, but each is trivially checkable. "Evenly Present
+Elements" balances assignment counts across versions over the sample.]]
+
+**Status.** Built in the Qualtrics survey; QSF structurally validated (flow order,
+gate, randomizer even=true, 6 blocks × 12 loop rows).
+
+**Paper location.** Experiment Design (Randomization and Counterbalancing).
+
+---
+
+## Trial order randomized within version; loop presents all 12 (no subset)
+
+**Decision.** Within each participant's assigned version, the 12 trials are
+presented in a **randomized order** (Loop & Merge "randomize loop order"), and
+**all 12 are presented** (no random-subset selection).
+
+**Why.** [[YOUR RATIONALE — randomized order reduces order/carryover effects per
+the design; all 12 must be shown because each participant must cover every cell
+once. State your reasoning.]]
+
+**Tradeoff.** [[YOUR RATIONALE if any.]]
+
+**Status.** [[CONFIRM: the QSF initially exported with loop Randomization='All'
+(fixed order). Verify the "randomize loop order" toggle is enabled and saved on
+all six Trial blocks, then re-export to confirm. Until confirmed, this is set in
+intent but not verified in the exported file.]]
+
+**Paper location.** Experiment Design (Randomization and Counterbalancing).
+
+---
+
+## Privacy/anonymity implemented in Qualtrics settings (Anonymize Responses ON)
+
+**Decision.** Responses are collected with Qualtrics **"Anonymize Responses" ON**
+(no IP/location stored) and **SecureResponseFiles** enabled. Age is collected in
+ranges; demographics reported in aggregate; no name collected.
+
+**Why.** [[YOUR RATIONALE — these settings make the consent/debrief privacy claims
+(IP stripped, anonymous) actually true rather than merely asserted; minimal-risk
+exempt design. State your reasoning.]]
+
+**Tradeoff / open item.** [[YOUR RATIONALE — and note the Prolific-ID reconciliation:
+once recruitment runs on Prolific, the Prolific ID is a persistent identifier, so
+data is *pseudonymous* until the ID is stripped/separated. "Anonymous" in the
+consent/debrief must be reconciled with this (or changed to "confidential"), and
+the withdrawal mechanism depends on the ID-handling choice. Currently testing
+WITHOUT Prolific, so the anonymity claim holds for the test phase.]]
+
+**Status.** Anonymize Responses confirmed ON in the exported QSF. Prolific
+integration (ID capture + completion redirect) intentionally deferred to after the
+test phase.
+
+**Paper location.** Ethics/Procedure; Attention Checks and Exclusion Criteria
+(bot/fraud screening); Limitations (anonymity vs. pseudonymity).
+
+---
+
 ## Dispositional trust switched to a single author-written item (reverses Merritt 6-item)
 
 **Decision.** Dispositional (baseline) trust is now measured with a *single*
@@ -407,7 +478,7 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       may apply if this is later pursued as a CS 8903 publication — track
       separately.
 - [ ] Power analysis / target N (pilot-driven).
-- [ ] Debrief screen (must correct the false answers shown).
+- [x] Debrief screen (must correct the false answers shown).
 - [ ] Abstract: required for the final report and counts toward the word-count
       limit (per Ed #323, citing TA guidance in thread 8109047). Write last,
       ~150-250 words, no citations; budget within the ~4000-word total, not on

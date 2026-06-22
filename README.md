@@ -49,6 +49,7 @@ notebook.
 | `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
 | `generation_prompt.md` | The LLM prompt used to generate candidate stimuli (the study's authored instrument). |
 | `make_qualtrics_block.py` | Emits paste-ready Qualtrics advanced-format text for the trial block (stimulus display + per-trial measures), with Loop & Merge piped fields pre-wired. |
+| `latin_square_versions.py` | Splits the master loop table into the six counterbalanced version files (`version_1.csv` … `version_6.csv`), applying the cyclic Latin square independently to the low- and high-stakes pools. Each version is one participant's 12-trial set. |
 | `DESIGN_LOG.md` | Running record of design decisions and rationale (working document; not a deliverable). |
 | `output/` | Generated and curated stimuli, and the Qualtrics loop table. |
 
@@ -57,6 +58,7 @@ notebook.
 Running `survey_generator.ipynb` writes to `output/`:
 - `generated_stems.json` / `.csv` — the 12 question stems with answers and sources
 - `qualtrics_loop_table.csv` — the 72-row table for Qualtrics loop & merge import
+- `versions_output/version_1.csv` … `version_6.csv` — the six counterbalanced version files produced by `latin_square_versions.py` (12 rows each); one is loaded into each of the six Trial blocks in Qualtrics
 - `generation_metadata.json` — model, run date, and curation flags (for reproducibility)
 
 ---
@@ -101,6 +103,16 @@ order. It calls the OpenAI API to generate candidate stimuli, validates them
 against the design constraints, flags items needing manual curation, and writes
 a Qualtrics-ready loop table. Generated stimuli are curated by the author before
 use.
+
+**Survey build (Qualtrics).** The 72-row loop table is split into six
+counterbalanced versions with `latin_square_versions.py` (set `INPUT_CSV` to the
+loop table, run). The trial-block text is generated with `make_qualtrics_block.py`
+and imported via Qualtrics advanced-format import. In Qualtrics, each version file
+is loaded into one of six Trial blocks, and a Survey Flow Randomizer
+("Evenly Present Elements," present 1 of 6) assigns each participant to one
+version; loop order is randomized within the assigned version. Survey flow:
+Consent (gate) → Instructions → Baseline Trust → Trial (one version) →
+Demographics → Debrief → End.
 
 **Analysis.** `analysis.ipynb` fits the mixed-effects models to collected data.
 *Pending data collection.*
