@@ -32,7 +32,8 @@ Categories:
 
 Constraints:
 - Exactly 12 objects: 6 low stakes, 6 high stakes.
-- Question prompts MUST be phrased as a plain user question and must NOT name or cite the source within the stem (e.g., not 'According to NASA...'). The source belongs only in the source fields. However, the stem must retain enough information that the correct answer is unambiguous, preserve scoping qualifiers (e.g., 'in general,' 'at the federal level') even while removing source attribution.
+- Question prompts MUST be phrased as a plain user question and must NOT name or cite the source within the stem (e.g., not 'According to NASA...'). The source belongs only in the source fields. However, the stem must retain enough information that the correct answer is unambiguous even while removing source attribution.
+- Question prompts must be as a real person would type them to a chatbot — plain, no legal/regulatory phrasing, no scoping preambles
 - No two questions may come from the same category.
 - REQUIRED question diversity along two independent axes at once:
   - Axis A - consequence-type.
