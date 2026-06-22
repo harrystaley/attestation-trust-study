@@ -1,0 +1,42 @@
+[[AdvancedFormat]]
+
+[[Block:Trial]]
+
+[[Question:Text]]
+<div style="max-width:640px">
+  <p><strong>Question:</strong> ${lm://Field/4}</p>
+  <div style="border:1px solid #ccc; border-radius:6px; padding:12px; margin-top:8px">
+    <p style="margin:0">${lm://Field/5}</p>
+    <div style="color:#555; font-size:0.9em; margin-top:10px">${lm://Field/9}</div>
+  </div>
+</div>
+
+[[Question:MC:SingleAnswer:Horizontal]]
+[[ID:trust]]
+How much do you trust this answer?
+[[Choices]]
+1 (Do not trust at all)
+2
+3
+4 (Neither trust nor distrust)
+5
+6
+7 (Completely trust)
+
+[[Question:MC:SingleAnswer]]
+[[ID:reliance]]
+What would you do with this answer?
+[[Choices]]
+Reject — do not use the information or take the recommended action.
+Verify before taking action or using the information.
+Use the information or take the recommended action (do not double-check).
+
+[[Question:MC:SingleAnswer:Horizontal]]
+[[ID:consequence]]
+If you acted on this answer and it turned out to be wrong, how serious would the outcome be?
+[[Choices]]
+1 (Not serious at all)
+2
+3
+4
+5 (Extremely serious)
