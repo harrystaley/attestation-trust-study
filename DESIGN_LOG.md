@@ -16,6 +16,43 @@ follows the CS 6795 course policy.
 
 ---
 
+## AI expertise added as an intake covariate (single 5-point item)
+
+**Decision.** A single self-rated **AI expertise** item is added at intake,
+alongside the baseline trust item and before the trials. Stem: "Rate your level
+of expertise with AI and related systems such as Chatbots/LLMs, Agents, AI
+assisted search." Five ordered anchors: Novice / Basic User / Experienced User /
+Advanced Practitioner / Expert/Specialist. This is distinct from the AI-use
+*frequency* demographic item: expertise measures self-rated competence; the
+demographic measures usage frequency. Both are retained as separate constructs.
+
+**Why.** [[YOUR RATIONALE — e.g., self-rated AI expertise is a plausible
+individual-difference moderator of trust calibration: more expert users may
+discount attestation cues or judge answer quality differently. Captured as a
+covariate to control for or test as a moderator. State your reasoning.]]
+
+**Tradeoff.** [[YOUR RATIONALE — single item (consistent with the single-item
+baseline trust decision) trades reliability for low burden; acceptable for a
+covariate, not a DV. Self-rated expertise is subjective (Dunning-Kruger noise).
+Note any moderation analysis you intend.]]
+
+**Placement.** Intake block, before trials (trait/individual-difference covariate;
+must precede the manipulation). The block holding baseline trust + AI expertise
+may be renamed from "Baseline Trust" to "Baseline measures" to reflect contents.
+
+**Consistency follow-through.** Report measures/individual-difference section to
+describe it as an *expertise* item (matching the anchors; keep "expertise" not
+"experience" wording consistent); IRB instrument upload to include it; Qualtrics
+intake block to add stem + 5 anchors.
+
+**Status.** Item finalized (stem + 5 anchors). Pending propagation to report,
+instrument, and Qualtrics.
+
+**Paper location.** Procedure (measures), Demographic/Individual-Difference
+Variables.
+
+---
+
 ## Counterbalancing implemented as six Qualtrics blocks + even Randomizer (not embedded-data)
 
 **Decision.** The six-version Latin square is implemented in Qualtrics as **six
@@ -478,7 +515,7 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       may apply if this is later pursued as a CS 8903 publication — track
       separately.
 - [ ] Power analysis / target N (pilot-driven).
-- [x] Debrief screen (must correct the false answers shown).
+- [ ] Debrief screen (must correct the false answers shown).
 - [ ] Abstract: required for the final report and counts toward the word-count
       limit (per Ed #323, citing TA guidance in thread 8109047). Write last,
       ~150-250 words, no citations; budget within the ~4000-word total, not on
