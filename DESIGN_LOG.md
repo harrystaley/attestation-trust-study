@@ -16,6 +16,45 @@ follows the CS 6795 course policy.
 
 ---
 
+## State trust scale: all 7 points labeled (fixes unlabeled-point confusion); resolves trust-anchor reconciliation
+
+**Decision.** The primary DV, state trust, stays **7-point** but is now **fully
+labeled at every point** (previously only 1/4/7 were labeled). Anchors:
+1 Strongly distrust / 2 Distrust / 3 Slightly distrust / 4 Neither trust nor
+distrust / 5 Slightly trust / 6 Trust / 7 Strongly trust. This is a symmetric
+bipolar scale: three distrust gradations, a neutral midpoint, three mirrored
+trust gradations. This also **resolves the long-pending trust-anchor
+reconciliation** (the author's wording vs. Jian et al. 2000): the scale lands on
+the author's own symmetric labels, informed by but not verbatim from Jian.
+
+**Why.** [[YOUR RATIONALE — direct usability feedback: participants found the
+7-point scale confusing specifically because the intermediate points (2,3,5,6)
+were unlabeled bare numbers. The fix is labeling, not reducing the point count:
+keeping 7 points preserves DV sensitivity for the trust-calibration question
+while full labeling removes the confusion. State your reasoning, and note whether
+you cite Jian (2000) as the basis.]]
+
+**Tradeoff / alternatives considered.** A switch to 5-point was considered (for
+consistency with the 5-point baseline-trust, perceived-consequence, and
+AI-expertise scales, and to reduce load). Rejected because the diagnosed problem
+was *unlabeled points*, not point count; dropping to 5-point would lose DV
+granularity and force a power-analysis recheck without addressing the actual
+confusion. Labeling all 7 fixes the problem at no sensitivity cost. [[YOUR
+RATIONALE — expand if desired.]]
+
+**Note on scale consistency.** Baseline trust remains 5-point ("Strongly Distrust
+-> Strongly Trust"); state trust is 7-point. Endpoint vocabulary matches, but the
+granularities differ by design (covariate vs. primary DV). Report must describe
+each correctly so the two are not conflated.
+
+**Status.** Anchors finalized. Power analysis unaffected (still 7-point; no
+recheck needed). Pending: rebuild the Qualtrics trust question choices; update
+report tab:trust-scale to show all 7 labels and settle the Jian citation framing.
+
+**Paper location.** Procedure (measures), tab:trust-scale, H1/H2 operationalization.
+
+---
+
 ## AI expertise added as an intake covariate (single 5-point item)
 
 **Decision.** A single self-rated **AI expertise** item is added at intake,
@@ -515,7 +554,7 @@ Still to verify before locking: FAFSA 2025-26 deadline, SS full retirement age
       may apply if this is later pursued as a CS 8903 publication — track
       separately.
 - [ ] Power analysis / target N (pilot-driven).
-- [ ] Debrief screen (must correct the false answers shown).
+- [x] Debrief screen (must correct the false answers shown).
 - [ ] Abstract: required for the final report and counts toward the word-count
       limit (per Ed #323, citing TA guidance in thread 8109047). Write last,
       ~150-250 words, no citations; budget within the ~4000-word total, not on
