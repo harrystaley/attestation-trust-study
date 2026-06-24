@@ -58,10 +58,10 @@ import tempfile
 # ---- editor-run config ------------------------------------------------------
 # EXPORT may be EITHER a Qualtrics .zip export OR the .csv inside it. If a .zip
 # is given, the CSV is extracted automatically (you do not need to unzip first).
-EXPORT_DIR = "../qdata"
-EXPORT_FILE = "AI+Attestation+Trust+Study_June+23,+2026_21.04.zip"
-VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
-OUTPUT_DIR = "../prepped_data"
+EXPORT_DIR = "qdata"
+EXPORT_FILE = "AI Attestation Trust Study_June 23, 2026_21.04.zip"
+VERSION_DIR = "versions_output"   # folder holding version_1.csv .. version_6.csv
+OUTPUT_DIR = "prepped_data"
 OUTPUT_CSV = "pilot_long_reconstructed.csv"
 
 # Map each block's question-ID signature -> version file number.
@@ -269,8 +269,17 @@ if __name__ == "__main__":
     out = Path(OUTPUT_DIR) / OUTPUT_CSV
     if not out.is_absolute():
         out = here / OUTPUT_DIR / OUTPUT_CSV
+    # Anchor VERSION_DIR to the script location too (same as exp/out), so relative
+    # paths like "../versions_output" resolve against the script, not the
+    # working directory DataSpell happened to launch from.
+    vdir = Path(VERSION_DIR)
+    if not vdir.is_absolute():
+        vdir = here / VERSION_DIR
     if not exp.exists():
         print(f"Export not found: {exp}")
         print("Set EXPORT_DIR/EXPORT_FILE at the top to your Qualtrics .zip or .csv.")
+    elif not vdir.exists():
+        print(f"Version dir not found: {vdir}")
+        print("Set VERSION_DIR at the top to the folder holding version_1.csv .. version_6.csv.")
     else:
-        reconstruct(exp, VERSION_DIR, out)
+        reconstruct(exp, vdir, out)
