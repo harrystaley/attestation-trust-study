@@ -58,10 +58,10 @@ import tempfile
 # ---- editor-run config ------------------------------------------------------
 # EXPORT may be EITHER a Qualtrics .zip export OR the .csv inside it. If a .zip
 # is given, the CSV is extracted automatically (you do not need to unzip first).
-EXPORT_DIR = "qdata"
+EXPORT_DIR = "../qdata"
 EXPORT_FILE = "AI+Attestation+Trust+Study_June+23,+2026_21.04.zip"
-VERSION_DIR = "versions_output"   # folder holding version_1.csv .. version_6.csv
-OUTPUT_DIR = "prepped_data"
+VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
+OUTPUT_DIR = "../prepped_data"
 OUTPUT_CSV = "pilot_long_reconstructed.csv"
 
 # Map each block's question-ID signature -> version file number.
@@ -170,8 +170,12 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
     versions = load_versions(version_dir)
 
     resolved_csv, _tmp = resolve_export_csv(export_csv)
-    with open(resolved_csv, encoding="utf-8") as fh:
-        rows = list(csv.reader(fh))
+    try:
+        with open(resolved_csv, encoding="utf-8") as fh:
+            rows = list(csv.reader(fh))
+    finally:
+        if _tmp is not None:
+            _tmp.cleanup()
     varnames = rows[0]
     data = rows[3:]  # 3 Qualtrics header rows
     rid_idx = varnames.index("ResponseId") if "ResponseId" in varnames else 7
@@ -234,6 +238,7 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
             })
 
     out_path = Path(out_csv)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = ["response_id", "version", "trial_position", "loop_num",
                   "stem_id", "stakes", "att_level", "correctness",
                   "trust", "reliance", "consequence"]
@@ -266,6 +271,6 @@ if __name__ == "__main__":
         out = here / OUTPUT_DIR / OUTPUT_CSV
     if not exp.exists():
         print(f"Export not found: {exp}")
-        print("Set EXPORT at the top to your Qualtrics .zip or .csv path.")
+        print("Set EXPORT_DIR/EXPORT_FILE at the top to your Qualtrics .zip or .csv.")
     else:
         reconstruct(exp, VERSION_DIR, out)
