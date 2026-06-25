@@ -58,11 +58,11 @@ import tempfile
 # ---- editor-run config ------------------------------------------------------
 # EXPORT may be EITHER a Qualtrics .zip export OR the .csv inside it. If a .zip
 # is given, the CSV is extracted automatically (you do not need to unzip first).
-EXPORT_DIR = "qdata"
-EXPORT_FILE = "AI Attestation Trust Study_June 23, 2026_21.04.zip"
-VERSION_DIR = "versions_output"   # folder holding version_1.csv .. version_6.csv
-OUTPUT_DIR = "prepped_data"
-OUTPUT_CSV = "pilot_long_reconstructed.csv"
+EXPORT_DIR = "../qdata"
+EXPORT_FILE = "AI_Attestation_Trust_Study_06-24-2026T0635.zip"
+VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
+OUTPUT_DIR = "../prepped_data"
+OUTPUT_CSV = "long_reconstructed.csv"
 
 # Map each block's question-ID signature -> version file number.
 # DEFAULT inferred from loop-number order (block creation order). CONFIRM!
@@ -265,19 +265,30 @@ if __name__ == "__main__":
     here = Path(__file__).parent
     exp = Path(EXPORT_DIR) / EXPORT_FILE
     if not exp.is_absolute():
-        exp = here / EXPORT_DIR / EXPORT_FILE
+        exp = (here / EXPORT_DIR / EXPORT_FILE).resolve()
     out = Path(OUTPUT_DIR) / OUTPUT_CSV
     if not out.is_absolute():
-        out = here / OUTPUT_DIR / OUTPUT_CSV
+        out = (here / OUTPUT_DIR / OUTPUT_CSV).resolve()
     # Anchor VERSION_DIR to the script location too (same as exp/out), so relative
     # paths like "../versions_output" resolve against the script, not the
     # working directory DataSpell happened to launch from.
     vdir = Path(VERSION_DIR)
     if not vdir.is_absolute():
-        vdir = here / VERSION_DIR
+        vdir = (here / VERSION_DIR).resolve()
     if not exp.exists():
         print(f"Export not found: {exp}")
-        print("Set EXPORT_DIR/EXPORT_FILE at the top to your Qualtrics .zip or .csv.")
+        # list what IS in that folder so a filename mismatch is easy to spot
+        parent = exp.parent
+        if parent.exists():
+            contents = sorted(p.name for p in parent.iterdir())
+            print(f"Contents of {parent}:")
+            for name in contents:
+                print(f"    {name}")
+            print("Set EXPORT_FILE to match the exact name above (including spaces,")
+            print("month spelling, and date format -- Qualtrics names vary).")
+        else:
+            print(f"That folder does not exist: {parent}")
+            print("Set EXPORT_DIR to the folder that actually holds your export.")
     elif not vdir.exists():
         print(f"Version dir not found: {vdir}")
         print("Set VERSION_DIR at the top to the folder holding version_1.csv .. version_6.csv.")

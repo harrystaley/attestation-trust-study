@@ -52,7 +52,7 @@ from pathlib import Path
 
 # ---- editor-run config ------------------------------------------------------
 INPUT_DIR = "../prepped_data"
-INPUT_FILE = "pilot_long_coded.csv"
+INPUT_FILE = "long_coded.csv"
 OUTCOME = "trust_num"   # primary DV; set to "consequence_num" to inspect that scale
 # ----------------------------------------------------------------------------
 

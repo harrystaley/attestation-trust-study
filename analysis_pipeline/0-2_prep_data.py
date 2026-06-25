@@ -54,9 +54,9 @@ import re
 
 # ---- editor-run config ------------------------------------------------------
 INPUT_DIR = "../prepped_data"
-INPUT_FILE = "pilot_long_reconstructed.csv"
+INPUT_FILE = "long_reconstructed.csv"
 OUTPUT_DIR = "../prepped_data"
-OUTPUT_FILE = "pilot_long_coded.csv"
+OUTPUT_FILE = "long_coded.csv"
 # ----------------------------------------------------------------------------
 
 # Reliance text -> ordinal, ordered by increasing uncritical reliance.
