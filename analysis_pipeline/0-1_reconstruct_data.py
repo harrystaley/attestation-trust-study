@@ -44,8 +44,12 @@ OUTPUT
 ------
 A long-format CSV: one row per participant-trial, with columns
     response_id, version, trial_position, stem_id, stakes, att_level,
-    correctness, trust, reliance, consequence
+    correctness, trust, reliance, consequence,
+    age, gender, education, ai_frequency, ai_expertise, baseline_trust, consent
 suitable for the mixed-effects analysis and for estimating pilot effect sizes.
+The trailing intake columns (age..consent) are per-participant values, answered
+once and repeated on every trial row for that participant; they come from plain
+(non-looped) Qualtrics columns and are configured in INTAKE_COLUMNS below.
 """
 
 from __future__ import annotations
@@ -85,6 +89,21 @@ MEASURE_TRIPLES = {
     4: ("Q30", "Q31", "Q32"),
     5: ("Q34", "Q35", "Q36"),
     6: ("Q38", "Q39", "Q40"),
+}
+
+# Per-participant intake / control items, answered ONCE (not per loop). These are
+# plain Qualtrics columns named by their DataExportTag (recovered from the QSF).
+# Each is attached to every trial row for that respondent, keyed on ResponseId.
+# LEFT = the export column header; RIGHT = the output column name.
+# If your export headers differ, edit the LEFT side.
+INTAKE_COLUMNS = {
+    "Age":            "age",
+    "Gender":         "gender",
+    "Education":      "education",
+    "AI Use":         "ai_frequency",     # Never/Monthly/Weekly/Daily
+    "Q44":            "ai_expertise",     # Novice..Expert/Specialist (tag is Q44)
+    "Baseline Trust": "baseline_trust",   # general trust in AI (5-point)
+    "Consent":        "consent",          # Agree/Disagree (useful as a screen)
 }
 # ----------------------------------------------------------------------------
 
@@ -187,6 +206,18 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
         if m:
             col_map[(int(m.group(1)), m.group(2))] = i
 
+    # index the per-participant intake columns (plain headers, answered once).
+    # intake_idx maps output-field-name -> column index in the export.
+    intake_idx: dict[str, int] = {}
+    for header, out_name in INTAKE_COLUMNS.items():
+        if header in varnames:
+            intake_idx[out_name] = varnames.index(header)
+    missing_intake = [h for h in INTAKE_COLUMNS if h not in varnames]
+    if missing_intake:
+        print(f"  NOTE: intake columns not found in export (will be blank): "
+              f"{missing_intake}")
+        print("        edit INTAKE_COLUMNS left-side keys to match your headers.")
+
     out_rows: list[dict] = []
     skipped: list[str] = []
 
@@ -215,6 +246,13 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
         trust_q, rel_q, cons_q = MEASURE_TRIPLES[version_num]
         vfile = versions[version_num]
         loops_sorted = sorted(loopnums)
+
+        # read this respondent's intake values once (same for all their trials)
+        intake_vals = {
+            name: (row[ci].strip() if ci < len(row) else "")
+            for name, ci in intake_idx.items()
+        }
+
         # loop position (1..12) -> version row index (0..11), fixed order assumption
         for pos, ln in enumerate(loops_sorted):
             if pos >= len(vfile):
@@ -223,7 +261,7 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
             def cell(qid):
                 ci = col_map.get((ln, qid))
                 return row[ci] if ci is not None and ci < len(row) else ""
-            out_rows.append({
+            out_row = {
                 "response_id": rid,
                 "version": version_num,
                 "trial_position": pos + 1,
@@ -235,13 +273,15 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
                 "trust": cell(trust_q),
                 "reliance": cell(rel_q),
                 "consequence": cell(cons_q),
-            })
+            }
+            out_row.update(intake_vals)  # attach per-participant intake to every trial
+            out_rows.append(out_row)
 
     out_path = Path(out_csv)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = ["response_id", "version", "trial_position", "loop_num",
                   "stem_id", "stakes", "att_level", "correctness",
-                  "trust", "reliance", "consequence"]
+                  "trust", "reliance", "consequence"] + list(INTAKE_COLUMNS.values())
     with out_path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
