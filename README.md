@@ -28,9 +28,10 @@ than isolating a single dimension; the per-trial Perceived Consequence measure i
 used to validate the manipulation. See the project report for the full rationale.
 
 Each participant sees 12 trials (one per cell). Counterbalancing uses a
-six-version Latin square; trial order is randomized. Recruitment is planned via
-Prolific (US residents only); target N is determined by the power-analysis
-notebook.
+six-version Latin square; trial order is randomized. Recruitment is via Prolific
+(US residents, 18+) and approved social-media outreach; target N is determined by
+the power-analysis notebook. Data collection is **in progress**: a 16-participant
+pilot validated the pipeline, and main collection is underway.
 
 (See the project report for hypotheses, measures, and full rationale.)
 
@@ -38,26 +39,52 @@ notebook.
 
 ## Repository contents
 
+### Survey construction
 | File | Purpose |
 |------|---------|
 | `survey_generator.ipynb` | Generates and validates candidate survey stimuli via an LLM, then expands them into a Qualtrics loop table. |
-| `power_analysis_simulation.ipynb` | Monte-Carlo power analysis for the 3×2×2 mixed-effects design; determines target sample size. |
-| `analysis.ipynb` | Analysis of collected data (mixed-effects models). *Pending data collection.* |
-| `setup_env.py` | One-time bootstrap that creates a git-ignored `.env` for the OpenAI API key. |
-| `environment.yaml` | Conda environment definition (delegates Python deps to `requirements.txt`). |
-| `requirements.txt` | Python package dependencies. |
-| `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
 | `generation_prompt.md` | The LLM prompt used to generate candidate stimuli (the study's authored instrument). |
 | `make_qualtrics_block.py` | Emits paste-ready Qualtrics advanced-format text for the trial block (stimulus display + per-trial measures), with Loop & Merge piped fields pre-wired. |
 | `latin_square_versions.py` | Splits the master loop table into the six counterbalanced version files (`version_1.csv` … `version_6.csv`), applying the cyclic Latin square independently to the low- and high-stakes pools. Each version is one participant's 12-trial set. |
-| `DESIGN_LOG.md` | Running record of design decisions and rationale (working document; not a deliverable). |
+| `AI_Attestation_Trust_Study.qsf` | The Qualtrics survey export (importable survey definition). |
 | `output/` | Generated and curated stimuli, and the Qualtrics loop table. |
+| `versions_output/` | The six counterbalanced version files (`version_1.csv` … `version_6.csv`), one loaded into each Qualtrics Trial block. |
+| `survey/` | Participant-facing survey text: `consent_text.md`, `instruction_text.md`, `debrief_text.md`, `debrief_corrections.md/html`, and `qualtrics_block.txt` (the generated trial-block markup). |
+
+### Analysis pipeline (`analysis_pipeline/`)
+The data pipeline runs in numbered order; each script is path-safe and modular,
+and reads the output of the previous step.
+
+| File | Purpose |
+|------|---------|
+| `0-1_reconstruct_data.py` | Reconstructs per-trial condition codes (stem, attestation, correctness, stakes) from the Qualtrics export by block signature and loop position, and folds the per-participant intake/demographic columns (age, gender, education, AI use, AI expertise, baseline trust, consent) into the long-format output. |
+| `0-2_prep_data.py` | Codes Qualtrics text labels to numeric: trust (1–7), reliance (1–3), consequence (1–5), and the analysis codings (`att_code` 0/1/2; `corr_code`, `stakes_code` ±0.5). Preserves all input columns, so intake data carries through. |
+| `0-3_fit_pilot_model.py` | Fits the crossed random-effects model to coded data and prints fixed-effect and variance-component estimates as **candidate** inputs for the power simulation. Estimation only; does not interpret. |
+| `attestation_trust_analysis.ipynb` | Main analysis notebook: descriptives, crossed mixed-effects models (participant + stem) for the three outcomes, the H4 interaction and stakes-moderation models, an H3 mediation scaffold, exploratory visualizations, and the intake/demographic figures. |
+| `power_analysis_simulation.ipynb` | Monte-Carlo power analysis for the 3×2×2 mixed-effects design; determines target sample size. |
+| `analysis_results.csv`, `power_results_detailed.csv` | Tidy model-estimate and power-curve outputs. |
+| `images/` | Generated analysis figures (`fig1`–`fig8`, diagnostics). |
+
+### Data (`prepped_data/`)
+| File | Purpose |
+|------|---------|
+| `long_reconstructed.csv` / `long_coded.csv` | Current main dataset: reconstructed long format, then coded for analysis (one row per participant-trial, with intake columns). |
+| `pilot_long_reconstructed.csv` / `pilot_long_coded.csv` | The 16-participant pilot dataset (pipeline validation; no intake columns). |
+
+### Environment & meta
+| File | Purpose |
+|------|---------|
+| `setup_env.py` | One-time bootstrap that creates a git-ignored `.env` for the OpenAI API key. |
+| `environment.yaml` | Conda environment definition (Python 3.13; delegates Python deps to `requirements.txt`). |
+| `requirements.txt` | Python package dependencies. |
+| `NOTICE.md` | Copyright, license status, and AI-assistance disclosure. |
+| `DESIGN_LOG.md` | Running record of design decisions and rationale (working document; not a deliverable). |
 
 ## Generated outputs
 
 Running `survey_generator.ipynb` writes to `output/`:
 - `generated_stems.json` / `.csv` — the 12 question stems with answers and sources
-- `qualtrics_loop_table.csv` — the 72-row table for Qualtrics loop & merge import
+- `qualtrics_loop_table.csv` — the table for Qualtrics loop & merge import
 - `versions_output/version_1.csv` … `version_6.csv` — the six counterbalanced version files produced by `latin_square_versions.py` (12 rows each); one is loaded into each of the six Trial blocks in Qualtrics
 - `generation_metadata.json` — model, run date, and curation flags (for reproducibility)
 
@@ -114,8 +141,18 @@ version; loop order is randomized within the assigned version. Survey flow:
 Consent (gate) → Instructions → Baseline Trust → Trial (one version) →
 Demographics → Debrief → End.
 
-**Analysis.** `analysis.ipynb` fits the mixed-effects models to collected data.
-*Pending data collection.*
+**Analysis.** The data pipeline in `analysis_pipeline/` runs in numbered order:
+
+```bash
+python analysis_pipeline/0-1_reconstruct_data.py   # Qualtrics export -> long_reconstructed.csv (+ intake columns)
+python analysis_pipeline/0-2_prep_data.py          # -> long_coded.csv (numeric codings)
+python analysis_pipeline/0-3_fit_pilot_model.py    # candidate effect-size estimates for the power sim
+```
+
+Each script has an editable path block at the top (`INPUT_DIR` / `OUTPUT_DIR`)
+and prints a validation report. Then open `attestation_trust_analysis.ipynb` and
+run it against `long_coded.csv` for the full models, robustness checks, and
+figures. Set `DATA_PATH` at the top of the notebook to the coded CSV.
 
 ---
 
