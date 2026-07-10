@@ -1,0 +1,273 @@
+% This file was created with matplot2tikz v0.5.4.
+\begin{tikzpicture}
+
+\definecolor{black252628}{RGB}{25,26,28}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{peru20610859}{RGB}{206,108,59}
+\definecolor{royalblue54108217}{RGB}{54,108,217}
+
+\begin{groupplot}[group style={group size=3 by 1}]
+\nextgroupplot[
+axis background/.style={fill=black252628},
+axis line style={white},
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204, fill=black252628},
+tick align=outside,
+tick pos=left,
+title={Trust (1-7)},
+x grid style={darkgray176},
+xlabel=\textcolor{white}{attestation},
+xmin=-0.133, xmax=2.133,
+xtick style={color=white},
+xtick={0,1,2},
+xticklabels={none,weak,strong},
+y grid style={darkgray176},
+ymin=1, ymax=7,
+ytick style={color=white}
+]
+\path [draw=royalblue54108217, semithick]
+(axis cs:-0.03,3.73738635608465)
+--(axis cs:-0.03,4.25077932438872);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:0.97,4.03513508639079)
+--(axis cs:0.97,4.52773916510622);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:1.97,4.50363492592267)
+--(axis cs:1.97,4.99939537710764);
+
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 3.73738646507263
+0.970000028610229 4.03513526916504
+1.97000002861023 4.50363492965698
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 4.2507791519165
+0.970000028610229 4.52773904800415
+1.97000002861023 4.9993953704834
+};
+\addlegendentry{incorrect}
+\path [draw=peru20610859, semithick]
+(axis cs:0.03,3.43912284369413)
+--(axis cs:0.03,3.95373429916301);
+
+\path [draw=peru20610859, semithick]
+(axis cs:1.03,4.17081391820758)
+--(axis cs:1.03,4.6149003675067);
+
+\path [draw=peru20610859, semithick]
+(axis cs:2.03,4.28454567382712)
+--(axis cs:2.03,4.79979167557047);
+
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 3.43912291526794
+1.02999997138977 4.170814037323
+2.02999997138977 4.2845458984375
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 3.95373439788818
+1.02999997138977 4.61490058898926
+2.02999997138977 4.79979181289673
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=*, mark size=3, mark options={solid}]
+table {%
+-0.0299999713897705 3.99408292770386
+0.970000028610229 4.28143692016602
+1.97000002861023 4.75151538848877
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0299999713897705 3.69642853736877
+1.02999997138977 4.39285707473755
+2.02999997138977 4.54216861724854
+};
+\addlegendentry{incorrect}
+
+\nextgroupplot[
+axis background/.style={fill=black252628},
+axis line style={white},
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204, fill=black252628},
+tick align=outside,
+tick pos=left,
+title={Reliance (1-3)},
+x grid style={darkgray176},
+xlabel=\textcolor{white}{attestation},
+xmin=-0.133, xmax=2.133,
+xtick style={color=white},
+xtick={0,1,2},
+xticklabels={none,weak,strong},
+y grid style={darkgray176},
+ymin=1, ymax=3,
+ytick style={color=white}
+]
+\path [draw=royalblue54108217, semithick]
+(axis cs:-0.03,2.00154839585369)
+--(axis cs:-0.03,2.16413207751909);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:0.97,2.01953093739817)
+--(axis cs:0.97,2.1601097811647);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:1.97,2.15011743211959)
+--(axis cs:1.97,2.29836741636526);
+
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 2.00154829025269
+0.970000028610229 2.01953101158142
+1.97000002861023 2.15011739730835
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 2.1641321182251
+0.970000028610229 2.16010975837708
+1.97000002861023 2.29836750030518
+};
+\addlegendentry{incorrect}
+\path [draw=peru20610859, semithick]
+(axis cs:0.03,1.88047024576105)
+--(axis cs:0.03,2.06000594471514);
+
+\path [draw=peru20610859, semithick]
+(axis cs:1.03,2.07362788525474)
+--(axis cs:1.03,2.2239911623643);
+
+\path [draw=peru20610859, semithick]
+(axis cs:2.03,2.13813829994998)
+--(axis cs:2.03,2.29559663980906);
+
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 1.88047027587891
+1.02999997138977 2.07362794876099
+2.02999997138977 2.13813829421997
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 2.06000590324402
+1.02999997138977 2.22399115562439
+2.02999997138977 2.29559659957886
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=*, mark size=3, mark options={solid}]
+table {%
+-0.0299999713897705 2.08284020423889
+0.970000028610229 2.08982038497925
+1.97000002861023 2.22424244880676
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0299999713897705 1.97023808956146
+1.02999997138977 2.1488094329834
+2.02999997138977 2.21686744689941
+};
+\addlegendentry{incorrect}
+
+\nextgroupplot[
+axis background/.style={fill=black252628},
+axis line style={white},
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204, fill=black252628},
+tick align=outside,
+tick pos=left,
+title={Perceived consequence (1-5)},
+x grid style={darkgray176},
+xlabel=\textcolor{white}{attestation},
+xmin=-0.133, xmax=2.133,
+xtick style={color=white},
+xtick={0,1,2},
+xticklabels={none,weak,strong},
+y grid style={darkgray176},
+ymin=1, ymax=5,
+ytick style={color=white}
+]
+\path [draw=royalblue54108217, semithick]
+(axis cs:-0.03,3.01413561239079)
+--(axis cs:-0.03,3.41189989056779);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:0.97,3.20397043738574)
+--(axis cs:0.97,3.58644872429091);
+
+\path [draw=royalblue54108217, semithick]
+(axis cs:1.97,3.07006399628179)
+--(axis cs:1.97,3.46326933705154);
+
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 3.01413559913635
+0.970000028610229 3.20397043228149
+1.97000002861023 3.07006406784058
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0299999713897705 3.41189980506897
+0.970000028610229 3.58644866943359
+1.97000002861023 3.46326923370361
+};
+\addlegendentry{incorrect}
+\path [draw=peru20610859, semithick]
+(axis cs:0.03,2.9118215395179)
+--(axis cs:0.03,3.32627369857734);
+
+\path [draw=peru20610859, semithick]
+(axis cs:1.03,2.94326233743063)
+--(axis cs:1.03,3.3305471863789);
+
+\path [draw=peru20610859, semithick]
+(axis cs:2.03,2.9154960349532)
+--(axis cs:2.03,3.32546782046849);
+
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 2.91182160377502
+1.02999997138977 2.94326233863831
+2.02999997138977 2.91549611091614
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+0.0299999713897705 3.32627367973328
+1.02999997138977 3.33054709434509
+2.02999997138977 3.32546782493591
+};
+\addlegendentry{incorrect}
+\addplot [semithick, royalblue54108217, mark=*, mark size=3, mark options={solid}]
+table {%
+-0.0299999713897705 3.21301770210266
+0.970000028610229 3.39520955085754
+1.97000002861023 3.26666665077209
+};
+\addlegendentry{incorrect}
+\addplot [semithick, peru20610859, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0299999713897705 3.11904764175415
+1.02999997138977 3.1369047164917
+2.02999997138977 3.12048196792603
+};
+\addlegendentry{incorrect}
+\end{groupplot}
+
+\draw ({$(current bounding box.south west)!0.5!(current bounding box.south east)$}|-{$(current bounding box.south west)!1.02!(current bounding box.north west)$}) node[
+  scale=0.6,
+  anchor=north,
+  text=white,
+  rotate=0.0
+]{Outcome means by attestation x correctness (95% CI)};
+\end{tikzpicture}
