@@ -62,11 +62,8 @@ import re
 import zipfile
 import tempfile
 
-# ---- editor-run config ------------------------------------------------------
-# EXPORT may be EITHER a Qualtrics .zip export OR the .csv inside it. If a .zip
-# is given, the CSV is extracted automatically (you do not need to unzip first).
 EXPORT_DIR = "../qdata"
-EXPORT_FILE = "AI_Attestation_Trust_Study_07-09-2026T1940.zip"
+EXPORT_FILE = None  # e.g. "AI_Attestation_Trust_Study_07-10-2026T1807.zip" to pin
 VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
 OUTPUT_DIR = "../prepped_data"
 OUTPUT_CSV = "long_reconstructed.csv"
@@ -299,9 +296,26 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
 
 if __name__ == "__main__":
     here = Path(__file__).parent
-    exp = Path(EXPORT_DIR) / EXPORT_FILE
-    if not exp.is_absolute():
-        exp = (here / EXPORT_DIR / EXPORT_FILE).resolve()
+    if EXPORT_FILE is None:
+        # Auto-select the newest export by the MM-DD-YYYYThhmm stamp in its name
+        # (so 0-1 and 0-1b read the same wave). Sort key reorders to YYYYMMDDhhmm.
+        import glob, re
+        edir = (here / EXPORT_DIR).resolve() if not Path(EXPORT_DIR).is_absolute() else Path(EXPORT_DIR)
+        def _stamp(f):
+            m = re.search(r"(\d{2})-(\d{2})-(\d{4})T(\d{4})", Path(f).name)
+            mm, dd, yyyy, hhmm = m.groups()
+            return yyyy + mm + dd + hhmm
+        matches = glob.glob(f"{edir}/AI_Attestation_Trust_Study_*.zip") + \
+                  glob.glob(f"{edir}/AI_Attestation_Trust_Study_*.csv")
+        if not matches:
+            print(f"Cannot run: no timestamped export found in {edir}")
+            raise SystemExit(1)
+        exp = Path(max(matches, key=_stamp))
+        print(f"Auto-selected latest export: {exp.name}")
+    else:
+        exp = Path(EXPORT_DIR) / EXPORT_FILE
+        if not exp.is_absolute():
+            exp = (here / EXPORT_DIR / EXPORT_FILE).resolve()
     out = Path(OUTPUT_DIR) / OUTPUT_CSV
     if not out.is_absolute():
         out = (here / OUTPUT_DIR / OUTPUT_CSV).resolve()

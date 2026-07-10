@@ -80,7 +80,10 @@ LONG_DIR = "../prepped_data"
 LONG_FILE = "long_reconstructed.csv"          # output of 0-1_reconstruct_data.py
 
 EXPORT_DIR = "../qdata"
-EXPORT_FILE = "AI_Attestation_Trust_Study_07-09-2026T1940.zip"  # raw Qualtrics export (.zip or .csv)
+# EXPORT_FILE: set to a specific filename to pin a wave (reproducibility), or
+# leave as None to auto-select the LATEST timestamped export in EXPORT_DIR.
+# Auto-selection keeps 0-1 and 0-1b on the same wave (identical inline logic).
+EXPORT_FILE = None  # e.g. "AI_Attestation_Trust_Study_07-10-2026T1807.zip" to pin
 
 QSF_DIR = "../survey"   # sibling of analytics_pipeline/ (holds the .qsf)
 QSF_FILE = "AI_Attestation_Trust_Study.qsf"   # survey definition (condition codes)
@@ -398,7 +401,24 @@ if __name__ == "__main__":
         return p if p.is_absolute() else (here / d / fn).resolve()
 
     long_csv = resolve(LONG_DIR, LONG_FILE)
-    export = resolve(EXPORT_DIR, EXPORT_FILE)
+    if EXPORT_FILE is None:
+        # Auto-select the newest export by the MM-DD-YYYYThhmm stamp in its name
+        # (so 0-1 and 0-1b read the same wave). Sort key reorders to YYYYMMDDhhmm.
+        import glob, re
+        edir = (here / EXPORT_DIR).resolve() if not Path(EXPORT_DIR).is_absolute() else Path(EXPORT_DIR)
+        def _stamp(f):
+            m = re.search(r"(\d{2})-(\d{2})-(\d{4})T(\d{4})", Path(f).name)
+            mm, dd, yyyy, hhmm = m.groups()
+            return yyyy + mm + dd + hhmm
+        matches = glob.glob(f"{edir}/AI_Attestation_Trust_Study_*.zip") + \
+                  glob.glob(f"{edir}/AI_Attestation_Trust_Study_*.csv")
+        if not matches:
+            print(f"Cannot run: no timestamped export found in {edir}")
+            raise SystemExit(1)
+        export = Path(max(matches, key=_stamp))
+        print(f"Auto-selected latest export: {export.name}")
+    else:
+        export = resolve(EXPORT_DIR, EXPORT_FILE)
     qsf = resolve(QSF_DIR, QSF_FILE)
     out = resolve(OUTPUT_DIR, OUTPUT_FILE)
 
