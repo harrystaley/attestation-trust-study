@@ -1,4 +1,4 @@
-"""Prepare the reconstructed pilot data for mixed-effects analysis.
+"""Prepare the reconstructed study data for mixed-effects analysis.
 
 AI assistance disclosure: this data-cleaning/plumbing utility was written with
 the assistance of an AI assistant (Claude) and reviewed by the author. It parses
@@ -9,7 +9,7 @@ course policy.
 
 WHAT IT DOES
 ------------
-Takes the long-format file from ``reconstruct_pilot_conditions.py`` (one row per
+Takes the long-format file from the cleaning stage (one row per
 participant-trial, with condition codes restored) and produces a model-ready
 file by:
 
@@ -31,15 +31,15 @@ WHAT IT DOES NOT DO
 -------------------
 It does not fit models, compute effect sizes, test hypotheses, or apply
 exclusion criteria (attention-check / completion-time / bot screens). Those are
-separate, author-owned steps. Note also: this PILOT (n=16) is for pipeline
-validation and rough power-input estimation only -- it is far too small for
-hypothesis testing, and no quality-exclusions are applied here.
+separate, author-owned steps. This script only codes labels to numbers; it
+applies no exclusions itself (exclusions are handled upstream in
+0-1b_clean_data.py) and makes no claim about sample size or analysis stage.
 
 INPUT CONTRACT
 --------------
 A CSV with columns: response_id, version, trial_position, loop_num, stem_id,
 stakes, att_level, correctness, trust, reliance, consequence
-(i.e. the output of reconstruct_pilot_conditions.py).
+(i.e. the output of 0-1b_clean_data.py).
 
 OUTPUT
 ------
@@ -54,7 +54,7 @@ import re
 
 # ---- editor-run config ------------------------------------------------------
 INPUT_DIR = "../prepped_data"
-INPUT_FILE = "long_reconstructed.csv"
+INPUT_FILE = "long_cleaned.csv"   # read the CLEANED file so 0-1b exclusions reach the model
 OUTPUT_DIR = "../prepped_data"
 OUTPUT_FILE = "long_coded.csv"
 # ----------------------------------------------------------------------------
@@ -182,9 +182,8 @@ def prepare(in_csv: str | Path, out_csv: str | Path) -> None:
             print(f"    ... and {len(fails) - 20} more")
     else:
         print("  all fields parsed and in range.")
-    print("\nNOTE: this is PILOT data (n small), prepped for pipeline validation")
-    print("and rough power-input estimation only -- not hypothesis testing, and")
-    print("no quality-exclusions are applied here.")
+    print("\nNOTE: coding only. Exclusions are applied upstream in 0-1b_clean_data.py;")
+    print("this step makes no claim about sample size or analysis stage.")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,12 @@
-"""Fit the mixed-effects model to the coded pilot data and report estimates.
+"""Estimate power-simulation inputs by fitting the model to PILOT data.
+
+    ROLE: design-phase tool. This is NOT the confirmatory analysis. It exists to
+    hand candidate variance components / effect sizes to the Monte Carlo power
+    simulation during study design. The N=89 confirmatory analysis lives in
+    attestation_trust_analysis.ipynb, which reads long_coded.csv. Do not read
+    the estimates this prints as study results.
+
+Fit the mixed-effects model to the coded pilot data and report estimates.
 
 AI assistance disclosure: this analysis-mechanics/plumbing utility was written
 with the assistance of an AI assistant (Claude) and reviewed by the author. It
