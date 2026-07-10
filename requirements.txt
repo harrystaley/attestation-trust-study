@@ -23,3 +23,4 @@ openai>=1.0              # OpenAI API client for LLM stimulus generation
 #  reading the Qualtrics export 
 openpyxl>=3.1            # xlsx export
 pyreadstat>=1.2          # SPSS .sav export (optional; remove if unused)
+matplot2tikz
