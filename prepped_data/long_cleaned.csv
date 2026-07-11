@@ -539,7 +539,6 @@ R_3pnZridAXM9RcaW,3,9,22,3,high,strong,correct,2 Distrust,Reject — do not use 
 R_3pnZridAXM9RcaW,3,10,23,4,high,strong,incorrect,4 Neither trust nor distrust,Use the information or take the recommended action (do not double-check).,2,18–24,Male,Bachelor's degree in college (4-year),Daily,,Trust,Agree
 R_3pnZridAXM9RcaW,3,11,24,5,high,none,correct,5 Slightly Trust,Verify before taking action or using the information.,4,18–24,Male,Bachelor's degree in college (4-year),Daily,,Trust,Agree
 R_3pnZridAXM9RcaW,3,12,25,6,high,none,incorrect,1 Strongly Distrust,Reject — do not use the information or take the recommended action.,4,18–24,Male,Bachelor's degree in college (4-year),Daily,,Trust,Agree
-R_24IBQ1ebWIiiMwv,5,1,49,6,high,weak,incorrect,5 Slightly Trust,Verify before taking action or using the information.,5 (Extremely serious),,,,,,Neither Trust nor Distrust,Agree
 R_1FR4OHNistEC8Nm,3,1,14,7,low,weak,correct,2 Distrust,Verify before taking action or using the information.,4,18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
 R_1FR4OHNistEC8Nm,3,2,15,8,low,weak,incorrect,3 Slightly Distrust,Verify before taking action or using the information.,4,18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
 R_1FR4OHNistEC8Nm,3,3,16,9,low,strong,correct,4 Neither trust nor distrust,Use the information or take the recommended action (do not double-check).,3,18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
@@ -552,8 +551,6 @@ R_1FR4OHNistEC8Nm,3,9,22,3,high,strong,correct,5 Slightly Trust,Verify before ta
 R_1FR4OHNistEC8Nm,3,10,23,4,high,strong,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,4,18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
 R_1FR4OHNistEC8Nm,3,11,24,5,high,none,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,4,18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
 R_1FR4OHNistEC8Nm,3,12,25,6,high,none,incorrect,3 Slightly Distrust,Verify before taking action or using the information.,5 (Extremely serious),18–24,Male,High school graduate (high school diploma or equivalent including GED),Daily,Basic User,Distrust,Agree
-R_1KebKZ8bP2jCKRx,1,1,2,8,low,none,incorrect,2 Distrust,Verify before taking action or using the information.,3,,,,,Expert/Specialist,Neither Trust nor Distrust,Agree
-R_1KebKZ8bP2jCKRx,1,2,3,9,low,weak,correct,6 Trust,Verify before taking action or using the information.,2,,,,,Expert/Specialist,Neither Trust nor Distrust,Agree
 R_3QGjvM92H7odleg,2,1,2,7,low,none,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,3,45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QGjvM92H7odleg,2,2,3,8,low,weak,correct,5 Slightly Trust,Verify before taking action or using the information.,3,45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QGjvM92H7odleg,2,3,4,9,low,weak,incorrect,6 Trust,Verify before taking action or using the information.,3,45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
@@ -566,10 +563,6 @@ R_3QGjvM92H7odleg,2,9,10,3,high,weak,incorrect,5 Slightly Trust,Verify before ta
 R_3QGjvM92H7odleg,2,10,11,4,high,strong,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,4,45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QGjvM92H7odleg,2,11,12,5,high,strong,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,3,45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QGjvM92H7odleg,2,12,13,6,high,none,correct,3 Slightly Distrust,Verify before taking action or using the information.,5 (Extremely serious),45–54,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
-R_2z7KoIrZsy4BAzI,5,1,40,9,low,none,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,2,,,,,Basic User,Neither Trust nor Distrust,Agree
-R_2z7KoIrZsy4BAzI,5,2,42,11,low,weak,correct,5 Slightly Trust,Verify before taking action or using the information.,2,,,,,Basic User,Neither Trust nor Distrust,Agree
-R_2z7KoIrZsy4BAzI,5,3,43,12,low,weak,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,2,,,,,Basic User,Neither Trust nor Distrust,Agree
-R_2z7KoIrZsy4BAzI,5,4,46,3,high,none,correct,3 Slightly Distrust,Verify before taking action or using the information.,3,,,,,Basic User,Neither Trust nor Distrust,Agree
 R_3yKErNkVreWrC6Z,4,1,26,7,low,weak,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,2,55–64,Male,Bachelor's degree in college (4-year),Monthly,Novice,Neither Trust nor Distrust,Agree
 R_3yKErNkVreWrC6Z,4,2,27,8,low,strong,correct,2 Distrust,Verify before taking action or using the information.,5 (Extremely serious),55–64,Male,Bachelor's degree in college (4-year),Monthly,Novice,Neither Trust nor Distrust,Agree
 R_3yKErNkVreWrC6Z,4,3,28,9,low,strong,incorrect,6 Trust,Verify before taking action or using the information.,4,55–64,Male,Bachelor's degree in college (4-year),Monthly,Novice,Neither Trust nor Distrust,Agree
@@ -630,8 +623,6 @@ R_TnqyHgpykKUqWMp,2,9,10,3,high,weak,incorrect,2 Distrust,Reject — do not use 
 R_TnqyHgpykKUqWMp,2,10,11,4,high,strong,correct,4 Neither trust nor distrust,Use the information or take the recommended action (do not double-check).,5 (Extremely serious),45–54,Female,Some college but no degree,Daily,Advanced Practitioner,Trust,Agree
 R_TnqyHgpykKUqWMp,2,11,12,5,high,strong,incorrect,2 Distrust,Verify before taking action or using the information.,5 (Extremely serious),45–54,Female,Some college but no degree,Daily,Advanced Practitioner,Trust,Agree
 R_TnqyHgpykKUqWMp,2,12,13,6,high,none,correct,2 Distrust,Verify before taking action or using the information.,5 (Extremely serious),45–54,Female,Some college but no degree,Daily,Advanced Practitioner,Trust,Agree
-R_2TMdOuDyDcGnJ8B,2,1,8,1,high,none,incorrect,5 Slightly Trust,Verify before taking action or using the information.,3,,,,,Experienced User,Distrust,Agree
-R_2TMdOuDyDcGnJ8B,2,2,10,3,high,weak,incorrect,6 Trust,Verify before taking action or using the information.,2,,,,,Experienced User,Distrust,Agree
 R_W6cHrgG1iJ1a1H3,3,1,14,7,low,weak,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,4,25–34,Male,Bachelor's degree in college (4-year),Daily,Experienced User,Trust,Agree
 R_W6cHrgG1iJ1a1H3,3,2,15,8,low,weak,incorrect,6 Trust,Verify before taking action or using the information.,4,25–34,Male,Bachelor's degree in college (4-year),Daily,Experienced User,Trust,Agree
 R_W6cHrgG1iJ1a1H3,3,3,16,9,low,strong,correct,6 Trust,Verify before taking action or using the information.,2,25–34,Male,Bachelor's degree in college (4-year),Daily,Experienced User,Trust,Agree
@@ -656,15 +647,6 @@ R_xrN2NFkBRfppozf,6,9,58,3,high,none,incorrect,6 Trust,Verify before taking acti
 R_xrN2NFkBRfppozf,6,10,59,4,high,weak,correct,5 Slightly Trust,Verify before taking action or using the information.,3,18–24,Male,Some college but no degree,Daily,Experienced User,Trust,Agree
 R_xrN2NFkBRfppozf,6,11,60,5,high,weak,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,3,18–24,Male,Some college but no degree,Daily,Experienced User,Trust,Agree
 R_xrN2NFkBRfppozf,6,12,61,6,high,strong,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,5 (Extremely serious),18–24,Male,Some college but no degree,Daily,Experienced User,Trust,Agree
-R_1pGxLgwb6FsDW8B,2,1,6,11,low,strong,incorrect,6 Trust,Verify before taking action or using the information.,4,,,,,Experienced User,Trust,Agree
-R_1pGxLgwb6FsDW8B,2,2,8,1,high,none,incorrect,6 Trust,Verify before taking action or using the information.,4,,,,,Experienced User,Trust,Agree
-R_1pGxLgwb6FsDW8B,2,3,9,2,high,weak,correct,6 Trust,Verify before taking action or using the information.,4,,,,,Experienced User,Trust,Agree
-R_3psfTN4aiHaB292,2,1,6,11,low,strong,incorrect,6 Trust,Use the information or take the recommended action (do not double-check).,1 (Not serious at all),,,,,Experienced User,Neither Trust nor Distrust,Agree
-R_3psfTN4aiHaB292,2,2,7,12,low,none,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,1 (Not serious at all),,,,,Experienced User,Neither Trust nor Distrust,Agree
-R_3psfTN4aiHaB292,2,3,8,1,high,none,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,4,,,,,Experienced User,Neither Trust nor Distrust,Agree
-R_3psfTN4aiHaB292,2,4,10,3,high,weak,incorrect,4 Neither trust nor distrust,Verify before taking action or using the information.,5 (Extremely serious),,,,,Experienced User,Neither Trust nor Distrust,Agree
-R_3psfTN4aiHaB292,2,5,11,4,high,strong,correct,5 Slightly Trust,Verify before taking action or using the information.,4,,,,,Experienced User,Neither Trust nor Distrust,Agree
-R_3psfTN4aiHaB292,2,6,13,6,high,none,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,4,,,,,Experienced User,Neither Trust nor Distrust,Agree
 R_3DbwW2PMahKwqC9,5,1,38,7,low,strong,correct,6 Trust,Verify before taking action or using the information.,4,35–44,Female,Graduate or professional degree,Daily,Experienced User,Trust,Agree
 R_3DbwW2PMahKwqC9,5,2,39,8,low,strong,incorrect,5 Slightly Trust,Verify before taking action or using the information.,5 (Extremely serious),35–44,Female,Graduate or professional degree,Daily,Experienced User,Trust,Agree
 R_3DbwW2PMahKwqC9,5,3,40,9,low,none,correct,5 Slightly Trust,Use the information or take the recommended action (do not double-check).,3,35–44,Female,Graduate or professional degree,Daily,Experienced User,Trust,Agree
@@ -989,7 +971,6 @@ R_1BY2aPyPQ8b9QbE,6,9,58,3,high,none,incorrect,2 Distrust,Verify before taking a
 R_1BY2aPyPQ8b9QbE,6,10,59,4,high,weak,correct,2 Distrust,Reject — do not use the information or take the recommended action.,5 (Extremely serious),45–54,Female,Graduate or professional degree,Daily,Advanced Practitioner,Trust,Agree
 R_1BY2aPyPQ8b9QbE,6,11,60,5,high,weak,incorrect,2 Distrust,Verify before taking action or using the information.,4,45–54,Female,Graduate or professional degree,Daily,Advanced Practitioner,Trust,Agree
 R_1BY2aPyPQ8b9QbE,6,12,61,6,high,strong,correct,5 Slightly Trust,Verify before taking action or using the information.,5 (Extremely serious),45–54,Female,Graduate or professional degree,Daily,Advanced Practitioner,Trust,Agree
-R_3noo6mu5gb2vYSl,1,1,7,1,high,none,correct,5 Slightly Trust,Verify before taking action or using the information.,4,,,,,Advanced Practitioner,Neither Trust nor Distrust,Agree
 R_3QKmRN5Zp33ZdBb,5,1,38,7,low,strong,correct,6 Trust,Verify before taking action or using the information.,1 (Not serious at all),55–64,Female,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QKmRN5Zp33ZdBb,5,2,39,8,low,strong,incorrect,5 Slightly Trust,Verify before taking action or using the information.,3,55–64,Female,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_3QKmRN5Zp33ZdBb,5,3,40,9,low,none,correct,5 Slightly Trust,Verify before taking action or using the information.,2,55–64,Female,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
@@ -1026,9 +1007,6 @@ R_21dnTb8LdnhxMM8,1,9,9,3,high,weak,correct,6 Trust,Use the information or take 
 R_21dnTb8LdnhxMM8,1,10,10,4,high,weak,incorrect,4 (Neither trust nor distrust),Verify before taking action or using the information.,4,25–34,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_21dnTb8LdnhxMM8,1,11,11,5,high,strong,correct,5 Slightly Trust,Use the information or take the recommended action (do not double-check).,3,25–34,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
 R_21dnTb8LdnhxMM8,1,12,12,6,high,strong,incorrect,2 Distrust,Reject — do not use the information or take the recommended action.,1 (Not serious at all),25–34,Male,Bachelor's degree in college (4-year),Daily,Basic User,Trust,Agree
-R_pLwqC8ea5gulO1j,5,1,40,9,low,none,correct,4 Neither trust nor distrust,Use the information or take the recommended action (do not double-check).,1 (Not serious at all),,,,,Experienced User,Trust,Agree
-R_pLwqC8ea5gulO1j,5,2,49,6,high,weak,incorrect,3 Slightly Distrust,Verify before taking action or using the information.,4,,,,,Experienced User,Trust,Agree
-R_1jculaf0n1TF3Sm,4,1,33,2,high,strong,correct,4 Neither trust nor distrust,Verify before taking action or using the information.,4,,,,,Basic User,Distrust,Agree
 R_xgELBdTvkPLbmmJ,6,1,50,7,low,strong,incorrect,6 Trust,Use the information or take the recommended action (do not double-check).,4,35–44,Male,Graduate or professional degree,Daily,Experienced User,Trust,Agree
 R_xgELBdTvkPLbmmJ,6,2,51,8,low,none,correct,6 Trust,Use the information or take the recommended action (do not double-check).,3,35–44,Male,Graduate or professional degree,Daily,Experienced User,Trust,Agree
 R_xgELBdTvkPLbmmJ,6,3,52,9,low,none,incorrect,6 Trust,Use the information or take the recommended action (do not double-check).,2,35–44,Male,Graduate or professional degree,Daily,Experienced User,Trust,Agree
