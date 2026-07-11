@@ -18,7 +18,7 @@
 *.jar
 *.rar
 *.tar
-*.zip
+#*.zip
 
 # Logs and backup files #
 ########################
