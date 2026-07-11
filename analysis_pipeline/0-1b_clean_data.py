@@ -78,16 +78,10 @@ import tempfile
 # ---- editor-run config ------------------------------------------------------
 LONG_DIR = "../prepped_data"
 LONG_FILE = "long_reconstructed.csv"          # output of 0-1_reconstruct_data.py
-
 EXPORT_DIR = "../qdata"
-# EXPORT_FILE: set to a specific filename to pin a wave (reproducibility), or
-# leave as None to auto-select the LATEST timestamped export in EXPORT_DIR.
-# Auto-selection keeps 0-1 and 0-1b on the same wave (identical inline logic).
-EXPORT_FILE = "AI_Attestation_Trust_Study_07-10-2026T2111.zip"  # PINNED wave. To use a newer export, change this filename (same in 0-1 and 0-1b).
-
+EXPORT_FILE = None  # e.g. "AI_Attestation_Trust_Study_07-10-2026T1807.zip" to pin
 QSF_DIR = "../survey"   # sibling of analytics_pipeline/ (holds the .qsf)
 QSF_FILE = "AI_Attestation_Trust_Study.qsf"   # survey definition (condition codes)
-
 OUTPUT_DIR = "../prepped_data"
 OUTPUT_FILE = "long_cleaned.csv"
 
@@ -97,6 +91,9 @@ APPLY_DUPLICATE   = True   # R2
 APPLY_BALLOT      = True   # R3
 APPLY_SPEED       = True   # R4
 APPLY_BLANK_TRIAL = True   # R5
+APPLY_COMPLETE    = True   # R6: keep only complete respondents
+REQUIRED_TRIALS   = 12     # R6: vignettes each respondent must have answered
+COMPLETE_DEMOG    = ("age", "gender", "education", "ai_frequency", "baseline_trust") # removed expertise because it was not in the survey during the initial pilot.
 REQUIRE_FINISHED  = False  # author's decision: keep fully-answered non-finished
 
 SPEED_FLOOR_SECONDS = 10   # R4 threshold: drop duration < this
@@ -305,7 +302,24 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
         print(f"  NOTE: {code_miss} trial rows had no matching QSF (version,loop) "
               f"key; their codes were left as-is.")
 
-    # --- step 2: participant-level exclusions (R1-R4) -----------------------
+    # --- step 2: participant-level exclusions (R1-R4, R6) -------------------
+    from collections import Counter, defaultdict
+    # Precompute per-respondent completeness for R6:
+    #   complete = 12 trials each with >=1 outcome AND required demographics
+    #   non-blank. ai_expertise is intentionally NOT required (added post-launch;
+    #   missing-by-design for the earliest respondents).
+    DEMOG_FIELDS = COMPLETE_DEMOG
+    trials_with_outcome = defaultdict(int)
+    demog_ok = {}
+    for r in rows:
+        rid = r["response_id"]
+        if not (_is_blank(r.get("trust")) and _is_blank(r.get("reliance"))
+                and _is_blank(r.get("consequence"))):
+            trials_with_outcome[rid] += 1
+        # demographics repeat on every trial row for a respondent; record once
+        if rid not in demog_ok:
+            demog_ok[rid] = all(not _is_blank(r.get(f)) for f in DEMOG_FIELDS)
+
     drop_resp: dict[str, str] = {}   # response_id -> first rule that dropped it
     for rid in resp_in:
         fl = flags.get(rid, {})
@@ -324,6 +338,10 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
                 drop_resp.setdefault(rid, "R4_speed")
         if REQUIRE_FINISHED and fl.get("finished", "").strip().lower() != "true":
             drop_resp.setdefault(rid, "R0_not_finished")
+        # R6 completeness: all 12 vignettes answered AND all demographics present.
+        if APPLY_COMPLETE:
+            if trials_with_outcome.get(rid, 0) < REQUIRED_TRIALS or not demog_ok.get(rid, False):
+                drop_resp.setdefault(rid, "R6_incomplete")
 
     # per-rule respondent counts
     from collections import Counter
@@ -365,7 +383,7 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
     print(f"  respondents: {len(resp_in)} -> {len(resp_out)}")
     print("  participant-level exclusions (respondents dropped):")
     for rule in ("R1_consent", "R2_duplicate", "R3_ballot", "R4_speed",
-                 "R0_not_finished"):
+                 "R6_incomplete", "R0_not_finished"):
         if rule_counts.get(rule):
             print(f"    {rule:16s}: {rule_counts[rule]}")
     if not rule_counts:
