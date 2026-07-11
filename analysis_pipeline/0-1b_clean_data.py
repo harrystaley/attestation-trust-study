@@ -83,7 +83,7 @@ EXPORT_DIR = "../qdata"
 # EXPORT_FILE: set to a specific filename to pin a wave (reproducibility), or
 # leave as None to auto-select the LATEST timestamped export in EXPORT_DIR.
 # Auto-selection keeps 0-1 and 0-1b on the same wave (identical inline logic).
-EXPORT_FILE = None  # e.g. "AI_Attestation_Trust_Study_07-10-2026T1807.zip" to pin
+EXPORT_FILE = "AI_Attestation_Trust_Study_07-10-2026T2111.zip"  # PINNED wave. To use a newer export, change this filename (same in 0-1 and 0-1b).
 
 QSF_DIR = "../survey"   # sibling of analytics_pipeline/ (holds the .qsf)
 QSF_FILE = "AI_Attestation_Trust_Study.qsf"   # survey definition (condition codes)

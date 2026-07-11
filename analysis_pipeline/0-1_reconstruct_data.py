@@ -63,7 +63,7 @@ import zipfile
 import tempfile
 
 EXPORT_DIR = "../qdata"
-EXPORT_FILE = None  # e.g. "AI_Attestation_Trust_Study_07-10-2026T1807.zip" to pin
+EXPORT_FILE = "AI_Attestation_Trust_Study_07-10-2026T2111.zip"  # PINNED wave. To use a newer export, change this filename (same in 0-1 and 0-1b).
 VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
 OUTPUT_DIR = "../prepped_data"
 OUTPUT_CSV = "long_reconstructed.csv"
