@@ -1,7 +1,6 @@
 % This file was created with matplot2tikz v0.5.4.
 \begin{tikzpicture}
 
-\definecolor{black252628}{RGB}{25,26,28}
 \definecolor{darkgray176}{RGB}{176,176,176}
 \definecolor{firebrick165038}{RGB}{165,0,38}
 \definecolor{forestgreen010455}{RGB}{0,104,55}
@@ -11,21 +10,19 @@
 
 \begin{groupplot}[group style={group size=2 by 1}]
 \nextgroupplot[
-axis background/.style={fill=black252628},
-axis line style={white},
 tick align=outside,
 tick pos=left,
 title={Trust distribution by attestation},
 x grid style={darkgray176},
-xlabel=\textcolor{white}{attestation},
+xlabel={attestation},
 xmin=0.625, xmax=3.375,
-xtick style={color=white},
+xtick style={color=black},
 xtick={1,2,3},
 xticklabels={none,weak,strong},
 y grid style={darkgray176},
-ylabel=\textcolor{white}{trust (1-7)},
+ylabel={trust (1-7)},
 ymin=0.5, ymax=7.5,
-ytick style={color=white}
+ytick style={color=black}
 ]
 \path [fill=royalblue54108217, fill opacity=0.3]
 (axis cs:1.12950435993539,1)
@@ -692,23 +689,21 @@ ytick style={color=white}
 
 
 \nextgroupplot[
-axis background/.style={fill=black252628},
-axis line style={white},
 legend cell align={left},
-legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204, fill=black252628},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
 tick align=outside,
 tick pos=left,
 title={Reliance action mix by attestation},
 x grid style={darkgray176},
-xlabel=\textcolor{white}{attestation},
+xlabel={attestation},
 xmin=-0.5, xmax=2.5,
-xtick style={color=white},
+xtick style={color=black},
 xtick={0,1,2},
 xticklabels={none,weak,strong},
 y grid style={darkgray176},
-ylabel=\textcolor{white}{proportion},
+ylabel={proportion},
 ymin=0, ymax=1.05,
-ytick style={color=white}
+ytick style={color=black}
 ]
 \draw[draw=none,fill=firebrick165038] (axis cs:-0.25,0) rectangle (axis cs:0.25,0.152941176470588);
 \addlegendimage{ybar,ybar legend,draw=none,fill=firebrick165038}
