@@ -1,0 +1,32 @@
+% AUTO-GENERATED. Mean trust by attestation x correctness (+/- 1 SE).
+\begin{tikzpicture}
+\begin{axis}[
+  attbase, width=\columnwidth, height=5.6cm,
+  title={Mean trust by attestation and correctness},
+  xlabel={Attestation strength}, ylabel={Trust (1--7)},
+  xmin=-0.35, xmax=2.35, xtick={0,1,2}, xticklabels={None,Weak,Strong},
+  ymin=3, ymax=5.4, ytick={3,3.5,4,4.5,5},
+  nodes near coords, point meta=explicit symbolic,
+  every node near coord/.append style={font=\footnotesize\bfseries, anchor=south, yshift=3pt},
+  legend style={at={(0.02,0.98)}, anchor=north west},
+]
+\addplot+[attPrimary, mark=*, mark size=3pt, mark options={fill=attPrimary, draw=white, line width=0.6pt},
+  error bars/.cd, y dir=both, y explicit, error bar style={attPrimary, line width=1pt}]
+  table[x=x,y=y,y error=err,meta=lbl]{
+  x y err lbl
+  0 4.037 0.124 4.04
+  1 4.277 0.116 4.28
+  2 4.862 0.116 4.86
+  };
+\addlegendentry{Correct}
+\addplot+[attAccent, mark=square*, mark size=3pt, mark options={fill=attAccent, draw=white, line width=0.6pt},
+  error bars/.cd, y dir=both, y explicit, error bar style={attAccent, line width=1pt}]
+  table[x=x,y=y,y error=err,meta=lbl]{
+  x y err lbl
+  0 3.734 0.125 3.73
+  1 4.351 0.110 4.35
+  2 4.622 0.120 4.62
+  };
+\addlegendentry{Incorrect}
+\end{axis}
+\end{tikzpicture}

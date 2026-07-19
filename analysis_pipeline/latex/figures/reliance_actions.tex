@@ -1,0 +1,32 @@
+% AUTO-GENERATED. Left: marginal mean trust by attestation (+/-1 SE).
+% Right: reliance action mix (Reject/Verify/Use proportions) by attestation.
+\begin{tikzpicture}
+\begin{groupplot}[group style={horizontal sep=1.9cm, group size=2 by 1},
+  attbase, width=0.46\linewidth, height=5.4cm,
+  xtick={0,1,2}, xticklabels={None,Weak,Strong}, xlabel={Attestation strength}]
+\nextgroupplot[title={Mean trust by attestation}, ylabel={Trust (1--7)},
+  ymin=3, ymax=5.2, xmin=-0.35, xmax=2.35,
+  nodes near coords, point meta=explicit symbolic,
+  every node near coord/.append style={font=\scriptsize\bfseries, anchor=south, yshift=2pt}]
+\addplot+[attPrimary, mark=*, mark size=2.6pt, mark options={fill=attPrimary, draw=white, line width=0.5pt},
+  error bars/.cd, y dir=both, y explicit, error bar style={attPrimary, line width=1pt}]
+  table[x=x,y=y,y error=err,meta=lbl]{
+  x y err lbl
+  0 3.886 0.088 3.89
+  1 4.314 0.080 4.31
+  2 4.742 0.084 4.74
+  };
+\nextgroupplot[title={Reliance action mix}, ylabel={Proportion},
+  ymin=0, ymax=1.06, xmin=-0.5, xmax=2.5, ybar stacked, bar width=17pt,
+  legend style={at={(0.5,-0.30)}, anchor=north, legend columns=-1,
+    /tikz/every even column/.append style={column sep=0.35cm}},
+  nodes near coords, point meta=explicit symbolic,
+  every node near coord/.append style={font=\tiny\bfseries, anchor=center, text=white}]
+\addplot+[draw=none, fill=attWarn] coordinates {(0,0.146)[.15] (1,0.072)[.07] (2,0.037)[.04]};
+\addlegendentry{Reject}
+\addplot+[draw=none, fill=attAccent] coordinates {(0,0.673)[.67] (1,0.742)[.74] (2,0.681)[.68]};
+\addlegendentry{Verify}
+\addplot+[draw=none, fill=attPositive] coordinates {(0,0.181)[.18] (1,0.186)[.19] (2,0.282)[.28]};
+\addlegendentry{Use}
+\end{groupplot}
+\end{tikzpicture}
