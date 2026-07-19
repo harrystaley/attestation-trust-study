@@ -10,8 +10,8 @@
   every node near coord/.append style={font=\footnotesize\bfseries, anchor=south, yshift=3pt},
   legend style={at={(0.02,0.98)}, anchor=north west},
 ]
-\addplot+[attPrimary, mark=*, mark size=3pt, mark options={fill=attPrimary, draw=white, line width=0.6pt},
-  error bars/.cd, y dir=both, y explicit, error bar style={attPrimary, line width=1pt}]
+\addplot+[boxblue, mark=*, mark size=3pt, mark options={fill=boxbluefill, draw=boxblue, line width=1pt},
+  error bars/.cd, y dir=both, y explicit, error bar style={boxblue, line width=1pt}]
   table[x=x,y=y,y error=err,meta=lbl]{
   x y err lbl
   0 4.037 0.124 4.04
@@ -19,8 +19,8 @@
   2 4.862 0.116 4.86
   };
 \addlegendentry{Correct}
-\addplot+[attAccent, mark=square*, mark size=3pt, mark options={fill=attAccent, draw=white, line width=0.6pt},
-  error bars/.cd, y dir=both, y explicit, error bar style={attAccent, line width=1pt}]
+\addplot+[llmline, mark=square*, mark size=3pt, mark options={fill=llmfill, draw=llmline, line width=1pt},
+  error bars/.cd, y dir=both, y explicit, error bar style={llmline, line width=1pt}]
   table[x=x,y=y,y error=err,meta=lbl]{
   x y err lbl
   0 3.734 0.125 3.73

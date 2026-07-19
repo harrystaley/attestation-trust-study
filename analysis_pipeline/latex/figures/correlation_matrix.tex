@@ -1,9 +1,9 @@
-% AUTO-GENERATED. Spearman correlation heatmap (native pgfplots vector).
+% AUTO-GENERATED. Spearman correlation heatmap, provenance blue ramp.
 \begin{tikzpicture}
 \begin{axis}[
   width=8.6cm, height=8.6cm, axis line style={draw=none}, tick style={draw=none},
   enlargelimits=false,
-  colormap={div}{color(-1cm)=(attWarn); color(0cm)=(white); color(1cm)=(attPrimary)},
+  colormap={provdiv}{color(-1cm)=(llmline); color(0cm)=(white); color(1cm)=(boxblue)},
   point meta min=-1, point meta max=1, colorbar,
   colorbar style={width=0.32cm, ytick={-1,-0.5,0,0.5,1},
     tick label style={font=\footnotesize}, tick style={draw=none}, axis line style={draw=none}},
@@ -12,9 +12,9 @@
   yticklabels={trust, reliance, conseq., attest., correct., stakes},
   xticklabel style={rotate=45, anchor=north east, font=\footnotesize},
   yticklabel style={font=\footnotesize}, y dir=reverse,
-  title style={font=\bfseries\small}, title={Spearman correlations among measures},
+  title style={font=\bfseries\small, text=boxbluetext}, title={Spearman correlations among measures},
   nodes near coords={\pgfmathprintnumber[fixed, precision=2]{\pgfplotspointmeta}},
-  nodes near coords style={font=\footnotesize\bfseries, text=attInk, anchor=center}]
+  nodes near coords style={font=\footnotesize\bfseries, text=boxgraytext, anchor=center}]
 \addplot[matrix plot*, point meta=explicit, mesh/cols=6, mesh/rows=6]
 table[meta=C]{
 x y C
