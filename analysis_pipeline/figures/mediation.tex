@@ -1,0 +1,12 @@
+% AUTO-GENERATED. Mediation path diagram. Indirect a*b = 0.085.
+\begin{tikzpicture}[font=\small, node distance=10mm and 20mm,
+  box/.style={draw=attInk, line width=0.9pt, rounded corners=3pt, align=center,
+    fill=white, minimum width=17mm, minimum height=10mm, inner sep=4pt, text=attInk},
+  arrow/.style={-{Latex[length=2.4mm]}, line width=1.1pt, attInk}]
+\node[box, fill=attFillP] (att) {Source\\Attestation};
+\node[box, right=of att, fill=attFillA] (trust) {State\\Trust};
+\node[box, right=of trust, fill=attFillP] (rel) {Behavioral\\Reliance};
+\draw[arrow, attPrimary] (att) -- node[above, text=attInk, font=\footnotesize\bfseries] {$a=0.428$} (trust);
+\draw[arrow, attPrimary] (trust) -- node[above, text=attInk, font=\footnotesize\bfseries] {$b=0.198$} (rel);
+\draw[arrow, attMuted, dashed, bend left=34] (att) to node[below, text=attInk, font=\footnotesize] {$c'=0.020$ (n.s.)} (rel);
+\end{tikzpicture}
