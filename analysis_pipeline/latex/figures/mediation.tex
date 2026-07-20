@@ -1,5 +1,5 @@
 % AUTO-GENERATED. Mediation path diagram, provenance-paper card style.
-% Indirect a*b = 0.085.
+% Indirect a*b = 0.082.
 \begin{tikzpicture}[
   >={Stealth[length=3mm,width=2.2mm]}, font=\small,
   card/.style={rectangle, rounded corners=6pt, align=center,
@@ -20,7 +20,7 @@
 \fill[boxblue] ($(att.north west)+(4pt,-7pt)$) rectangle ($(att.south west)+(6pt,7pt)$);
 \fill[llmline] ($(trust.north west)+(4pt,-7pt)$) rectangle ($(trust.south west)+(6pt,7pt)$);
 \fill[ragline] ($(rel.north west)+(4pt,-7pt)$) rectangle ($(rel.south west)+(6pt,7pt)$);
-\draw[flow] (att) -- node[elab]{$a=0.428$} (trust);
-\draw[flow] (trust) -- node[elab]{$b=0.198$} (rel);
-\draw[weak, bend right=38] (att.south) to node[graylab, below]{$c'=0.020$ (n.s.)} (rel.south);
+\draw[flow] (att) -- node[elab]{$a=0.419$} (trust);
+\draw[flow] (trust) -- node[elab]{$b=0.195$} (rel);
+\draw[weak, bend right=38] (att.south) to node[graylab, below]{$c'=0.026$ (n.s.)} (rel.south);
 \end{tikzpicture}

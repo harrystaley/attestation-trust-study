@@ -12,9 +12,9 @@
   error bars/.cd, y dir=both, y explicit, error bar style={boxblue, line width=1pt}]
   table[x=x,y=y,y error=err,meta=lbl]{
   x y err lbl
-  0 3.886 0.088 3.89
-  1 4.314 0.080 4.31
-  2 4.742 0.084 4.74
+  0 3.920 0.086 3.92
+  1 4.338 0.079 4.34
+  2 4.758 0.083 4.76
   };
 \nextgroupplot[title={Reliance action mix}, ylabel={Proportion},
   ymin=0, ymax=1.06, xmin=-0.5, xmax=2.5, ybar stacked, bar width=19pt,
@@ -22,11 +22,11 @@
     /tikz/every even column/.append style={column sep=0.35cm}},
   nodes near coords, point meta=explicit symbolic,
   every node near coord/.append style={font=\tiny\bfseries, anchor=center, text=white}]
-\addplot+[draw=llmline, fill=llmfill, line width=1pt] coordinates {(0,0.146)[.15] (1,0.072)[.07] (2,0.037)[.04]};
+\addplot+[draw=llmline, fill=llmfill, line width=1pt] coordinates {(0,0.142)[.14] (1,0.072)[.07] (2,0.036)[.04]};
 \addlegendentry{Reject}
-\addplot+[draw=boxblue, fill=boxbluefill, line width=1pt] coordinates {(0,0.673)[.67] (1,0.742)[.74] (2,0.681)[.68]};
+\addplot+[draw=boxblue, fill=boxbluefill, line width=1pt] coordinates {(0,0.678)[.68] (1,0.742)[.74] (2,0.673)[.67]};
 \addlegendentry{Verify}
-\addplot+[draw=ragline, fill=ragfill, line width=1pt] coordinates {(0,0.181)[.18] (1,0.186)[.19] (2,0.282)[.28]};
+\addplot+[draw=ragline, fill=ragfill, line width=1pt] coordinates {(0,0.180)[.18] (1,0.186)[.19] (2,0.291)[.29]};
 \addlegendentry{Use}
 \end{groupplot}
 \end{tikzpicture}

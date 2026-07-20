@@ -11,7 +11,7 @@
 \nextgroupplot[
 tick align=outside,
 tick pos=left,
-title={Participant mean trust vs expertise (r=0.08, descriptive)},
+title={Participant mean trust vs expertise (r=0.06, descriptive)},
 x grid style={darkgray176},
 xlabel={AI expertise (1-5)},
 xmin=0.8, xmax=5.2,
@@ -33,7 +33,7 @@ x  y
 5 5.58333333333333
 2 3.33333333333333
 5 4.33333333333333
-4 5.66666666666667
+3 4.33333333333333
 1 5.16666666666667
 3 3.75
 4 3.58333333333333
@@ -50,11 +50,14 @@ x  y
 3 4.33333333333333
 3 5.91666666666667
 2 3.41666666666667
+3 4.75
 3 4.08333333333333
+5 5.58333333333333
 2 4.25
 1 5.25
 2 4
 2 3.83333333333333
+2 6
 3 2.08333333333333
 4 4.66666666666667
 2 4.08333333333333
@@ -89,6 +92,7 @@ x  y
 4 5.58333333333333
 4 4.5
 2 4.5
+3 5
 1 4.41666666666667
 4 3.66666666666667
 3 6
@@ -103,6 +107,7 @@ x  y
 2 4.83333333333333
 3 3.08333333333333
 3 2.16666666666667
+3 5.08333333333333
 4 5.66666666666667
 3 5.41666666666667
 3 5.66666666666667
@@ -112,8 +117,8 @@ x  y
 };
 \addplot [semithick, red]
 table {%
-1 4.20480298995972
-5 4.49851846694946
+1 4.25539970397949
+5 4.49524116516113
 };
 
 \nextgroupplot[
@@ -135,16 +140,16 @@ ytick style={color=black}
 ]
 \addplot [semithick, royalblue54108217, mark=*, mark size=3, mark options={solid}]
 table {%
-0 3.59558820724487
-1 4.18382358551025
-2 4.72794103622437
+0 3.65000009536743
+1 4.23571443557739
+2 4.77857160568237
 };
 \addlegendentry{Low (1-2)}
 \addplot [semithick, peru20610859, mark=*, mark size=3, mark options={solid}]
 table {%
-0 4.05000019073486
-1 4.55000019073486
-2 4.90000009536743
+0 4.09375
+1 4.5546875
+2 4.8828125
 };
 \addlegendentry{Mid (3)}
 \addplot [semithick, brown1585690, mark=*, mark size=3, mark options={solid}]
