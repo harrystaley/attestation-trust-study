@@ -1,11 +1,14 @@
 # Attestation Trust Study
 
-Materials and analysis code for a cognitive-science experiment on source
-attestation and trust calibration in AI-generated answers, conducted for
-Georgia Tech CS 6795 (Introduction to Cognitive Science), Summer 2026.
+Materials, data, and analysis code for a cognitive-science experiment on source
+attestation and trust calibration in AI-generated answers. The study finds that
+source attestation raises reported trust and intended reliance but does **not**
+improve trust calibration—a dissociation between trust *formation* and trust
+*calibration*.
 
-This README covers the code and how to run it. **For the full experimental
-design, hypotheses, theoretical framing, and analysis, see the project report.**
+This work is being prepared for publication (Staley & Madisetti). This README
+covers the code and how to run it. **For the full experimental design,
+hypotheses, theoretical framing, and results, see the paper.**
 
 ---
 
@@ -28,10 +31,11 @@ than isolating a single dimension; the per-trial Perceived Consequence measure i
 used to validate the manipulation. See the project report for the full rationale.
 
 Each participant sees 12 trials (one per cell). Counterbalancing uses a
-six-version Latin square; trial order is randomized. Recruitment is via Prolific
-(US residents, 18+) and approved social-media outreach; target N is determined by
-the power-analysis notebook. Data collection is **in progress**: a 16-participant
-pilot validated the pipeline, and main collection is underway.
+six-version Latin square; trial order is randomized. Recruitment was via Prolific
+(US residents, 18+) and approved social-media outreach. **Data collection is
+complete:** a 16-participant pilot validated the pipeline, and the final analytic
+sample is **97 participants contributing 1,164 participant-trials** (after
+pre-specified exclusions). Target N was informed by the power-analysis notebook.
 
 (See the project report for hypotheses, measures, and full rationale.)
 
@@ -58,8 +62,9 @@ and reads the output of the previous step.
 | File | Purpose |
 |------|---------|
 | `0-1_reconstruct_data.py` | Reconstructs per-trial condition codes (stem, attestation, correctness, stakes) from the Qualtrics export by block signature and loop position, and folds the per-participant intake/demographic columns (age, gender, education, AI use, AI expertise, baseline trust, consent) into the long-format output. |
+| `0-1b_clean_data.py` | Applies the pre-specified exclusion rules (consent, RelevantID duplicate and ballot-box-stuffing flags, a 10-second speeder floor, blank-trial and completeness checks) to the reconstructed data, prints a full exclusion funnel, and writes the cleaned long-format file. |
 | `0-2_prep_data.py` | Codes Qualtrics text labels to numeric: trust (1–7), reliance (1–3), consequence (1–5), and the analysis codings (`att_code` 0/1/2; `corr_code`, `stakes_code` ±0.5). Preserves all input columns, so intake data carries through. |
-| `0-3_fit_pilot_model.py` | Fits the crossed random-effects model to coded data and prints fixed-effect and variance-component estimates as **candidate** inputs for the power simulation. Estimation only; does not interpret. |
+| `0-3_pilot_power_inputs.py` | Fits the crossed random-effects model to coded data and prints fixed-effect and variance-component estimates as **candidate** inputs for the power simulation. Estimation only; does not interpret. |
 | `attestation_trust_analysis.ipynb` | Main analysis notebook: descriptives, crossed mixed-effects models (participant + stem) for the three outcomes, the H4 interaction and stakes-moderation models, an H3 mediation scaffold, exploratory visualizations, and the intake/demographic figures. |
 | `power_analysis_simulation.ipynb` | Monte-Carlo power analysis for the 3×2×2 mixed-effects design; determines target sample size. |
 | `analysis_results.csv`, `power_results_detailed.csv` | Tidy model-estimate and power-curve outputs. |
@@ -68,7 +73,7 @@ and reads the output of the previous step.
 ### Data (`prepped_data/`)
 | File | Purpose |
 |------|---------|
-| `long_reconstructed.csv` / `long_coded.csv` | Current main dataset: reconstructed long format, then coded for analysis (one row per participant-trial, with intake columns). |
+| `long_reconstructed.csv` / `long_cleaned.csv` / `long_coded.csv` | Main dataset (final, N=97): reconstructed long format, then cleaned (exclusions applied), then coded for analysis. One row per participant-trial, with intake columns. |
 | `pilot_long_reconstructed.csv` / `pilot_long_coded.csv` | The 16-participant pilot dataset (pipeline validation; no intake columns). |
 
 ### Environment & meta
@@ -146,7 +151,8 @@ Demographics → Debrief → End.
 ```bash
 python analysis_pipeline/0-1_reconstruct_data.py   # Qualtrics export -> long_reconstructed.csv (+ intake columns)
 python analysis_pipeline/0-2_prep_data.py          # -> long_coded.csv (numeric codings)
-python analysis_pipeline/0-3_fit_pilot_model.py    # candidate effect-size estimates for the power sim
+python analysis_pipeline/0-1b_clean_data.py        # -> long_cleaned.csv (applies exclusions, prints funnel)
+python analysis_pipeline/0-3_pilot_power_inputs.py # candidate effect-size estimates for the power sim
 ```
 
 Each script has an editable path block at the top (`INPUT_DIR` / `OUTPUT_DIR`)
@@ -169,7 +175,8 @@ protocol and participant consent.
 
 ---
 
-## Author
+## Authors
 
-Harry Staley — Georgia Institute of Technology, OMSCS
+- **Harry A. Staley** — Georgia Institute of Technology
+- **Vijay K. Madisetti** — Georgia Institute of Technology (corresponding author)
 CS 6795 (Introduction to Cognitive Science), Summer 2026
