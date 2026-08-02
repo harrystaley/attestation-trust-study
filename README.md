@@ -1,82 +1,79 @@
 ```markdown
 # Attestation Trust Study
 
-Welcome to the **Attestation Trust Study** repository. This project focuses on researching and developing methodologies for attestation and trust verification to enhance system security and reliability. By utilizing a combination of C, Rust, Go, and Bash, we aim to create robust solutions that ensure systems are both secure and trustworthy.
+Welcome to the **Attestation Trust Study** repository. This project focuses on researching and developing methodologies for attestation and trust verification, utilizing the power of C, Rust, Go, and Bash. Our goal is to enhance system security and reliability through innovative approaches and robust implementations.
+
+## Project Overview
+
+The Attestation Trust Study project aims to explore and implement various techniques for verifying system trustworthiness. By leveraging different programming languages and tools, we aim to provide comprehensive solutions for attestation and trust verification that can be integrated into existing systems to bolster security measures.
 
 ## Features
 
-- **Multi-language Implementation**: Leveraging the strengths of C, Rust, Go, and Bash for comprehensive solutions.
-- **Security Focused**: Designed to enhance system security through rigorous attestation and trust verification processes.
-- **Research Driven**: Continuously evolving with the latest advancements in system security and reliability.
-- **Cross-platform Support**: Compatible with various operating systems to ensure broad applicability.
+- **Multi-language Support:** Implementations in C, Rust, Go, and Bash to accommodate different system requirements and preferences.
+- **Cross-platform Compatibility:** Designed to work across various operating systems, ensuring broad applicability.
+- **Modular Design:** Easily integrate with existing systems and applications.
+- **Logging and Reporting:** Comprehensive logging to facilitate monitoring and auditing of attestation processes.
+- **User Interface:** Command-line interfaces for seamless interaction and control.
 
-## Setup & Installation
+## Setup / Installation
 
-### Prerequisites
+To set up the project on your local machine, follow these steps:
 
-Ensure you have the following installed on your system:
-
-- **C Compiler** (e.g., GCC)
-- **Rust**: [Install Rust](https://www.rust-lang.org/tools/install)
-- **Go**: [Install Go](https://golang.org/doc/install)
-- **Bash**: Available on most UNIX-like systems
-
-### Installation
-
-1. **Clone the Repository**:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/attestation-trust-study.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
    cd attestation-trust-study
    ```
 
-2. **Build the Project**:
-   - **C Components**:
+3. **Build the project:**
+   - For C:
      ```bash
-     make build-c
+     gcc -o attestation_c src/attestation.c
      ```
-   - **Rust Components**:
+   - For Rust:
      ```bash
      cargo build --release
      ```
-   - **Go Components**:
+   - For Go:
      ```bash
-     go build ./...
+     go build -o attestation_go src/attestation.go
      ```
 
-## Usage
+4. **Run the desired implementation:**
+   ```bash
+   ./attestation_c    # For C
+   ./target/release/attestation_rust # For Rust
+   ./attestation_go   # For Go
+   ```
 
-### Running the Attestation Verification
+## Usage Examples
 
-To run the attestation verification process, execute the following command:
+To perform a basic attestation verification, execute the following command:
 
 ```bash
-./run_attestation.sh
+./attestation_c --verify --input config.yaml
 ```
 
-### Example
-
-```bash
-./run_attestation.sh --verify --log-level=info
-```
-
-This command initiates the verification process with logging set to info level.
+For more detailed usage instructions, refer to the documentation provided within each language-specific subdirectory.
 
 ## Contribution Guidelines
 
-We welcome contributions from the community. To contribute:
+We welcome contributions from the community! To contribute:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
-3. Commit your changes with clear messages.
-4. Push your branch and create a pull request.
+3. Commit your changes and push them to your fork.
+4. Submit a pull request detailing your changes.
 
-Please ensure your code adheres to our coding standards and includes appropriate tests.
+Please ensure all code adheres to the project's coding standards and includes appropriate tests.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Thank you for your interest in the Attestation Trust Study project. We look forward to your contributions and feedback!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 ```
+
+This README provides a comprehensive overview of the project, detailing its purpose, setup instructions, usage examples, and guidelines for contributing, while maintaining a professional tone.
