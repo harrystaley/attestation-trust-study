@@ -63,7 +63,7 @@ import zipfile
 import tempfile
 
 EXPORT_DIR = "../qdata"
-EXPORT_FILE = "AI_Attestation_Trust_Study_07-11-2026T1614.zip"  # PINNED wave. To use a newer export, change this filename (same in 0-1 and 0-1b).
+EXPORT_FILE = "AI_Attestation_Trust_Study_07-20-2026T1920.zip"  # PINNED wave. To use a newer export, change this filename (same in 0-1 and 0-1b).
 VERSION_DIR = "../versions_output"   # folder holding version_1.csv .. version_6.csv
 OUTPUT_DIR = "../prepped_data"
 OUTPUT_CSV = "long_reconstructed.csv"
@@ -213,8 +213,11 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
 
     out_rows: list[dict] = []
     skipped: list[str] = []
+    n_raw = 0            # raw data rows seen
+    n_no_data = 0        # rows with no answer data at all (previews/abandoned)
 
     for row in data:
+        n_raw += 1
         rid = row[rid_idx] if rid_idx < len(row) else ""
         # find which qids this respondent has data in -> block signature
         present_qids = set()
@@ -224,6 +227,7 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
                 present_qids.add(qid)
                 loopnums.add(ln)
         if not present_qids:
+            n_no_data += 1
             continue
 
         # match this respondent's qid set to a block signature
@@ -283,9 +287,14 @@ def reconstruct(export_csv: str | Path, version_dir: str | Path,
     n_resp = len({r["response_id"] for r in out_rows})
     print(f"Wrote {len(out_rows)} trial rows for {n_resp} respondents -> {out_path}")
     print(f"  (expected ~{n_resp*12} rows = {n_resp} respondents x 12 trials)")
+    print("\n  RECONSTRUCTION FUNNEL (raw export -> reconstructed):")
+    print(f"    raw data rows in export        : {n_raw}")
+    print(f"    dropped, no answer data        : {n_no_data}  (previews/abandoned/empty)")
+    print(f"    dropped, unrecognized block    : {len(skipped)}")
+    print(f"    respondents written            : {n_resp}")
+    print(f"    (check: {n_no_data} + {len(skipped)} + {n_resp} = {n_no_data+len(skipped)+n_resp} should equal raw rows {n_raw})")
     if skipped:
-        print(f"  WARNING: {len(skipped)} respondents had an unrecognized block "
-              f"signature and were skipped: {skipped}")
+        print(f"  WARNING: unrecognized-block response_ids: {skipped}")
     print("\nVERIFY before trusting this:")
     print("  1. Confirm BLOCK_TO_VERSION matches how you assigned versions to blocks.")
     print("  2. Loop order was FIXED (QSF Looping='Static') -- confirmed for this survey.")

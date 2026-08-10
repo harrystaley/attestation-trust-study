@@ -1,0 +1,26 @@
+% AUTO-GENERATED. Mediation path diagram, provenance-paper card style.
+% Indirect a*b = 0.082.
+\begin{tikzpicture}[
+  >={Stealth[length=3mm,width=2.2mm]}, font=\small,
+  card/.style={rectangle, rounded corners=6pt, align=center,
+    inner xsep=9pt, inner ysep=8pt, line width=1.4pt, text width=24mm, minimum height=15mm},
+  attnode/.style={card, draw=boxblue, fill=boxbluefill, text=boxbluetext},
+  mednode/.style={card, draw=llmline, fill=llmfill, text=llmtext},
+  outnode/.style={card, draw=ragline, fill=ragfill, text=ragtext},
+  flow/.style={->, draw=boxblue, line width=1.5pt},
+  weak/.style={->, draw=boxgray, line width=1.2pt, dash pattern=on 4pt off 3pt},
+  elab/.style={font=\footnotesize\bfseries, text=boxbluetext, fill=white,
+    inner xsep=3pt, inner ysep=1.5pt, rounded corners=2pt},
+  graylab/.style={font=\footnotesize, text=boxgraytext, fill=white,
+    inner xsep=3pt, inner ysep=1.5pt, rounded corners=2pt},
+]
+\node[attnode] (att) {\textbf{Source}\\\textbf{Attestation}};
+\node[mednode, right=22mm of att] (trust) {\textbf{State}\\\textbf{Trust}};
+\node[outnode, right=22mm of trust] (rel) {\textbf{Behavioral}\\\textbf{Reliance}};
+\fill[boxblue] ($(att.north west)+(4pt,-7pt)$) rectangle ($(att.south west)+(6pt,7pt)$);
+\fill[llmline] ($(trust.north west)+(4pt,-7pt)$) rectangle ($(trust.south west)+(6pt,7pt)$);
+\fill[ragline] ($(rel.north west)+(4pt,-7pt)$) rectangle ($(rel.south west)+(6pt,7pt)$);
+\draw[flow] (att) -- node[elab]{$a=0.419$} (trust);
+\draw[flow] (trust) -- node[elab]{$b=0.195$} (rel);
+\draw[weak, bend right=38] (att.south) to node[graylab, below]{$c'=0.026$ (n.s.)} (rel.south);
+\end{tikzpicture}

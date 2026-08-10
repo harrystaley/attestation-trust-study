@@ -1,0 +1,27 @@
+% AUTO-GENERATED from power_analysis_simulation.ipynb. Provenance-paper palette.
+\begin{tikzpicture}
+\begin{axis}[
+  attbase, width=\columnwidth, height=0.72\columnwidth,
+  title={Power to detect interaction effects (Monte Carlo)},
+  xlabel={True interaction effect size ($\beta$)}, ylabel={Power},
+  xmin=0.08, xmax=0.42, ymin=0, ymax=1.02,
+  xtick={0.1,0.15,0.2,0.25,0.3,0.35,0.4}, ytick={0,0.2,0.4,0.6,0.8,1.0},
+  legend cell align={left},
+  legend style={at={(0.97,0.30)}, anchor=east, font=\scriptsize},
+]
+\addplot[boxblue, mark=*, mark size=2pt, mark options={fill=boxbluefill, draw=boxblue}, line width=1.5pt]
+  coordinates {(0.10,0.07) (0.15,0.17) (0.20,0.37) (0.25,0.56) (0.30,0.77) (0.35,0.89) (0.40,0.97)};
+\addlegendentry{H2, $N=60$}
+\addplot[llmline, mark=square*, mark size=2pt, mark options={fill=llmfill, draw=llmline}, line width=1.5pt]
+  coordinates {(0.10,0.08) (0.15,0.24) (0.20,0.52) (0.25,0.72) (0.30,0.88) (0.35,0.96) (0.40,0.99)};
+\addlegendentry{H2, $N=80$}
+\addplot[ragline, mark=triangle*, mark size=2.4pt, mark options={fill=ragfill, draw=ragline}, line width=1.5pt]
+  coordinates {(0.10,0.12) (0.15,0.34) (0.20,0.61) (0.25,0.83) (0.30,0.96) (0.35,0.99) (0.40,1.00)};
+\addlegendentry{H2, $N=100$}
+\addplot[boxgray, mark=x, mark size=2.4pt, line width=1.3pt, dash pattern=on 4pt off 3pt]
+  coordinates {(0.10,0.06) (0.15,0.05) (0.20,0.06) (0.25,0.04) (0.30,0.06) (0.35,0.05) (0.40,0.05)};
+\addlegendentry{H4 (3-way), $N=80$}
+\addplot[boxgraytext, dashed, line width=1pt] coordinates {(0.08,0.8) (0.42,0.8)};
+\addlegendentry{80\% power}
+\end{axis}
+\end{tikzpicture}
