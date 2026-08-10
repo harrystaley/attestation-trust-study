@@ -343,9 +343,31 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
             if trials_with_outcome.get(rid, 0) < REQUIRED_TRIALS or not demog_ok.get(rid, False):
                 drop_resp.setdefault(rid, "R6_incomplete")
 
-    # per-rule respondent counts
+    # per-rule respondent counts.
+    # NOTE: drop_resp records the FIRST rule that caught each respondent, so
+    # rule_counts sums exactly to the number dropped (no double counting), but a
+    # respondent failing multiple rules appears only under the first. The
+    # independent tally below shows how many respondents each rule would catch
+    # on its own (these can overlap and need not sum to the total).
     from collections import Counter
     rule_counts = Counter(drop_resp.values())
+
+    indep = Counter()
+    for rid in resp_in:
+        fl = flags.get(rid, {})
+        if APPLY_CONSENT and fl.get("consent","").strip().lower() != CONSENT_ACCEPT:
+            indep["R1_consent"] += 1
+        if APPLY_DUPLICATE and fl.get("duplicate","").strip().lower() == "true":
+            indep["R2_duplicate"] += 1
+        if APPLY_BALLOT and fl.get("ballot","").strip() not in ("",):
+            indep["R3_ballot"] += 1
+        if APPLY_SPEED:
+            d = _safe_float(fl.get("duration"))
+            if d is not None and d < SPEED_FLOOR_SECONDS:
+                indep["R4_speed"] += 1
+        if APPLY_COMPLETE and (trials_with_outcome.get(rid,0) < REQUIRED_TRIALS
+                               or not demog_ok.get(rid, False)):
+            indep["R6_incomplete"] += 1
 
     kept_rows = [r for r in rows if r["response_id"] not in drop_resp]
 
@@ -380,7 +402,8 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
     # --- report -------------------------------------------------------------
     resp_out = {r["response_id"] for r in final_rows}
     print(f"\nCleaned {n_rows_in} -> {len(final_rows)} trial rows -> {out_path}")
-    print(f"  respondents: {len(resp_in)} -> {len(resp_out)}")
+    print(f"  respondents entering 0-1b (from reconstructed file): {len(resp_in)}")
+    print(f"  respondents after exclusions: {len(resp_out)}  (dropped {len(resp_in)-len(resp_out)})")
     print("  participant-level exclusions (respondents dropped):")
     for rule in ("R1_consent", "R2_duplicate", "R3_ballot", "R4_speed",
                  "R6_incomplete", "R0_not_finished"):
@@ -388,6 +411,12 @@ def clean(long_csv: str | Path, export_csv: str | Path, qsf_path: str | Path,
             print(f"    {rule:16s}: {rule_counts[rule]}")
     if not rule_counts:
         print("    (none)")
+    print("  (each respondent counted once, under the first rule they failed)")
+    if indep:
+        print("  per-rule, independent (respondents each rule catches on its own; may overlap):")
+        for rule in ("R1_consent","R2_duplicate","R3_ballot","R4_speed","R6_incomplete"):
+            if indep.get(rule):
+                print(f"    {rule:16s}: {indep[rule]}")
     print(f"  trial-level exclusions:")
     print(f"    R5_blank_trial  : {n_blank_trials} trial rows dropped")
     if empty_resp:

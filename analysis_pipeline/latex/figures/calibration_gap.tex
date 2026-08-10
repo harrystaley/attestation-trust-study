@@ -1,0 +1,18 @@
+% AUTO-GENERATED. Trust calibration gap = mean(correct) - mean(incorrect).
+\begin{tikzpicture}
+\begin{axis}[
+  attbase, width=\columnwidth, height=5.6cm,
+  title={Trust calibration gap: mean(correct) $-$ mean(incorrect)},
+  xlabel={Attestation strength}, ylabel={Trust difference},
+  xmin=-0.6, xmax=2.6, xtick={0,1,2}, xticklabels={None,Weak,Strong},
+  ymin=-0.150, ymax=0.404, axis on top,
+]
+\draw[draw=boxblue, fill=boxbluefill, line width=1.3pt, rounded corners=1.5pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.3041);
+\draw[draw=llmline, fill=llmfill, line width=1.3pt, rounded corners=1.5pt] (axis cs:0.6,0) rectangle (axis cs:1.4,-0.0670);
+\draw[draw=boxblue, fill=boxbluefill, line width=1.3pt, rounded corners=1.5pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.1959);
+\draw[boxgraytext, line width=1.0pt] (axis cs:-0.6,0) -- (axis cs:2.6,0);
+\node[font=\footnotesize\bfseries, text=boxgraytext, anchor=south] at (axis cs:0,0.3181) {+0.30};
+\node[font=\footnotesize\bfseries, text=boxgraytext, anchor=north] at (axis cs:1,-0.0810) {-0.07};
+\node[font=\footnotesize\bfseries, text=boxgraytext, anchor=south] at (axis cs:2,0.2099) {+0.20};
+\end{axis}
+\end{tikzpicture}
