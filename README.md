@@ -1,74 +1,115 @@
-```markdown
 # Attestation Trust Study
 
-Welcome to the **Attestation Trust Study** repository! This project focuses on researching and developing methodologies for attestation and trust verification, aimed at enhancing system security and reliability. We utilize a combination of C, Rust, Go, and Bash to explore innovative solutions in this domain.
+A user-facing empirical study measuring how people calibrate trust in LLM-generated answers under different levels of source attestation (none/weak/strong) and decision stakes (low/high consequence). Part of **CS 6795** (Summer 2026, Georgia Tech).
 
-## Features
+## Overview
 
-- **Multi-language Implementation**: Leverage the strengths of C, Rust, Go, and Bash for versatile and robust development.
-- **Security Enhancement**: Focus on improving system security through effective attestation and trust verification techniques.
-- **Cross-Platform Support**: Designed to work seamlessly across different operating systems.
+This study tests whether and how source attestation affects trust and behavioral reliance on LLM responses. The design crosses three attestation levels (none, weak, strong) with two stakes conditions (low-consequence facts, high-stakes federal decisions), using a within-subjects Latin square with 12 trials per participant. We measure:
 
-## Installation
+- **State trust** (1–7 point scale, fully labeled)
+- **Behavioral reliance** (reject / verify / act)
+- **Perceived consequence** (mediator for stakes effect)
 
-To set up the development environment for the Attestation Trust Study project, follow these steps:
+Key hypotheses:
+- **H1:** Attestation strength increases trust.
+- **H2:** Attestation strength increases reliance.
+- **H3:** Stakes increase reliance (boundary conditions).
+- **H4:** Perceived consequence mediates the stakes effect.
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/attestation-trust-study.git
-   ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd attestation-trust-study
-   ```
-3. **Build the Project**:
-   - For C components:
-     ```bash
-     make build-c
-     ```
-   - For Rust components:
-     ```bash
-     cargo build --release
-     ```
-   - For Go components:
-     ```bash
-     go build ./...
-     ```
+## Repository Structure
 
-## Usage
+```
+survey/                       Qualtrics instrument and consent/debrief
+├── AI_Attestation_Trust_Study.qsf      Live survey (6-version counterbalanced)
+├── consent_text.md, debrief_text.md    Ethics & disclosure
+├── debrief_corrections.html            Corrections for false answers shown
+└── *_versions/                         Stimulus sets (per Latin square version)
 
-Here are some examples of how to use the different components of this project:
+analysis_pipeline/            Data handling and statistical modeling
+├── 0-1_reconstruct_data.py   Parse raw Qualtrics CSV export
+├── 0-1b_clean_data.py        Attention checks, bot detection, exclusions
+├── 0-2_prep_data.py          Reshape to long format for analysis
+├── attestation_trust_analysis.ipynb    Mixed-effects modeling (LMM)
+├── power_analysis_simulation.ipynb     Sample-size planning
+└── analysis_results.csv, power_results_detailed.csv
 
-- **C Component**:
-  ```bash
-  ./bin/c-component --verify
-  ```
+prepped_data/                 Cleaned/reshaped CSVs (intermediate outputs)
+output/                       Figures and results summaries
 
-- **Rust Component**:
-  ```bash
-  ./target/release/rust-component --attest
-  ```
+survey_generator.ipynb        LLM-based stimulus generation & curation
+latin_square_versions.py      6-version counterbalancing (3 attestation × 2 stakes × 2 correctness)
+make_qualtrics_block.py       Convert stimulus CSV to Qualtrics block format
 
-- **Go Component**:
-  ```bash
-  ./go-component --trust-check
-  ```
+DESIGN_LOG.md                 Decision record: rationale for all design choices
+generation_prompt.md          LLM instruction template for stimulus generation
+environment.yaml, requirements.txt    Conda & pip dependencies
+```
 
-## Contributing
+## Design Highlights
 
-We welcome contributions from the community! If you're interested in contributing, please follow these steps:
+- **Stimuli:** LLM-generated (OpenAI API), author-curated US-federal facts with verifiable ground truth
+- **Counterbalancing:** 6-version Latin square, randomly assigned via Qualtrics Randomizer (Evenly Present)
+- **Trial randomization:** 12 trials per version, shuffled within version
+- **Manipulation:** Attestation strength applied downstream in code (fixed wording, source name only varies)
+- **Stakes operationalization:** Defined by *consequence*, not physical danger. High-stakes = substantial, hard-to-reverse federal outcome (FAFSA deadline, Social Security, etc.). Low-stakes = minor recoverable consequence.
+- **Sample:** US residents only (federal facts do not apply uniformly internationally)
+- **Privacy:** Qualtrics anonymization enabled; no IP/location stored; age in ranges
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with a descriptive message.
-4. Push your changes to your fork.
-5. Open a pull request against the main branch.
+## Quick Start
 
-Please ensure that your code follows the project's coding standards and includes appropriate tests.
+### Environment setup
+```bash
+git clone https://github.com/harrystaley/attestation-trust-study.git
+cd attestation-trust-study
+conda env create -f environment.yaml
+conda activate attestation-trust
+```
+
+### Stimulus generation (if re-running)
+```bash
+# Requires OPENAI_API_KEY in .env
+jupyter notebook survey_generator.ipynb
+# Review outputs, curate; then:
+python make_qualtrics_block.py
+```
+
+### Analysis pipeline (post-data)
+```bash
+# Export raw responses from Qualtrics → prepped_data/
+cd analysis_pipeline
+python 0-1_reconstruct_data.py    # Parse Qualtrics format
+python 0-1b_clean_data.py         # Exclusions
+python 0-2_prep_data.py           # Reshape
+jupyter notebook attestation_trust_analysis.ipynb  # LMM & hypotheses
+```
+
+### Power analysis
+```bash
+cd analysis_pipeline
+jupyter notebook power_analysis_simulation.ipynb
+```
+
+## Key References & Decisions
+
+See **[DESIGN_LOG.md](DESIGN_LOG.md)** for detailed justification of major design choices:
+- 7-point state-trust scale (all points labeled)
+- Single-item dispositional trust (covariate only)
+- Three-option behavioral reliance (reject/verify/act)
+- High/low stakes binary (continuous Perceived Consequence captures variation)
+- Attestation-strength wording fixed in code (not per-item LLM generation)
+- No physical-harm stimuli (financial/legal/benefit consequences only)
+
+## Contributing & Attribution
+
+This study was developed iteratively with discussion of an AI assistant (Claude), which helped surface tradeoffs, structure reasoning, and record decisions. **All research design choices, justification, and analytical content are the author's** (Harry Staley). Use of generative AI follows the **CS 6795 course policy**.
+
+PI: Dr. Keith McGreggor (course professor), Georgia Tech  
+Course: CS 6795, Summer 2026
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
+MIT License. See [LICENSE](LICENSE) file for details.
 
-Feel free to customize the installation and usage sections based on the actual build and execution process of your project.
+---
+
+**Status:** Pilot phase in progress. Data collection pending Prolific integration. Stimulus curation and power analysis underway.
