@@ -179,4 +179,3 @@ protocol and participant consent.
 
 - **Harry A. Staley** — Georgia Institute of Technology
 - **Vijay K. Madisetti** — Georgia Institute of Technology (corresponding author)
-CS 6795 (Introduction to Cognitive Science), Summer 2026
